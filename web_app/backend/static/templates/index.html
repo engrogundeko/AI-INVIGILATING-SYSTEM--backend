@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Capture</title>
+    <script src="https://docs.opencv.org/4.5.4/opencv.js"></script>
+    <link defer rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link defer rel="stylesheet" href="static/js/bootstrap.min.js">
+    <link defer rel="stylesheet" href="static/js/script.js">
+</head>
+<body>
+    
+    <h1>Camera Capture</h1>
+    <video id="videoElement" width="640" height="480" autoplay></video>
+    <button id="captureButton">Capture</button>
+    <canvas id="canvas" width="640" height="480" style="display: none;"></canvas>
+
+    <script>
+        // OpenCV.js initialization
+        cv.onRuntimeInitialized = () => {
+            console.log('OpenCV.js is ready');
+        };
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const video = document.getElementById('videoElement');
+            const canvas = document.getElementById('canvas');
+            const captureButton = document.getElementById('captureButton');
+            
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(stream => {
+                    video.srcObject = stream;
+                    video.play();
+                })
+                .catch(err => console.error('getUserMedia() failed: ', err));
+
+            captureButton.addEventListener('click', function() {
+                const context = canvas.getContext('2d');
+                context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+                // Convert canvas to base64 data URL
+                const imageDataURL = canvas.toDataURL('image/jpeg');
+
+                // Send captured image to backend
+                sendToBackend(imageDataURL);
+            });
+
+            function sendToBackend(imageDataURL) {
+                // Example: Send image data to backend using fetch API
+                fetch('/accounts/verify-student', {
+                    method: 'POST',
+                    body: JSON.stringify({ image: imageDataURL }),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log('Response from backend:', data);
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

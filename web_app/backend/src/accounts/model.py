@@ -2,10 +2,6 @@ from pydantic import BaseModel
 from enum import Enum
 from typing import List, BinaryIO
 
-from ..config import MONGODB_URL
-
-from redbird.repos import MongoRepo
-
 
 class Gender(Enum):
     male = "MALE"
@@ -31,15 +27,8 @@ class User(BaseModel):
     gender: Gender
     role: UserRole
     photo_path: List[str]
-    photo_embed: List[BinaryIO]
+    photo_embed: List[bytes]
 
     @property
     def full_name(self):
         return self.first_name + self.last_name
-
-
-user = MongoRepo(
-    uri=MONGODB_URL, database="AIReady", collection="user", model=User, id_field ="id"
-)
-
-
