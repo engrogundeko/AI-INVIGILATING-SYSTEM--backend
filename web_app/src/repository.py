@@ -15,9 +15,11 @@ class MongoDBRepository:
         collection = self.db[collection_name]
         return collection.find_one(query)
 
-    def find_many(self, collection_name, query):
+    def find_many(self, collection_name, query = None):
         collection = self.db[collection_name]
-        return collection.find(query)
+        if query:
+            return collection.find(query)
+        return collection.find()
 
     def update_one(self, collection_name, query, update):
         collection = self.db[collection_name]

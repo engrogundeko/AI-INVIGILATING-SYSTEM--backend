@@ -19,8 +19,8 @@ class User(BaseModel):
     id: int
     first_name: str
     last_name: str
-    password: str
-    matric_no: int
+    password: str | None = None
+    matric_no: int | None = None
     email: str
     phone: str
     address: str

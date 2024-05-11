@@ -1,24 +1,16 @@
-import subprocess
-from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse
-from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
+from fastapi import FastAPI
 from uvicorn import run
 from .accounts.route import router as accounts_router
+from .server.route import router as server_router
+from .exams.route import router as exam_router
 
 import os
 
-print(os.path.exists("./static"))
 app = FastAPI()
+
 app.include_router(accounts_router)
-
-app.mount("/static", StaticFiles(directory="./static"), name="static")
-templates = Jinja2Templates(directory="./static/templates")
-
-
-@app.get("/", response_class=HTMLResponse)
-async def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+app.include_router(exam_router)
+app.include_router(server_router)
 
 
 if __name__ == "__main__":

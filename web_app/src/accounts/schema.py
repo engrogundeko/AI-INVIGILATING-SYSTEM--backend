@@ -1,24 +1,26 @@
 from dataclasses import dataclass
-from fastapi import UploadFile
+from fastapi import Form, UploadFile, File
 from typing import BinaryIO, List
 from pydantic import BaseModel
 
 from .model import Gender, UserRole
 
+
 class ImagePayload(BaseModel):
     image: str
 
+
 @dataclass
 class StudentInSchema:
-    first_name: str
-    last_name: str
-    matric_no: int
-    email: str
-    phone: str
-    address: str
-    gender: Gender
-    role: UserRole
-    image: List[UploadFile]
+    first_name: str = Form(default=None)
+    last_name: str = Form(...)
+    matric_no: int = Form(...)
+    email: str = Form(...)
+    phone: str = Form(...)
+    address: str = Form(...)
+    gender: str = Form(...)
+    role: str = Form(...)
+    image: UploadFile = File(...)
 
     def validate_email(self):
         pass
