@@ -1,51 +1,67 @@
 import base64
-import json
+from pathlib import Path
+from fastapi.responses import StreamingResponse
+
+from ..utils.images import preprocess_and_embed, compare_images
 from .schema import VideoSchema
 
 import cv2
 import numpy as np
 from ultralytics import YOLO
-from fastapi import APIRouter, Request, WebSocket
+from fastapi import APIRouter, Header, Response, WebSocket
 
 model = YOLO("yolov8n.pt")
 router = APIRouter(tags=["Exams"], prefix="/exams")
 
 
-@router.post("/stream")
-async def create_student(payload: VideoSchema):
+def generate_frame():
+    camera = cv2.VideoCapture(
+        0
+    )  # Initialize camera (assuming camera is available at index 0)
     try:
-        base64_data = payload.image.split(",")[1]
-        # Convert image data from string to bytes
-        image_bytes = base64.b64decode(base64_data)
+        while True:
+            # Read frame from camera
+            success, frame = camera.read()
+            if not success:
+                break
 
-        # Convert bytes to numpy array
+            # Perform object detection
+            results = model.track(frame, persist=True)
 
-    except Exception as e:
-        print(f"Error: {e}")
+            ret, buffer = cv2.imencode(".webp", frame)
+            if not ret:
+                break
+
+            # Yield encoded frame as bytes
+            yield b'--frame\r\nContent-Type: image/jpeg\r\n\r\n' + buffer.tobytes() + b'\r\n'
+    finally:
+        # Release camera when done
+        camera.release()
 
 
-@router.websocket("/video-stream")
-async def video_stream(websocket: WebSocket):
-    await websocket.accept()
+@router.get("/video")
+def video():
+    return StreamingResponse(
+        generate_frame(), media_type="multipart/x-mixed-replace; boundary=frame"
+    )
 
-    while True:
-        data = await websocket.receive_text()
-        if data is not None:
-            # Decode base64 image data
-            img_bytes = base64.b64decode(data.split(",")[1])
 
-            nparr = np.frombuffer(img_bytes, np.uint8)
-            if len(nparr) >= 1:
-                # # Decode the numpy array into an image
-                img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
-                results = model.track(img, persist=True)
-                bounding_boxes = []
-                for result in results:
-                    # Assuming each detection result has 'xyxy' attribute
-                    bounding_boxes.append(result.tojson(normalize=False))
+# @router.websocket("/video-stream")
+# async def video_stream(websocket: WebSocket):
+#     await websocket.accept()
 
-                # Convert bounding box coordinates to JSON
-                bounding_boxes_json = json.dumps(bounding_boxes)
+#     while True:
+#         data = await websocket.receive_text()
+#         if data is not None:
+#             img_bytes = base64.b64decode(data.split(",")[1])
+#             # embeddings = preprocess_and_embed(img_bytes)
+#             # image_path = compare_images(embeddings)
 
-                # Send bounding box coordinates to frontend
-                await websocket.send_text(bounding_boxes_json)
+#             nparr = np.frombuffer(img_bytes, np.uint8)
+#             if len(nparr) >= 1:
+#                 img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+#                 results = model.track(img, persist=True)
+#                 bounding_boxes = [result.orig_img for result in results if result]
+#                 print(bounding_boxes)
+#                 # await websocket.send_text(bounding_boxes)
+#                 # break
