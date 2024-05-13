@@ -20,7 +20,11 @@ class StudentInSchema:
     address: str = Form(...)
     gender: str = Form(...)
     role: str = Form(...)
-    image: UploadFile = File(...)
+    image_path: UploadFile = File(alias="image")
+    
+    @property
+    def get_fullname(self):
+        return self.first_name + self.last_name
 
     def validate_email(self):
         pass

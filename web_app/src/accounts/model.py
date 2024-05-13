@@ -26,8 +26,8 @@ class User(BaseModel):
     address: str
     gender: Gender
     role: UserRole
-    photo_path: List[str]
-    photo_embed: List[bytes]
+    img_path: List[str]
+    img_embed: List[bytes]
 
     @property
     def full_name(self):

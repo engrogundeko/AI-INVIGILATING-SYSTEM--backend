@@ -1,5 +1,4 @@
 import os
-import io
 from typing import List
 import uuid
 from PIL import Image
@@ -8,13 +7,13 @@ import numpy as np
 import cv2
 from deepface import DeepFace
 from fastapi import UploadFile
-from ..repository import repository
+from ..repository import userRespository
 
 SAVE_DIRECTORY = "media/profilephotos/"
 
 
 def compare_images(image: Image.Image):
-    users = repository.find_many("user")
+    users = userRespository.find_many()
     for user in users:
         embeddings = user["photo_embed"]
         result = DeepFace.verify(embeddings, image)
@@ -50,12 +49,5 @@ def save_image(images: List[Image.Image]) -> str:
 def preprocess_and_embed(image_data):
     nparr = np.frombuffer(image_data, np.uint8)
     image = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
-
-    # Display the image
-    cv2.imshow("Input Image", image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-
-    # Proceed with embedding extraction
     embeddings = DeepFace.represent(image, model_name="Facenet")
     return embeddings
