@@ -3,72 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Streaming</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Video Streaming</h1>
+    <img src="http://127.0.0.1:8000/exams/video" alt="">
     
-    <!-- Video element to display the streamed video -->
-    <video id="videoElement" autoplay></video>
-
-    <script>
-        async function startVideoStreaming() {
-            try {
-                const videoElement = document.getElementById('videoElement');
-                
-                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-                videoElement.srcObject = stream;
-            } catch (error) {
-                console.error('Error accessing the webcam:', error);
-            }
-        }
-
-        async function sendVideoFrames() {
-            const socket = new WebSocket('ws://localhost:8000/exams/video-stream');
-        
-            socket.onerror = function(event) {
-                console.error('WebSocket error:', event);
-                socket.close();
-                // Set the flag to stop streaming
-                isStreaming = false;
-            };
-
-            // Close WebSocket connection when the page unloads
-            window.addEventListener('unload', function() {
-                socket.close();
-            });
-        
-            await new Promise(resolve => {
-                socket.onopen = resolve;
-            });
-        
-            const videoElement = document.getElementById('videoElement');
-            const canvas = document.createElement('canvas');
-            const context = canvas.getContext('2d');
-        
-            let isStreaming = true; // Flag to control the streaming loop
-        
-            while (isStreaming) {
-                canvas.width = videoElement.videoWidth;
-                canvas.height = videoElement.videoHeight;
-                
-                context.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
-                const imageDataUrl = canvas.toDataURL('image/jpeg');
-        
-                // Send image data over WebSocket
-                socket.send(imageDataUrl);
-        
-                await new Promise(resolve => setTimeout(resolve, 1000 / 60)); // Adjust frame rate as needed
-            }
-        }
-        
-        
-        window.onload = function () {
-            startVideoStreaming();
-            sendVideoFrames().catch(error => {
-                console.error('Error sending video frames:', error);
-            });
-        };
-    </script>
 </body>
 </html>

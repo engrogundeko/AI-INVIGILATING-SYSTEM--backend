@@ -2,52 +2,48 @@ from pymongo import MongoClient
 
 
 class MongoDBRepository:
-    def __init__(self, host="localhost", port=27017, db_name="AIReady"):
-
+    def __init__(
+        self,
+        host: str = "localhost",
+        port: int = 27017,
+        db_name: str = "AIReady",
+        collection_name: str = None,
+    ):
         self.client = MongoClient(host, port)
         self.db = self.client[db_name]
+        self.collection = self.db[collection_name]
 
-    def insert_one(self, collection_name, document):
-        collection = self.db[collection_name]
-        return collection.insert_one(document)
+    def insert_one(self, document):
+        return self.collection.insert_one(document)
 
-    def find_one(self, collection_name, query):
-        collection = self.db[collection_name]
-        return collection.find_one(query)
+    def find_one(self, query):
+        return self.collection.find_one(query)
 
-    def find_many(self, collection_name, query = None):
-        collection = self.db[collection_name]
+    def find_many(self, query=None):
         if query:
-            return collection.find(query)
-        return collection.find()
+            return self.collection.find(query)
+        return self.collection.find()
 
-    def update_one(self, collection_name, query, update):
-        collection = self.db[collection_name]
-        return collection.update_one(query, {"$set": update})
+    def update_one(self, query, update):
+        return self.collection.update_one(query, {"$set": update})
 
-    def delete_one(self, collection_name, query):
-        collection = self.db[collection_name]
-        return collection.delete_one(query)
+    def delete_one(self, query):
+        return self.collection.delete_one(query)
 
 
-repository = MongoDBRepository()
-# Example usage:
+userRespository = MongoDBRepository(collection_name="user")
+examRespository = MongoDBRepository(collection_name="exam")
+roomRespository = MongoDBRepository(collection_name="room")
+courseRespository = MongoDBRepository(collection_name="course")
+videoRecordingRespository = MongoDBRepository(collection_name="recording")
+examAttedanceRespository = MongoDBRepository(collection_name="attendance")
+notificationRespository = MongoDBRepository(collection_name="notification")
+suspicionReportRespository = MongoDBRepository(collection_name="suspicion")
+cheatingBehaviourRespository = MongoDBRepository(collection_name="behaviour")
+examRegistrationRespository = MongoDBRepository(collection_name="registration")
+
 if __name__ == "__main__":
-    # Initialize repository
+    pass
+# Initialize repository
 
-    # Example document
-    document = {"name": "John Doe", "age": 30, "email": "john.doe@example.com"}
-
-    # Insert document into collection
-    repository.insert_one("users", document)
-
-    # Find document by query
-    result = repository.find_one("users", {"name": "John Doe"})
-    print(result)
-
-    # Update document
-    update = {"age": 31}
-    repository.update_one("users", {"name": "John Doe"}, update)
-
-    # Delete document
-    repository.delete_one("users", {"name": "John Doe"})
+# Example document

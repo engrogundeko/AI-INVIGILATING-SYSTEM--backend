@@ -22,9 +22,4 @@ async def verify_student(payload: ImagePayload):
     image_bytes = base64.b64decode(base64_data)
     image = Image.open(io.BytesIO(image_bytes))
     embeddings = preprocess_and_embed(image_bytes)
-    # print(image_path)
-    # print(image_bytes)
     image_path = compare_images(embeddings)
-    print(image_path)
-    # print(embeddings)
-    # return {"user": data}

@@ -1,7 +1,7 @@
 from ..algorithms.facial import preprocess_and_embed
 from ..utils.images import save_image, save_file
 from .model import User
-from ..repository import repository
+from ..repository import userRespository
 from .schema import StudentInSchema
 
 
@@ -15,4 +15,4 @@ def create_student_service(payload: StudentInSchema):
     payload.image = image
     payload = payload.__dict__
     payload["embed"] = embed
-    repository.insert_one("user", payload)
+    userRespository.insert_one(payload)
