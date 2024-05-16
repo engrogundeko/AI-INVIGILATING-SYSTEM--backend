@@ -1,14 +1,22 @@
 import json
-import numpy as np
 from pathlib import Path
-from ..repository import examRespository
-from apscheduler.schedulers.background import BackgroundScheduler
+from bson import ObjectId
+
+from ..utils.constants import AIConstant
+from ..repository import (
+    examRegistrationRespository,
+    userRespository,
+    examAttedanceRespository,
+)
+
 import cv2
+import numpy as np
 from ultralytics import YOLO
 from deepface import DeepFace
+from apscheduler.schedulers.background import BackgroundScheduler
 
-img_db = Path("media/profilephotos")
 model = YOLO("yolov8n.pt")
+img_db = Path("media/profilephotos")
 scheduler = BackgroundScheduler()
 
 
@@ -19,7 +27,7 @@ def label_box(frame, detection):
     return cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
 
 
-def generate_frame():
+def generate_frame(exam_id):
     camera = cv2.VideoCapture(0)
     try:
         while True:
@@ -29,12 +37,17 @@ def generate_frame():
                 break
 
             # Perform object detection
-            results = model.track(frame, persist=True)
+            detections = model.track(frame, persist=True)
 
-            frame = results[0].plot()
-            schedule_live_recognition(results)
-            # job = scheduler.add_job(
-            #     schedule_live_recognition, "interval", minutes=10, args=[results]
+            frame = detections[0].plot()
+
+            # schedule_live_recognition(results, exam_id)
+            # scheduler.add_job(
+            #     schedule_live_recognition,
+            #     "interval",
+            #     id=1,
+            #     minutes=10,
+            #     args=[results, exam_id],
             # )
 
             ret, buffer = cv2.imencode(".webp", frame)
@@ -46,29 +59,41 @@ def generate_frame():
     finally:
 
         # Release camera when done
-        # job.remove()
+        scheduler.remove_job(job_id=1)
         camera.release()
 
 
-def schedule_live_recognition(detections):
+def anomaly_detection():
+    pass
+
+
+def gesture_detection():
+    pass
+
+
+def schedule_live_recognition(detections, exam_id: ObjectId):
     for detection in detections:
         boxes = detection.tojson(detection)
         boxes_json = json.loads(boxes)
         for obj in boxes_json:
-            if obj["class"] == 0:
-                if obj["confidence"] > 0.6:
+            if obj["class"] == AIConstant.PERSON_CLASS:
+                if obj["confidence"] > AIConstant.PROB_ALLOWANCE:
                     try:
-                        result = live_recognition(detection.orig_img)
-                        print(result)
+                        result = live_recognition(detection.orig_img, exam_id)
                     except ValueError as e:
                         pass
 
 
-def live_recognition(nparr) -> bool:
+def live_recognition(nparr, exam_id: ObjectId) -> list:
     results = []
-    students = examRespository.find_one({"course": ...})
-    for student in students:
+    exam = examRegistrationRespository.find_one({"id": exam_id})
+    for student_id in exam["students"]:
+        student = userRespository.find_one({"id": student_id})
         path = Path(student["image_path"])
-        result = DeepFace.verify(nparr, path)
-        results.append({"student": student["matric_no"], "result": result})
+        if path.exists:
+            result = DeepFace.verify(nparr, path, detector_backend="mtcnn")
+            results.append({"student": student["matric_no"], "result": result})
     return results
+
+
+class AIInvigilatingSystem: ...

@@ -1,9 +1,10 @@
-from dataclasses import dataclass
-from fastapi import Form, UploadFile, File
-from typing import BinaryIO, List
 from pydantic import BaseModel
+from dataclasses import dataclass
+from typing import BinaryIO, List
 
 from .model import Gender, UserRole
+
+from fastapi import Form, UploadFile, File
 
 
 class ImagePayload(BaseModel):
@@ -21,7 +22,7 @@ class StudentInSchema:
     gender: str = Form(...)
     role: str = Form(...)
     image_path: UploadFile = File(alias="image")
-    
+
     @property
     def get_fullname(self):
         return self.first_name + self.last_name
