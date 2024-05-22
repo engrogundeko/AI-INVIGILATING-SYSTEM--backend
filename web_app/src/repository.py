@@ -14,7 +14,8 @@ class MongoDBRepository:
         self.collection = self.db[collection_name]
 
     def insert_one(self, document):
-        return self.collection.insert_one(document)
+        qs = self.collection.insert_one(document)
+        return self.find_one({"_id": qs.inserted_id})
 
     def find_one(self, query):
         return self.collection.find_one(query)

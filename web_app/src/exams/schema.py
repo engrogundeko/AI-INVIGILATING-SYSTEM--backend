@@ -9,13 +9,13 @@ class VideoSchema(BaseModel):
 
 
 class CreateExamSchema(BaseModel):
-    exam_id: ObjectId
-    students: List[ObjectId]
+    exam_id: int
+    students: List[int]
     status: str
 
 
 class GetExamAttendance(BaseModel):
-    exam_id: ObjectId
+    exam_id: int
 
 
 class AttendanceSchema(BaseModel):

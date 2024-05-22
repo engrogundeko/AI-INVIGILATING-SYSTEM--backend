@@ -1,19 +1,20 @@
 import io
 import base64
 from PIL import Image
+from ..repository import userRespository
 from ..utils.images import preprocess_and_embed
-from ..utils.images import save_image, compare_images
-from .services import create_student_service
-from .schema import StudentInSchema, ImagePayload
+from ..utils.images import compare_images
+from .schema import StudentInSchema, ImagePayload, StudentOutSchema
 
-from fastapi import APIRouter, File, UploadFile, Depends
+from fastapi import APIRouter,  Depends
+from fastapi.responses import JSONResponse
 
 router = APIRouter(tags=["Accounts"], prefix="/accounts")
 
 
-@router.post("/")
+@router.post("/", response_model=StudentOutSchema)
 async def create_student(payload: StudentInSchema = Depends()):
-    return create_student_service(payload)
+    return userRespository.insert_one(payload.__dict__)
 
 
 @router.post("/verify-student")

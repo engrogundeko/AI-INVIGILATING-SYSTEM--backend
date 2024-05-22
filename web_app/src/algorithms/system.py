@@ -12,6 +12,7 @@ class AIInvigilationSystem:
         self.facial_recognition_model = FacialRecogntion()
         self.anomaly_detection_model = AnomalyRecogntion()
         self.objection_recognition_model = ObjectRecognition()
+        # self.action_recognition_model = ActionRecognition()
 
     def monitor_exam(self, video_feed, course):
         # Process each frame of the video feed
@@ -42,3 +43,6 @@ class AIInvigilationSystem:
 
     def analyze_exam_data(self):
         pass
+
+
+ai = AIInvigilationSystem()

@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from bson import ObjectId
 
-from ..utils.constants import AIConstant
+from ..config import AIConstant, YOLOV8_MODEL
 from ..repository import (
     examRegistrationRespository,
     userRespository,
@@ -15,7 +15,8 @@ from ultralytics import YOLO
 from deepface import DeepFace
 from apscheduler.schedulers.background import BackgroundScheduler
 
-model = YOLO("yolov8n.pt")
+
+# model = YOLO(YOLOV8_MODEL)
 img_db = Path("media/profilephotos")
 scheduler = BackgroundScheduler()
 

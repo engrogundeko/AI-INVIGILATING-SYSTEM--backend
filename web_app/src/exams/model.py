@@ -5,55 +5,55 @@ from pydantic import BaseModel
 
 
 class Exam(BaseModel):
-    id: ObjectId
+    id: int
     name: str
     date: date
     start_time: time
     end_time: time
-    room_id: ObjectId
-    course_id: ObjectId
-    invilgilator_id: ObjectId
+    room_id: int
+    course_id: int
+    invilgilator_id: int
 
 
-class VideoRecording(BaseModel):
-    id: ObjectId
-    exam_id: ObjectId
-    timestamp: datetime
-    file_path = str
-    duration: str
-    resolution: str
+# class VideoRecording(BaseModel):
+#     id: int
+#     exam_id: int
+#     timestamp: datetime
+#     file_path = str
+#     duration: str
+#     resolution: str
 
 
 class SuspicionReport(BaseModel):
-    id: ObjectId
-    exam_id: ObjectId
-    student_id: ObjectId
+    id: int
+    exam_id: int
+    student_id: int
     timestamp: datetime
 
 
 class ExamAttendance(BaseModel):
     status: str
     exam_id: str
-    student_id: ObjectId
+    student_id: int
     status: str
 
 
 class ExamRegistration(BaseModel):
-    id: ObjectId
+    id: int
     exam_id: Exam
-    student_id: ObjectId
+    student_id: int
     status: str
 
 
 class Course(BaseModel):
-    id: ObjectId
+    id: int
     name: str
     department: str
     faculty: str
 
 
 class Room(BaseModel):
-    id: ObjectId
+    id: int
     name: str
     capacity: int
     building: str

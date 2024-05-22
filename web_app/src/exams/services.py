@@ -2,6 +2,8 @@ import base64
 from bson import ObjectId
 import cv2
 import numpy as np
+
+from ..algorithms.data import DataStorage
 from ..repository import (
     userRespository,
     examRespository,
@@ -13,10 +15,12 @@ from deepface import DeepFace
 from pathlib import Path
 
 
-class AttendanceSystem: ...
+class AttendanceSystem:
+    def __init__(self):
+        self.records = DataStorage()
 
 
-def take_attendance(image: str, exam_id: ObjectId):
+def take_attendance(image: str, exam_id: int):
     base64_data = image.split(",")[1]
     image_bytes = base64.b64decode(base64_data)
     nparr = np.frombuffer(image_bytes, np.uint8)

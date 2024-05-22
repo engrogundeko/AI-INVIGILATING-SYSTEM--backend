@@ -10,9 +10,9 @@ def hash_password(password) -> str:
 
 
 def create_student_service(payload: StudentInSchema):
-    image = save_file(payload.image)
-    embed = preprocess_and_embed(image)
-    payload.image = image
+    # image = save_file(payload.image)
+    # embed = preprocess_and_embed(image)
+    # payload.image = image
     payload = payload.__dict__
-    payload["embed"] = embed
+    # payload["embed"] = embed
     userRespository.insert_one(payload)

@@ -11,7 +11,7 @@ from ..repository import (
 )
 
 from ultralytics import YOLO
-from fastapi import APIRouter, Path
+from fastapi import APIRouter, Path, Query
 from fastapi.responses import StreamingResponse, JSONResponse
 
 model = YOLO("yolov8n.pt")
@@ -27,13 +27,11 @@ def video():
 
 @router.post("")
 def create_exam(payload: CreateExamSchema):
-    exam_insert = examRespository.insert_one(payload.__dict__)
-    exam = examRespository.find_one({"_id": exam_insert.inserted_id})
-    return JSONResponse(exam)
+    return examRespository.insert_one(payload.__dict__)
 
 
-@router.get("/{exam_name}")
-def get_exam(exam_name: str = None):
+@router.get("/")
+def get_exam(exam_name: str = Query(...)):
     if exam_name:
         return examRespository.find_one({"name": exam_name})
     return examRespository.find_many()
@@ -41,14 +39,12 @@ def get_exam(exam_name: str = None):
 
 @router.post("/course")
 def create_course(payload: CreateExamSchema):
-    exam_insert = courseRespository.insert_one(payload.__dict__)
-    return JSONResponse(exam_insert)
+    return courseRespository.insert_one(payload.__dict__)
 
 
 @router.post("/register")
 def create_exam(payload: CreateExamSchema):
-    exam_insert = examRegistrationRespository.insert_one(payload.__dict__)
-    return JSONResponse(exam_insert)
+    return examRegistrationRespository.insert_one(payload.__dict__)
 
 
 @router.get("/attendance")
@@ -59,7 +55,7 @@ def get_attendance(payload: GetExamAttendance):
 
 
 @router.post("/attendance/{exam_id}/verify_students/")
-async def verify_students(exam_id: ObjectId, payload: AttendanceSchema):
+async def verify_students(exam_id: int, payload: AttendanceSchema):
     attendance_id = take_attendance(payload.image, exam_id)
     attendance = examAttedanceRespository.find_one({"_id": attendance_id})
     student = userRespository.find_one({"_id": attendance["student_id"]})
