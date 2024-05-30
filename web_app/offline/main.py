@@ -8,9 +8,9 @@ import os
 
 app = FastAPI()
 
-app.include_router(accounts_router)
 app.include_router(exam_router)
 app.include_router(server_router)
+app.include_router(accounts_router)
 
 
 if __name__ == "__main__":

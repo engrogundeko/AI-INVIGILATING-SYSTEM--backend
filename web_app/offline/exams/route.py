@@ -1,4 +1,3 @@
-from bson import ObjectId
 from .schema import AttendanceSchema, CreateExamSchema, GetExamAttendance
 from .algorithms import generate_frame
 from .services import take_attendance
@@ -9,7 +8,8 @@ from ..repository import (
     courseRespository,
     userRespository,
 )
-
+from ..authentication.permission import role_required
+from ..accounts.model import Role
 from ultralytics import YOLO
 from fastapi import APIRouter, Path, Query
 from fastapi.responses import StreamingResponse, JSONResponse
@@ -19,6 +19,7 @@ router = APIRouter(tags=["Exams"], prefix="/exams")
 
 
 @router.get("/video")
+@role_required([Role.admin])
 def video():
     return StreamingResponse(
         generate_frame(), media_type="multipart/x-mixed-replace; boundary=frame"

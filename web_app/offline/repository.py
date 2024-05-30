@@ -42,7 +42,7 @@ notificationRespository = MongoDBRepository(collection_name="notification")
 suspicionReportRespository = MongoDBRepository(collection_name="suspicion")
 cheatingBehaviourRespository = MongoDBRepository(collection_name="behaviour")
 examRegistrationRespository = MongoDBRepository(collection_name="registration")
-
+userRoleRepository = MongoDBRepository(collection_name="role")
 if __name__ == "__main__":
     pass
 # Initialize repository
