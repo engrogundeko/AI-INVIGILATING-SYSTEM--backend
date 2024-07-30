@@ -1,0 +1,2732 @@
+.background33 {
+    width: 345px;
+    height: 1163px;
+    position: relative;
+    background-color: #4d44b5;
+    display: none;
+    max-width: 100%;
+  }
+  .rectangle-div {
+    height: 48px;
+    width: 48px;
+    position: relative;
+    border-radius: 16px;
+    background-color: #fb7d5b;
+    display: none;
+  }
+  .a2 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    display: inline-block;
+    min-width: 27px;
+    z-index: 1;
+  }
+  .rectangle-container {
+    border-radius: 16px;
+    background-color: #fb7d5b;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 10px 0px 11px;
+    z-index: 1;
+  }
+  .akademi2 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    z-index: 1;
+  }
+  .menu-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .menu-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 12px;
+  }
+  .home-icon3 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard21 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 102px;
+  }
+  .dashboard-wrapper12 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .dashboard20 {
+    align-self: stretch;
+    filter: drop-shadow(0px 20px 50px rgba(191, 21, 108, 0.05));
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 24px;
+    gap: 24px;
+  }
+  .student-icon3 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .email4 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 81px;
+  }
+  .email-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .students5 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    background-color: #f3f4ff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+    color: #4d44b5;
+  }
+  .teacher-icon3 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .contact4 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 84px;
+  }
+  .contact-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .teachers4 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .calendar-icon4 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .crypto2 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 50px;
+  }
+  .crypto-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .event3 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .finance-icon3 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard22 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 72px;
+  }
+  .dashboard-wrapper13 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .finance3 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .food-icon2 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard23 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 45px;
+  }
+  .dashboard-wrapper14 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .food3 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .user-icon8 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard24 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 41px;
+  }
+  .dashboard-wrapper15 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .user3 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .chat-icon1 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard25 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 45px;
+  }
+  .dashboard-wrapper16 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .chat1 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .activity-icon3 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard26 {
+    position: relative;
+    font-weight: 500;
+  }
+  .dashboard-wrapper17 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .activity3 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .list4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    z-index: 1;
+  }
+  .content3 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 34px 12px;
+    font-size: 18px;
+    color: #c1bbeb;
+  }
+  .akademi-school3 {
+    position: relative;
+    z-index: 1;
+  }
+  .made-with3 {
+    width: 245px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 19px 0px 0px;
+    gap: 15px;
+    font-size: 14px;
+  }
+  .side-menu3 {
+    width: 345px;
+    background-color: #4d44b5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 0px 172px 34px;
+    box-sizing: border-box;
+    gap: 46px;
+    max-width: 100%;
+  }
+  .students6 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+  }
+  .notification-icon3 {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    transform: scale(2.667);
+  }
+  .wrapper-notification2 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bg11 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    box-shadow: 0px 20px 50px rgba(191, 21, 108, 0.05);
+    border-radius: 40px;
+    background-color: #fff;
+    display: none;
+  }
+  .gear-icon2 {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .setting2 {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 20px 50px rgba(191, 21, 108, 0.05);
+    border-radius: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px;
+    box-sizing: border-box;
+  }
+  .setting-new-student {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 5px 0px 0px;
+  }
+  .nabila-a2 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 64px;
+  }
+  .admin2 {
+    position: relative;
+    display: inline-block;
+    min-width: 46px;
+  }
+  .profile-role {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 18px;
+    color: #a098ae;
+  }
+  .profile-info1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+  .profile1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 7px 4px 0px 0px;
+  }
+  .placeholder25 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #c1bbeb;
+  }
+  .notification-setting {
+    height: 60px;
+    width: 313px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 14px;
+  }
+  .search-notification {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .search-icon2 {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 32px;
+  }
+  .search-here2 {
+    position: relative;
+    display: inline-block;
+    min-width: 120px;
+  }
+  .search-input1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2.5px 0px 0px;
+  }
+  .search-bar5 {
+    border-radius: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 32px;
+    gap: 16px;
+  }
+  .search-bar4 {
+    width: 350px;
+    border-radius: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .newest {
+    position: relative;
+    display: inline-block;
+    min-width: 66px;
+  }
+  .dropdown-sort {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2.5px 0px 0px;
+  }
+  .dropdown-icon2 {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 32px;
+  }
+  .sort {
+    flex: 0.7755;
+    filter: drop-shadow(0px 20px 50px rgba(191, 21, 108, 0.05));
+    border-radius: 40px;
+    border: 2px solid #4d44b5;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 11px 43px 11px 46px;
+    gap: 16px;
+    min-width: 135px;
+  }
+  .icon9 {
+    width: 16.2px;
+    height: 16.2px;
+    position: relative;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px 0px 0px;
+  }
+  .new-student {
+    position: relative;
+    font-size: 18px;
+    font-family: Poppins;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    min-width: 114px;
+  }
+  .new-student-button {
+    cursor: pointer;
+    border: none;
+    padding: 16.5px 30px;
+    background-color: #4d44b5;
+    flex: 1;
+    box-shadow: 0px 20px 50px rgba(191, 21, 108, 0.05);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    gap: 16px;
+    min-width: 135px;
+  }
+  .sort-parent {
+    width: 438px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    max-width: 100%;
+    color: #4d44b5;
+  }
+  .search-notification1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 20px;
+    font-size: 18px;
+    color: #a098ae;
+  }
+  .background34 {
+    align-self: stretch;
+    height: 873px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+  }
+  .check {
+    margin: 0;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    border-radius: 4px;
+    border: 2px solid #c1bbeb;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  .name {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 44px;
+    z-index: 1;
+  }
+  .name-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2px 0px 0px;
+  }
+  .list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  .id {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 14px;
+    z-index: 1;
+  }
+  .table-header-names {
+    width: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .date5 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 34px;
+    z-index: 1;
+  }
+  .table-header-names1 {
+    width: 102px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .parent-name {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 94px;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .table-header-names2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 6px 0px 0px;
+  }
+  .city {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 29px;
+    z-index: 1;
+  }
+  .table-header-names3 {
+    width: 57px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .contact5 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 58px;
+    z-index: 1;
+  }
+  .table-header-names4 {
+    width: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .grade {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 45px;
+    z-index: 1;
+  }
+  .action {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 46px;
+    z-index: 1;
+  }
+  .table-header-items {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .table-header {
+    width: 1061px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 0px 1px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .list-content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 20px;
+  }
+  .list-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 32px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .border1 {
+    height: 1px;
+    width: 1475px;
+    position: relative;
+    border-radius: 14px;
+    background-color: #dbdbdb;
+    display: none;
+    max-width: 100%;
+  }
+  .selected {
+    align-self: stretch;
+    width: 1475px;
+    position: relative;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .selected1 {
+    align-self: stretch;
+    width: 5px;
+    position: relative;
+    background-color: #4d44b5;
+    z-index: 1;
+  }
+  .checkedbox {
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  .checkedbox-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 44px 0px 0px;
+  }
+  .selection-checkbox {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 27px;
+  }
+  .placeholder26 {
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    margin: 0 !important;
+    top: calc(50% - 24px);
+    left: 86px;
+    border-radius: 40px;
+    background-color: #c1bbeb;
+    z-index: 1;
+  }
+  .samanta-william {
+    position: relative;
+    z-index: 1;
+  }
+  .student-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 42.5px 0px 0px;
+  }
+  .student-selection {
+    height: 112px;
+    width: 318px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px 6px 0px 0px;
+    box-sizing: border-box;
+    position: relative;
+    gap: 20px;
+    font-size: 18px;
+  }
+  .empty {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 112px;
+    z-index: 1;
+  }
+  .date-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 46px 0px 0px;
+    font-size: 18px;
+    color: #4d44b5;
+  }
+  .march-25-2021 {
+    position: relative;
+    display: inline-block;
+    min-width: 101px;
+    z-index: 1;
+  }
+  .date-column {
+    width: 126px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 46px 20px 0px 0px;
+    box-sizing: border-box;
+    color: #a098ae;
+  }
+  .mana-william {
+    position: relative;
+    display: inline-block;
+    min-width: 96px;
+    z-index: 1;
+  }
+  .parent {
+    width: 124px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 46px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .jakarta {
+    position: relative;
+    display: inline-block;
+    min-width: 54px;
+    z-index: 1;
+  }
+  .city-info {
+    width: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 46px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .placeholder27 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 20px;
+    background-color: rgba(77, 68, 181, 0.1);
+    width: 100%;
+    height: 100%;
+  }
+  .call-icon1 {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    top: 20%;
+    right: 20%;
+    bottom: 20%;
+    left: 20%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    z-index: 1;
+  }
+  .phone1 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .placeholder28 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 20px;
+    background-color: rgba(77, 68, 181, 0.1);
+    width: 100%;
+    height: 100%;
+  }
+  .email-icon11 {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .mail1 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .contact-info1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .contact-details2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 36px 24px 0px 0px;
+  }
+  .vii-a5 {
+    position: relative;
+    font-size: 14px;
+    font-family: Poppins;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    min-width: 30px;
+  }
+  .status {
+    cursor: pointer;
+    border: none;
+    padding: 9.5px 25px;
+    background-color: #fb7d5b;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .status:hover {
+    background-color: #c74a29;
+  }
+  .grade-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 36px 13px 0px 0px;
+  }
+  .dots-icon7 {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .dots-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 44px 0px 0px;
+  }
+  .student-details {
+    align-self: stretch;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 32px 0px 0px;
+    box-sizing: border-box;
+    gap: 64px;
+    max-width: 100%;
+    z-index: 2;
+  }
+  .border2 {
+    height: 1px;
+    width: 1475px;
+    position: relative;
+    border-radius: 14px;
+    background-color: #dbdbdb;
+    display: none;
+    max-width: 100%;
+  }
+  .selected2 {
+    height: 112px;
+    width: 1475px;
+    position: relative;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .check1 {
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    border-radius: 4px;
+    border: 2px solid #c1bbeb;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  .check-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 14px 0px 0px;
+  }
+  .placeholder29 {
+    height: 48px;
+    width: 48px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #c1bbeb;
+    z-index: 1;
+  }
+  .tony-soap5 {
+    position: relative;
+    display: inline-block;
+    min-width: 97px;
+    z-index: 1;
+  }
+  .tony-soap-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10.5px 0px 0px;
+  }
+  .frame-parent11 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 71px 0px 0px;
+    gap: 16px;
+    font-size: 18px;
+  }
+  .div8 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 112px;
+    z-index: 1;
+  }
+  .frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 0px 0px;
+    font-size: 18px;
+    color: #4d44b5;
+  }
+  .march-25-20211 {
+    position: relative;
+    display: inline-block;
+    min-width: 101px;
+    z-index: 1;
+  }
+  .march-25-2021-wrapper {
+    width: 126px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 20px 0px 0px;
+    box-sizing: border-box;
+    color: #a098ae;
+  }
+  .james-soap {
+    position: relative;
+    display: inline-block;
+    min-width: 88px;
+    z-index: 1;
+  }
+  .james-soap-wrapper {
+    width: 124px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .jakarta1 {
+    position: relative;
+    display: inline-block;
+    min-width: 54px;
+    z-index: 1;
+  }
+  .jakarta-wrapper {
+    width: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .placeholder30 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 20px;
+    background-color: rgba(77, 68, 181, 0.1);
+    width: 100%;
+    height: 100%;
+  }
+  .call-icon2 {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    top: 20%;
+    right: 20%;
+    bottom: 20%;
+    left: 20%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    z-index: 1;
+  }
+  .phone2 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .placeholder31 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 20px;
+    background-color: rgba(77, 68, 181, 0.1);
+    width: 100%;
+    height: 100%;
+  }
+  .email-icon12 {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .mail2 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .phone-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .student-details-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 4px 24px 0px 0px;
+  }
+  .vii-b {
+    position: relative;
+    display: inline-block;
+    min-width: 29px;
+  }
+  .status1 {
+    border-radius: 40px;
+    background-color: #fcc43e;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 9.5px 25px;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .status-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 4px 13px 0px 0px;
+    color: #fff;
+  }
+  .dots-icon8 {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .dots-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 0px 0px;
+  }
+  .student-details1 {
+    align-self: stretch;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 32px;
+    box-sizing: border-box;
+    max-width: 100%;
+    gap: 20px;
+    z-index: 2;
+  }
+  .border3 {
+    height: 1px;
+    width: 1475px;
+    position: relative;
+    border-radius: 14px;
+    background-color: #dbdbdb;
+    display: none;
+    max-width: 100%;
+  }
+  .selected3 {
+    align-self: stretch;
+    width: 1475px;
+    position: relative;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .selected4 {
+    width: 5px;
+    flex: 1;
+    position: relative;
+    background-color: #4d44b5;
+    z-index: 1;
+  }
+  .checkedbox1 {
+    margin: 0 !important;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 14px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  .selected-parent {
+    align-self: stretch;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+  }
+  .placeholder32 {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #c1bbeb;
+    z-index: 1;
+  }
+  .placeholder-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 32px 0px 0px;
+  }
+  .karen-hope5 {
+    position: relative;
+    display: inline-block;
+    min-width: 108px;
+    z-index: 1;
+  }
+  .karen-hope-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 42.5px 0px 0px;
+  }
+  .frame-parent12 {
+    height: 112px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 60px 0px 0px;
+    box-sizing: border-box;
+    gap: 16px;
+    font-size: 18px;
+  }
+  .div9 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 112px;
+    z-index: 1;
+  }
+  .wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 46px 0px 0px;
+    font-size: 18px;
+    color: #4d44b5;
+  }
+  .march-25-20212 {
+    position: relative;
+    display: inline-block;
+    min-width: 101px;
+    z-index: 1;
+  }
+  .march-25-2021-container {
+    width: 126px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 46px 20px 0px 0px;
+    box-sizing: border-box;
+    color: #a098ae;
+  }
+  .justin-hope {
+    position: relative;
+    display: inline-block;
+    min-width: 82px;
+    z-index: 1;
+  }
+  .justin-hope-wrapper {
+    width: 124px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 46px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .jakarta2 {
+    position: relative;
+    display: inline-block;
+    min-width: 54px;
+    z-index: 1;
+  }
+  .jakarta-container {
+    width: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 46px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .placeholder33 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 20px;
+    background-color: rgba(77, 68, 181, 0.1);
+    width: 100%;
+    height: 100%;
+  }
+  .call-icon3 {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    top: 20%;
+    right: 20%;
+    bottom: 20%;
+    left: 20%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    z-index: 1;
+  }
+  .phone3 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .placeholder34 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 20px;
+    background-color: rgba(77, 68, 181, 0.1);
+    width: 100%;
+    height: 100%;
+  }
+  .email-icon13 {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .mail3 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .phone-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .student-details-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 36px 24px 0px 0px;
+  }
+  .vii-c {
+    position: relative;
+    display: inline-block;
+    min-width: 31px;
+  }
+  .status2 {
+    border-radius: 40px;
+    background-color: #4d44b5;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 9.5px 24px;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .status-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 36px 13px 0px 0px;
+    color: #fff;
+  }
+  .dots-icon9 {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .dots-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 44px 0px 0px;
+  }
+  .student-details2 {
+    align-self: stretch;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px 32px 0px 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+    gap: 20px;
+    z-index: 2;
+  }
+  .border4 {
+    height: 1px;
+    width: 1475px;
+    position: relative;
+    border-radius: 14px;
+    background-color: #dbdbdb;
+    display: none;
+    max-width: 100%;
+  }
+  .selected5 {
+    height: 112px;
+    width: 1475px;
+    position: relative;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .check2 {
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    border-radius: 4px;
+    border: 2px solid #c1bbeb;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  .check-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 14px 0px 0px;
+  }
+  .placeholder35 {
+    height: 48px;
+    width: 48px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #c1bbeb;
+    z-index: 1;
+  }
+  .jordan-nico4 {
+    position: relative;
+    display: inline-block;
+    min-width: 112px;
+    z-index: 1;
+  }
+  .jordan-nico-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10.5px 0px 0px;
+  }
+  .frame-parent13 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 56px 0px 0px;
+    gap: 16px;
+    font-size: 18px;
+  }
+  .div10 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 112px;
+    z-index: 1;
+  }
+  .wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 0px 0px;
+    font-size: 18px;
+    color: #4d44b5;
+  }
+  .march-25-20213 {
+    position: relative;
+    display: inline-block;
+    min-width: 101px;
+    z-index: 1;
+  }
+  .march-25-2021-frame {
+    width: 126px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 20px 0px 0px;
+    box-sizing: border-box;
+    color: #a098ae;
+  }
+  .amanda-nico {
+    position: relative;
+    display: inline-block;
+    min-width: 96px;
+    z-index: 1;
+  }
+  .amanda-nico-wrapper {
+    width: 124px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .jakarta3 {
+    position: relative;
+    display: inline-block;
+    min-width: 54px;
+    z-index: 1;
+  }
+  .jakarta-frame {
+    width: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .placeholder36 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 20px;
+    background-color: rgba(77, 68, 181, 0.1);
+    width: 100%;
+    height: 100%;
+  }
+  .call-icon4 {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    top: 20%;
+    right: 20%;
+    bottom: 20%;
+    left: 20%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    z-index: 1;
+  }
+  .phone4 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .placeholder37 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 20px;
+    background-color: rgba(77, 68, 181, 0.1);
+    width: 100%;
+    height: 100%;
+  }
+  .email-icon14 {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .mail4 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .phone-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .student-details-inner1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 4px 24px 0px 0px;
+  }
+  .vii-a6 {
+    position: relative;
+    font-size: 14px;
+    font-family: Poppins;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    min-width: 30px;
+  }
+  .status3 {
+    cursor: pointer;
+    border: none;
+    padding: 9.5px 25px;
+    background-color: #fcc43e;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .status3:hover {
+    background-color: #c9910a;
+  }
+  .status-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 4px 13px 0px 0px;
+  }
+  .dots-icon10 {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .dots-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 0px 0px;
+  }
+  .student-details3 {
+    align-self: stretch;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 32px;
+    box-sizing: border-box;
+    max-width: 100%;
+    gap: 20px;
+    z-index: 2;
+  }
+  .border5 {
+    height: 1px;
+    width: 1475px;
+    position: relative;
+    border-radius: 14px;
+    background-color: #dbdbdb;
+    display: none;
+    max-width: 100%;
+  }
+  .selected6 {
+    align-self: stretch;
+    width: 1475px;
+    position: relative;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .selected7 {
+    width: 5px;
+    flex: 1;
+    position: relative;
+    background-color: #4d44b5;
+    z-index: 1;
+  }
+  .checkedbox2 {
+    margin: 0 !important;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 14px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  .selected-group {
+    align-self: stretch;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+  }
+  .placeholder38 {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #c1bbeb;
+    z-index: 1;
+  }
+  .placeholder-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 32px 0px 0px;
+  }
+  .nadila-adja4 {
+    position: relative;
+    display: inline-block;
+    min-width: 108px;
+    z-index: 1;
+  }
+  .nadila-adja-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 42.5px 0px 0px;
+  }
+  .frame-parent14 {
+    height: 112px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 60px 0px 0px;
+    box-sizing: border-box;
+    gap: 16px;
+    font-size: 18px;
+  }
+  .div11 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 112px;
+    z-index: 1;
+  }
+  .wrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 46px 0px 0px;
+    font-size: 18px;
+    color: #4d44b5;
+  }
+  .march-25-20214 {
+    position: relative;
+    display: inline-block;
+    min-width: 101px;
+    z-index: 1;
+  }
+  .march-25-2021-wrapper1 {
+    width: 126px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 46px 20px 0px 0px;
+    box-sizing: border-box;
+    color: #a098ae;
+  }
+  .jack-adja {
+    position: relative;
+    display: inline-block;
+    min-width: 69px;
+    z-index: 1;
+  }
+  .jack-adja-wrapper {
+    width: 124px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 46px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .jakarta4 {
+    position: relative;
+    display: inline-block;
+    min-width: 54px;
+    z-index: 1;
+  }
+  .jakarta-wrapper1 {
+    width: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 46px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .placeholder39 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 20px;
+    background-color: rgba(77, 68, 181, 0.1);
+    width: 100%;
+    height: 100%;
+  }
+  .call-icon5 {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    top: 20%;
+    right: 20%;
+    bottom: 20%;
+    left: 20%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    z-index: 1;
+  }
+  .phone5 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .placeholder40 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 20px;
+    background-color: rgba(77, 68, 181, 0.1);
+    width: 100%;
+    height: 100%;
+  }
+  .email-icon15 {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .mail5 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .phone-parent1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .student-details-inner2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 36px 24px 0px 0px;
+  }
+  .vii-a7 {
+    position: relative;
+    font-size: 14px;
+    font-family: Poppins;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    min-width: 30px;
+  }
+  .status4 {
+    cursor: pointer;
+    border: none;
+    padding: 9.5px 25px;
+    background-color: #fb7d5b;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .status4:hover {
+    background-color: #c74a29;
+  }
+  .status-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 36px 13px 0px 0px;
+  }
+  .dots-icon11 {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .dots-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 44px 0px 0px;
+  }
+  .student-details4 {
+    align-self: stretch;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px 32px 0px 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+    gap: 20px;
+    z-index: 2;
+  }
+  .border6 {
+    height: 1px;
+    width: 1475px;
+    position: relative;
+    border-radius: 14px;
+    background-color: #dbdbdb;
+    display: none;
+    max-width: 100%;
+  }
+  .selected8 {
+    height: 112px;
+    width: 1475px;
+    position: relative;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .check3 {
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    border-radius: 4px;
+    border: 2px solid #c1bbeb;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  .check-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 14px 0px 0px;
+  }
+  .placeholder41 {
+    height: 48px;
+    width: 48px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #c1bbeb;
+    z-index: 1;
+  }
+  .johnny-ahmad {
+    position: relative;
+    z-index: 1;
+  }
+  .johnny-ahmad-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10.5px 0px 0px;
+  }
+  .frame-parent15 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 25px 0px 0px;
+    gap: 16px;
+    font-size: 18px;
+  }
+  .div12 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 112px;
+    z-index: 1;
+  }
+  .wrapper4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 0px 0px;
+    font-size: 18px;
+    color: #4d44b5;
+  }
+  .march-25-20215 {
+    position: relative;
+    display: inline-block;
+    min-width: 101px;
+    z-index: 1;
+  }
+  .march-25-2021-wrapper2 {
+    width: 126px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 20px 0px 0px;
+    box-sizing: border-box;
+    color: #a098ae;
+  }
+  .danny-ahmad {
+    position: relative;
+    display: inline-block;
+    min-width: 101px;
+    z-index: 1;
+  }
+  .danny-ahmad-wrapper {
+    width: 124px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .jakarta5 {
+    position: relative;
+    display: inline-block;
+    min-width: 54px;
+    z-index: 1;
+  }
+  .jakarta-wrapper2 {
+    width: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 20px 0px 0px;
+    box-sizing: border-box;
+  }
+  .placeholder42 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 20px;
+    background-color: rgba(77, 68, 181, 0.1);
+    width: 100%;
+    height: 100%;
+  }
+  .call-icon6 {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    top: 20%;
+    right: 20%;
+    bottom: 20%;
+    left: 20%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    z-index: 1;
+  }
+  .phone6 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .placeholder43 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 20px;
+    background-color: rgba(77, 68, 181, 0.1);
+    width: 100%;
+    height: 100%;
+  }
+  .email-icon16 {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .mail6 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .phone-parent2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .student-details-inner3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 4px 24px 0px 0px;
+  }
+  .vii-a8 {
+    position: relative;
+    font-size: 14px;
+    font-family: Poppins;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    min-width: 30px;
+  }
+  .status5 {
+    cursor: pointer;
+    border: none;
+    padding: 9.5px 25px;
+    background-color: #fcc43e;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .status5:hover {
+    background-color: #c9910a;
+  }
+  .status-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 4px 13px 0px 0px;
+  }
+  .dots-icon12 {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .dots-wrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 0px 0px;
+  }
+  .student-details5 {
+    align-self: stretch;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 32px;
+    box-sizing: border-box;
+    max-width: 100%;
+    gap: 20px;
+    z-index: 2;
+  }
+  .student-info2 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 7px;
+    box-sizing: border-box;
+    gap: 1px;
+    max-width: 100%;
+  }
+  .span12 {
+    color: #303972;
+  }
+  .span13 {
+    color: #303972;
+  }
+  .showing-1-5-from-container1 {
+    position: relative;
+    z-index: 1;
+  }
+  .data-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 0px 0px;
+  }
+  .dropdown-icon3 {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+    z-index: 1;
+  }
+  .pagination-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 9.5px 0px 0px;
+  }
+  .selectedpage1 {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.14);
+    border-radius: 40px;
+    background-color: #4d44b5;
+    display: none;
+  }
+  .div13 {
+    position: relative;
+    display: inline-block;
+    min-width: 6.9px;
+    z-index: 1;
+  }
+  .page-number {
+    flex: 1;
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.14);
+    border-radius: 40px;
+    background-color: #4d44b5;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 11px 21px 12px 22px;
+    z-index: 1;
+    color: #fff;
+  }
+  .background35 {
+    height: 51px;
+    width: 51px;
+    position: relative;
+    border-radius: 40px;
+    border: 2px solid #a098ae;
+    box-sizing: border-box;
+    display: none;
+  }
+  .div14 {
+    position: relative;
+    display: inline-block;
+    min-width: 11px;
+    z-index: 1;
+  }
+  .pagination-items1 {
+    flex: 1;
+    border-radius: 40px;
+    border: 2px solid #a098ae;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 9px 20px;
+    z-index: 1;
+  }
+  .background36 {
+    height: 51px;
+    width: 51px;
+    position: relative;
+    border-radius: 40px;
+    border: 2px solid #a098ae;
+    box-sizing: border-box;
+    display: none;
+  }
+  .div15 {
+    position: relative;
+    display: inline-block;
+    min-width: 11px;
+    z-index: 1;
+  }
+  .pagination-items2 {
+    flex: 1;
+    border-radius: 40px;
+    border: 2px solid #a098ae;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 9px 20px;
+    z-index: 1;
+  }
+  .dropdown-icon4 {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+    z-index: 1;
+  }
+  .pagination-items3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 9.5px 0px 0px;
+  }
+  .pagination1 {
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    font-size: 18px;
+  }
+  .footer-info {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 20px;
+  }
+  .footer-data {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 32px;
+    box-sizing: border-box;
+    max-width: 100%;
+    color: #a098ae;
+  }
+  .students-list {
+    align-self: stretch;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 32px 0px;
+    box-sizing: border-box;
+    gap: 25px;
+    max-width: 100%;
+    font-size: 14px;
+  }
+  .search-notification-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    max-width: 100%;
+    text-align: left;
+    font-size: 36px;
+    color: #303972;
+    font-family: Poppins;
+  }
+  .header {
+    width: 1475px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 0px 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .students4 {
+    width: 100%;
+    position: relative;
+    background-color: #f3f4ff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 36px;
+    color: #fff;
+    font-family: Poppins;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .student-details {
+      flex-wrap: wrap;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  
+    .students4 {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1350px) {
+    .side-menu3 {
+      padding-top: 32px;
+      padding-bottom: 112px;
+      box-sizing: border-box;
+    }
+  
+    .table-header-items {
+      display: none;
+    }
+  
+    .table-header {
+      width: 0px;
+    }
+  
+    .student-details1 {
+      flex-wrap: wrap;
+    }
+  
+    .student-details2 {
+      flex-wrap: wrap;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  
+    .student-details3 {
+      flex-wrap: wrap;
+    }
+  
+    .student-details4 {
+      flex-wrap: wrap;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  
+    .student-details5 {
+      flex-wrap: wrap;
+    }
+  
+    .header {
+      padding-top: 32px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .a2 {
+      font-size: 29px;
+    }
+  
+    .akademi2 {
+      font-size: 29px;
+    }
+  
+    .students6 {
+      font-size: 29px;
+    }
+  
+    .search-notification {
+      flex-wrap: wrap;
+    }
+  
+    .search-notification1 {
+      flex-wrap: wrap;
+    }
+  
+    .student-details {
+      gap: 32px;
+    }
+  
+    .footer-info {
+      flex-wrap: wrap;
+    }
+  
+    .students-list {
+      padding-top: 21px;
+      padding-bottom: 21px;
+      box-sizing: border-box;
+    }
+  
+    .search-notification-parent {
+      gap: 20px;
+    }
+  
+    .header {
+      padding-top: 21px;
+      box-sizing: border-box;
+    }
+  
+    .students4 {
+      gap: 25px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .a2 {
+      font-size: 22px;
+    }
+  
+    .akademi2 {
+      font-size: 22px;
+    }
+  
+    .side-menu3 {
+      gap: 23px;
+      padding-top: 21px;
+      padding-bottom: 73px;
+      box-sizing: border-box;
+    }
+  
+    .students6 {
+      font-size: 22px;
+    }
+  
+    .sort {
+      flex: 1;
+    }
+  
+    .sort-parent {
+      flex-wrap: wrap;
+    }
+  
+    .student-details {
+      gap: 16px;
+    }
+  
+    .frame-parent11 {
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+  
+    .frame-parent12 {
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+  
+    .frame-parent13 {
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+  
+    .frame-parent14 {
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+  
+    .students-list {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      box-sizing: border-box;
+    }
+  }
+  

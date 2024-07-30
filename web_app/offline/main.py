@@ -4,10 +4,17 @@ from .accounts.route import router as accounts_router
 from .server.route import router as server_router
 from .exams.route import router as exam_router
 
+from pathlib import Path
+from fastapi.staticfiles import StaticFiles
+
 import os
 
 app = FastAPI()
-
+app.mount(
+    "/static",
+    StaticFiles(directory=Path(__file__).parent.parent.absolute() / "static"),
+    name="static",
+)
 app.include_router(exam_router)
 app.include_router(server_router)
 app.include_router(accounts_router)

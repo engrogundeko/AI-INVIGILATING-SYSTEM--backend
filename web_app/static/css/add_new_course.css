@@ -1,0 +1,813 @@
+.background43 {
+    width: 345px;
+    height: 1688px;
+    position: relative;
+    background-color: #4d44b5;
+    display: none;
+    max-width: 100%;
+  }
+  .frame-child5 {
+    height: 48px;
+    width: 48px;
+    position: relative;
+    border-radius: 16px;
+    background-color: #fb7d5b;
+    display: none;
+  }
+  .a6 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    display: inline-block;
+    min-width: 27px;
+    z-index: 1;
+  }
+  .rectangle-parent2 {
+    border-radius: 16px;
+    background-color: #fb7d5b;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 10px 0px 11px;
+    z-index: 1;
+  }
+  .akademi6 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    z-index: 1;
+  }
+  .frame-parent23 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 20px 0px 0px;
+    gap: 16px;
+  }
+  .home-icon7 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard48 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 102px;
+  }
+  .dashboard-wrapper35 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .dashboard47 {
+    align-self: stretch;
+    filter: drop-shadow(0px 20px 50px rgba(191, 21, 108, 0.05));
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 24px;
+    gap: 24px;
+  }
+  .student-icon7 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .email10 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 81px;
+  }
+  .email-wrapper5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .students10 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .teacher-icon7 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .contact9 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 84px;
+  }
+  .contact-wrapper5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .teachers8 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    background-color: #f3f4ff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+    color: #4d44b5;
+  }
+  .calendar-icon8 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .crypto6 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 50px;
+  }
+  .crypto-wrapper4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .event7 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .finance-icon7 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard49 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 72px;
+  }
+  .dashboard-wrapper36 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .finance7 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .food-icon6 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard50 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 45px;
+  }
+  .dashboard-wrapper37 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .food8 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .user-icon12 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard51 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 41px;
+  }
+  .dashboard-wrapper38 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .user8 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .activity-icon7 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard52 {
+    position: relative;
+    font-weight: 500;
+  }
+  .dashboard-wrapper39 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .activity7 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .list8 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    z-index: 1;
+    font-size: 18px;
+    color: #c1bbeb;
+  }
+  .side-menu7 {
+    width: 345px;
+    background-color: #4d44b5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 0px 914px 46px;
+    box-sizing: border-box;
+    gap: 46px;
+    max-width: 100%;
+  }
+  .create-course {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  .bg18 {
+    align-self: stretch;
+    height: 753px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+  }
+  .title-child1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #4d44b5;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .title14 {
+    align-self: stretch;
+    height: 60px;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #4d44b5;
+    z-index: 1;
+  }
+  .name2 {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form41 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .samantha3 {
+    width: 75px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+    z-index: 1;
+  }
+  .form40 {
+    flex: 1;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .name-field {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 1px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .name-group {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .department {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 112px;
+    z-index: 1;
+  }
+  .form43 {
+    height: 48px;
+    width: 571px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .februari-19972 {
+    width: 413px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    max-width: 100%;
+    padding: 0;
+    z-index: 1;
+  }
+  .form42 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 28px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .department-field {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .faculty {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form45 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .williammailcom2 {
+    width: 450px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+    max-width: 100%;
+    padding: 0;
+    z-index: 1;
+  }
+  .form44 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .faculty-parent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .form-fields-inner {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 20px 1px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .course-code {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form47 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .input3 {
+    width: 39px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0;
+    z-index: 1;
+  }
+  .form46 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .course-code-parent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .form-fields-child {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 1px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .form-fields {
+    width: 578px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 33px;
+    max-width: 100%;
+  }
+  .student-form1 {
+    width: 1090px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .student-details9 {
+    flex: 1;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 175px;
+    box-sizing: border-box;
+    gap: 35px;
+    max-width: 100%;
+  }
+  .course-details {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 639px;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-size: 18px;
+  }
+  .submit3 {
+    position: relative;
+    font-size: 18px;
+    font-family: Poppins;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    min-width: 64px;
+  }
+  .submit-button2 {
+    cursor: pointer;
+    border: none;
+    padding: 16.5px 24px;
+    background-color: #4d44b5;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .submit-button2:hover {
+    background-color: #736bdb;
+  }
+  .submit-button-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .course-creation {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 46px;
+    max-width: 100%;
+    text-align: left;
+    font-size: 36px;
+    color: #303972;
+    font-family: Poppins;
+  }
+  .content7 {
+    width: 1475px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 0px 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .add-new-course {
+    width: 100%;
+    position: relative;
+    background-color: #f3f4ff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 36px;
+    color: #fff;
+    font-family: Poppins;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .add-new-course {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1350px) {
+    .side-menu7 {
+      padding-top: 32px;
+      padding-bottom: 594px;
+      box-sizing: border-box;
+    }
+  
+    .course-details {
+      padding-bottom: 415px;
+      box-sizing: border-box;
+    }
+  
+    .content7 {
+      padding-top: 32px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .a6 {
+      font-size: 29px;
+    }
+  
+    .akademi6 {
+      font-size: 29px;
+    }
+  
+    .side-menu7 {
+      padding-top: 21px;
+      padding-bottom: 386px;
+      box-sizing: border-box;
+    }
+  
+    .create-course {
+      font-size: 29px;
+    }
+  
+    .form-fields {
+      gap: 16px;
+    }
+  
+    .student-details9 {
+      gap: 17px;
+      padding-bottom: 114px;
+      box-sizing: border-box;
+    }
+  
+    .course-details {
+      padding-bottom: 270px;
+      box-sizing: border-box;
+    }
+  
+    .course-creation {
+      gap: 23px;
+    }
+  
+    .content7 {
+      padding-top: 21px;
+      box-sizing: border-box;
+    }
+  
+    .add-new-course {
+      gap: 25px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .a6 {
+      font-size: 22px;
+    }
+  
+    .akademi6 {
+      font-size: 22px;
+    }
+  
+    .side-menu7 {
+      gap: 23px;
+      padding-left: 20px;
+      box-sizing: border-box;
+    }
+  
+    .create-course {
+      font-size: 22px;
+    }
+  
+    .content7 {
+      padding-top: 20px;
+      box-sizing: border-box;
+    }
+  }
+  

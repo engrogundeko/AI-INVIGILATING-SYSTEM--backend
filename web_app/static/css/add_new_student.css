@@ -1,0 +1,1971 @@
+.background42 {
+    width: 345px;
+    height: 1688px;
+    position: relative;
+    background-color: #4d44b5;
+    display: none;
+    max-width: 100%;
+  }
+  .frame-child4 {
+    height: 48px;
+    width: 48px;
+    position: relative;
+    border-radius: 16px;
+    background-color: #fb7d5b;
+    display: none;
+  }
+  .a5 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    display: inline-block;
+    min-width: 27px;
+    z-index: 1;
+  }
+  .rectangle-parent1 {
+    border-radius: 16px;
+    background-color: #fb7d5b;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 10px 0px 11px;
+    z-index: 1;
+  }
+  .akademi5 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    z-index: 1;
+  }
+  .frame-parent22 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .side-menu-inner1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 12px;
+  }
+  .home-icon6 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard41 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    min-width: 102px;
+  }
+  .dashboard-wrapper29 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .dashboard40 {
+    align-self: stretch;
+    filter: drop-shadow(0px 20px 50px rgba(191, 21, 108, 0.05));
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 24px;
+    gap: 24px;
+  }
+  .student-icon6 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .email7 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    min-width: 81px;
+  }
+  .email-wrapper4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .students9 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .teacher-icon6 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .contact8 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    min-width: 84px;
+  }
+  .contact-wrapper4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .teachers7 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    background-color: #f3f4ff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+    color: #4d44b5;
+  }
+  .calendar-icon7 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .crypto5 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 50px;
+  }
+  .crypto-wrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .event6 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .finance-icon6 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard42 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 72px;
+  }
+  .dashboard-wrapper30 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .finance6 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .food-icon5 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard43 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 45px;
+  }
+  .dashboard-wrapper31 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .food7 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .user-icon11 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard44 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 41px;
+  }
+  .dashboard-wrapper32 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .user6 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .chat-icon3 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard45 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 45px;
+  }
+  .dashboard-wrapper33 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .chat3 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .activity-icon6 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard46 {
+    position: relative;
+    font-weight: 500;
+  }
+  .dashboard-wrapper34 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .activity6 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .list7 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    z-index: 1;
+  }
+  .content6 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 34px 12px;
+    font-size: 18px;
+    color: #c1bbeb;
+  }
+  .akademi-school5 {
+    position: relative;
+    z-index: 1;
+  }
+  .made-with5 {
+    width: 245px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  .header2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 19px 0px 0px;
+    gap: 15px;
+    font-size: 14px;
+  }
+  .side-menu6 {
+    width: 345px;
+    background-color: #4d44b5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 0px 697px 34px;
+    box-sizing: border-box;
+    gap: 46px;
+    max-width: 100%;
+  }
+  .add-new-student1 {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  .notification-icon6 {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    transform: scale(2.667);
+  }
+  .wrapper-notification5 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bg15 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    box-shadow: 0px 20px 50px rgba(191, 21, 108, 0.05);
+    border-radius: 40px;
+    background-color: #fff;
+    display: none;
+  }
+  .gear-icon5 {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .setting5 {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 20px 50px rgba(191, 21, 108, 0.05);
+    border-radius: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px;
+    box-sizing: border-box;
+  }
+  .settings-icon {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 5px 0px 0px;
+  }
+  .nabila-a5 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 64px;
+  }
+  .admin5 {
+    position: relative;
+    display: inline-block;
+    min-width: 46px;
+  }
+  .user-role {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 18px;
+    color: #a098ae;
+  }
+  .user-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+  .user-info1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 7px 4px 0px 0px;
+  }
+  .placeholder53 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #c1bbeb;
+  }
+  .user7 {
+    height: 60px;
+    width: 313px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 14px;
+  }
+  .profile-info3 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 36px;
+    color: #303972;
+  }
+  .bg16 {
+    align-self: stretch;
+    height: 753px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+  }
+  .title-item {
+    height: 60px;
+    width: 1475px;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #4d44b5;
+    display: none;
+    max-width: 100%;
+  }
+  .student-details8 {
+    width: 241.9px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .title12 {
+    align-self: stretch;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #4d44b5;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 40px;
+    box-sizing: border-box;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .photo {
+    align-self: stretch;
+    position: relative;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .form15 {
+    height: 175px;
+    width: 175px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px dashed #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+  }
+  .drag-and-drop {
+    margin: 0;
+  }
+  .click-here-to {
+    margin: 0;
+  }
+  .drag-and-drop-container {
+    position: relative;
+    z-index: 1;
+  }
+  .form14 {
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px dashed #c1bbeb;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 68px 10px 61px;
+    z-index: 1;
+    text-align: center;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .photo-parent {
+    width: 192px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .first-name {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form17 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .samantha2 {
+    width: 75px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+    z-index: 1;
+  }
+  .form16 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .name-and-birth-fields {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .date-place {
+    position: relative;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .form19 {
+    height: 48px;
+    width: 276.5px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+  }
+  .februari-19971 {
+    width: 200px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+    z-index: 1;
+  }
+  .form18 {
+    flex: 1;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    min-width: 179px;
+    z-index: 1;
+  }
+  .form21 {
+    height: 48px;
+    width: 276.5px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+  }
+  .jakarta6 {
+    width: 200px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+    z-index: 1;
+  }
+  .form20 {
+    flex: 1;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    min-width: 179px;
+    z-index: 1;
+  }
+  .form-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .name-and-birth-fields1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .email8 {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form23 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .williammailcom1 {
+    width: 450px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+    max-width: 100%;
+    padding: 0;
+    z-index: 1;
+  }
+  .form22 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .email-input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .email-input-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 1px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .address {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form24 {
+    height: 175px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .lorem-ipsum-dolor5 {
+    align-self: stretch;
+    position: relative;
+    z-index: 2;
+  }
+  .lorem-ipsum-dolor-sit-amet-co-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2px 0px 0px;
+    box-sizing: border-box;
+    min-width: 358px;
+    max-width: 100%;
+  }
+  .address-icon {
+    height: 70px;
+    width: 2px;
+    position: relative;
+    z-index: 2;
+  }
+  .address-content {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 11px 3px 74px 12px;
+    gap: 7px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .div18 {
+    position: relative;
+    display: inline-block;
+    min-width: 45px;
+    z-index: 1;
+  }
+  .address-placeholder {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-size: 12px;
+    font-family: "DM Sans";
+  }
+  .address-field {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    max-width: 100%;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .address-input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .address-input-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 1px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .name-and-birth {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 33px;
+    max-width: 100%;
+  }
+  .personal-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3px 0px 0px;
+    box-sizing: border-box;
+    min-width: 376px;
+    max-width: 100%;
+  }
+  .last-name {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form26 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .william {
+    width: 52px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+    z-index: 1;
+  }
+  .form25 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .last-name-and-parent-labels {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .parent-name1 {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form28 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .mana-william1 {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    flex: 1;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    min-width: 250px;
+    max-width: 100%;
+    padding: 0;
+    z-index: 1;
+  }
+  .form27 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 12px 10px 14px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .last-name-and-parent-labels1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .phone7 {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form30 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .phone-number-value {
+    width: 450px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+    max-width: 100%;
+    padding: 0;
+    z-index: 1;
+  }
+  .form29 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .phone-input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .phone-input-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 1px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .last-name-and-parent-fields {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 33px;
+    max-width: 100%;
+  }
+  .last-name-and-parent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3px 0px 0px;
+    box-sizing: border-box;
+    min-width: 376px;
+    max-width: 100%;
+  }
+  .student-form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 23.5px;
+    max-width: 100%;
+  }
+  .student-form {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-size: 18px;
+    color: #303972;
+  }
+  .student-details7 {
+    align-self: stretch;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 40px;
+    box-sizing: border-box;
+    gap: 32px;
+    max-width: 100%;
+  }
+  .bg17 {
+    align-self: stretch;
+    height: 605px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+  }
+  .title-inner {
+    height: 60px;
+    width: 1475px;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #4d44b5;
+    display: none;
+    max-width: 100%;
+  }
+  .parent-details1 {
+    width: 241.9px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .title13 {
+    align-self: stretch;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #4d44b5;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 40px;
+    box-sizing: border-box;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .first-name1 {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form32 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .mana {
+    position: relative;
+    display: inline-block;
+    min-width: 40px;
+    z-index: 1;
+  }
+  .form31 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .parent-name-fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    min-width: 375px;
+    max-width: 100%;
+  }
+  .last-name1 {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form34 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .william1 {
+    width: 52px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+    z-index: 1;
+  }
+  .form33 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .parent-name-fields1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    min-width: 375px;
+    max-width: 100%;
+  }
+  .parent-name2 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    max-width: 100%;
+  }
+  .email9 {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form36 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .manamailcom {
+    width: 450px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+    max-width: 100%;
+    padding: 0;
+    z-index: 1;
+  }
+  .form35 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .contact-fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    min-width: 375px;
+    max-width: 100%;
+  }
+  .phone8 {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form38 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .input2 {
+    width: 450px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+    max-width: 100%;
+    padding: 0;
+    z-index: 1;
+  }
+  .form37 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .contact-fields1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    min-width: 375px;
+    max-width: 100%;
+  }
+  .contact-details3 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    max-width: 100%;
+  }
+  .contact-info2 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 1px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .address1 {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .payments {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .payment-fields {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .form39 {
+    height: 175px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .lorem-ipsum-dolor6 {
+    align-self: stretch;
+    position: relative;
+    z-index: 2;
+  }
+  .address-value-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2px 0px 0px;
+    box-sizing: border-box;
+    min-width: 358px;
+    max-width: 100%;
+  }
+  .address-icon-container {
+    height: 70px;
+    width: 2px;
+    position: relative;
+    z-index: 2;
+  }
+  .form-group {
+    flex: 1;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 11px 3px 74px 12px;
+    gap: 7px;
+    min-width: 375px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .bxbx-radio-circle-marked {
+    cursor: pointer;
+    margin: 0;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .cash {
+    position: relative;
+    display: inline-block;
+    min-width: 37px;
+    z-index: 1;
+  }
+  .payment-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3px 0px 0px;
+  }
+  .bxbx-radio-circle-marked-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+  .bxbx-radio-circle {
+    cursor: pointer;
+    margin: 0;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .debit {
+    position: relative;
+    display: inline-block;
+    min-width: 37px;
+    z-index: 1;
+  }
+  .debit-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3px 0px 0px;
+  }
+  .bxbx-radio-circle-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+  .payment-selection {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 17px;
+  }
+  .payment-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px 0px 0px;
+  }
+  .address-content1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 23px;
+    max-width: 100%;
+  }
+  .placeholder54 {
+    position: relative;
+    display: inline-block;
+    min-width: 45px;
+    z-index: 1;
+  }
+  .payment-description {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 20px 0px 382px;
+    font-size: 12px;
+    font-family: "DM Sans";
+  }
+  .payment-address {
+    width: 747px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    max-width: 100%;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .payment-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .payment-info {
+    width: 794px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 1px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .parent-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    max-width: 100%;
+  }
+  .parent-form {
+    width: 1259px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-size: 18px;
+    color: #303972;
+  }
+  .parent-details {
+    align-self: stretch;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 34px;
+    box-sizing: border-box;
+    gap: 35px;
+    max-width: 100%;
+  }
+  .save-as-draft1 {
+    position: relative;
+    font-size: 18px;
+    font-family: Poppins;
+    color: #4d44b5;
+    text-align: left;
+    display: inline-block;
+    min-width: 120px;
+  }
+  .draft-button1 {
+    cursor: pointer;
+    border: 2px solid #4d44b5;
+    padding: 14px 22px;
+    background-color: transparent;
+    flex: 1;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .draft-button1:hover {
+    background-color: rgba(115, 107, 219, 0.09);
+    border: 2px solid #736bdb;
+    box-sizing: border-box;
+  }
+  .submit2 {
+    position: relative;
+    font-size: 18px;
+    font-family: Poppins;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    min-width: 64px;
+  }
+  .submit-button1 {
+    cursor: pointer;
+    border: none;
+    padding: 16.5px 24px;
+    background-color: #4d44b5;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .submit-button1:hover {
+    background-color: #736bdb;
+  }
+  .actions1 {
+    width: 326px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 20px;
+    box-sizing: border-box;
+    gap: 26px;
+    max-width: 100%;
+  }
+  .profile-info-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 40px;
+    max-width: 100%;
+    text-align: left;
+    font-size: 24px;
+    color: #fff;
+    font-family: Poppins;
+  }
+  .profile3 {
+    width: 1475px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 0px 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .add-new-student {
+    width: 100%;
+    position: relative;
+    background-color: #f3f4ff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 36px;
+    color: #fff;
+    font-family: Poppins;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .add-new-student {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1350px) {
+    .side-menu6 {
+      padding-top: 32px;
+      padding-bottom: 453px;
+      box-sizing: border-box;
+    }
+  
+    .student-form-container {
+      flex-wrap: wrap;
+    }
+  
+    .parent-name2 {
+      flex-wrap: wrap;
+    }
+  
+    .contact-details3 {
+      flex-wrap: wrap;
+    }
+  
+    .profile3 {
+      padding-top: 32px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .a5 {
+      font-size: 29px;
+    }
+  
+    .akademi5 {
+      font-size: 29px;
+    }
+  
+    .side-menu6 {
+      padding-top: 21px;
+      padding-bottom: 294px;
+      box-sizing: border-box;
+    }
+  
+    .add-new-student1 {
+      font-size: 29px;
+    }
+  
+    .profile-info3 {
+      flex-wrap: wrap;
+    }
+  
+    .form-parent {
+      flex-wrap: wrap;
+    }
+  
+    .lorem-ipsum-dolor-sit-amet-co-wrapper {
+      min-width: 100%;
+    }
+  
+    .address-content {
+      flex-wrap: wrap;
+    }
+  
+    .name-and-birth {
+      gap: 16px;
+    }
+  
+    .personal-info {
+      min-width: 100%;
+    }
+  
+    .last-name-and-parent-fields {
+      gap: 16px;
+    }
+  
+    .last-name-and-parent {
+      min-width: 100%;
+    }
+  
+    .student-details7 {
+      gap: 16px;
+    }
+  
+    .parent-name-fields {
+      min-width: 100%;
+    }
+  
+    .parent-name-fields1 {
+      min-width: 100%;
+    }
+  
+    .contact-fields {
+      min-width: 100%;
+    }
+  
+    .contact-fields1 {
+      min-width: 100%;
+    }
+  
+    .payment-fields {
+      flex-wrap: wrap;
+    }
+  
+    .address-value-container {
+      min-width: 100%;
+    }
+  
+    .form-group {
+      flex-wrap: wrap;
+      min-width: 100%;
+    }
+  
+    .address-content1 {
+      flex-wrap: wrap;
+    }
+  
+    .parent-details {
+      gap: 17px;
+    }
+  
+    .profile-info-parent {
+      gap: 20px;
+    }
+  
+    .profile3 {
+      padding-top: 21px;
+      box-sizing: border-box;
+    }
+  
+    .add-new-student {
+      gap: 25px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .a5 {
+      font-size: 22px;
+    }
+  
+    .akademi5 {
+      font-size: 22px;
+    }
+  
+    .side-menu6 {
+      gap: 23px;
+    }
+  
+    .add-new-student1 {
+      font-size: 22px;
+    }
+  
+    .student-details8 {
+      font-size: 19px;
+    }
+  
+    .parent-details1 {
+      font-size: 19px;
+    }
+  
+    .payment-description {
+      padding-left: 20px;
+      box-sizing: border-box;
+    }
+  
+    .profile3 {
+      padding-top: 20px;
+      box-sizing: border-box;
+    }
+  }
+  

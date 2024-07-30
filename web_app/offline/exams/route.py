@@ -1,6 +1,17 @@
-from .schema import AttendanceSchema, CreateExamSchema, GetExamAttendance
-from .algorithms import generate_frame
-from .services import take_attendance
+from typing import List
+from .model import Course, Room, ExamRegistration, Exam
+from .schema import (
+    AttendanceSchema,
+    CreateRoom,
+    RegisterExamSchema,
+    CreateCourseShema,
+    ExamAttendance,
+    CreateExamSchema,
+    GetExamAttendance,
+)
+from .ai import ai_invigilating_system, take_attendance
+
+# from .services import take_attendance
 from ..repository import (
     examRespository,
     examAttedanceRespository,
@@ -8,27 +19,55 @@ from ..repository import (
     courseRespository,
     userRespository,
 )
+
+# from .ais import frame_generator
 from ..authentication.permission import role_required
 from ..accounts.model import Role
-from ultralytics import YOLO
-from fastapi import APIRouter, Path, Query
+from fastapi import APIRouter, Path, Query, UploadFile
 from fastapi.responses import StreamingResponse, JSONResponse
+from fastapi import Request
 
-model = YOLO("yolov8n.pt")
+# model = YOLO("yolov8n.pt")
 router = APIRouter(tags=["Exams"], prefix="/exams")
 
 
-@router.get("/video")
-@role_required([Role.admin])
-def video():
-    return StreamingResponse(
-        generate_frame(), media_type="multipart/x-mixed-replace; boundary=frame"
-    )
+# @role_required([Role.admin])
+@router.get("/video/{exam_id}")
+async def video(exam_id: str):
+    try:
+
+        # def generate():
+        async for _ in ai_invigilating_system(exam_id):
+            continue
+                # print(frame)
+                # ret, buffer = cv2.imencode(".webp", frame)
+                # if ret:
+                #     yield (
+                #         b"--frame\r\n"
+                #         b"Content-Type: image/webp\r\n\r\n" + buffer.tobytes() + b"\r\n"
+                #     )
+        return "Success"
+        # return StreamingResponse(
+        #     generate(), media_type="multipart/x-mixed-replace; boundary=frame"
+        # )
+    except Exception as e:
+        print({"error": str(e)})
+        return {"error": str(e)}
 
 
-@router.post("")
+@router.post("", response_model=Exam)
 def create_exam(payload: CreateExamSchema):
     return examRespository.insert_one(payload.__dict__)
+
+
+@router.get("", response_model=List[Exam])
+def get_exam():
+    return examRespository.find_many()
+
+
+# @router.post("")
+# def create_exam(payload: CreateExamSchema):
+#     return examRespository.insert_one(payload.__dict__)
 
 
 @router.get("/")
@@ -38,13 +77,18 @@ def get_exam(exam_name: str = Query(...)):
     return examRespository.find_many()
 
 
-@router.post("/course")
-def create_course(payload: CreateExamSchema):
+@router.post("/room", response_model=Room)
+def create_room(payload: CreateRoom):
     return courseRespository.insert_one(payload.__dict__)
 
 
-@router.post("/register")
-def create_exam(payload: CreateExamSchema):
+@router.get("/course", response_model=List[Course])
+def get_course():
+    return courseRespository.find_many()
+
+
+@router.post("/register", response_model=ExamRegistration)
+def register_exam(payload: RegisterExamSchema):
     return examRegistrationRespository.insert_one(payload.__dict__)
 
 
@@ -55,21 +99,13 @@ def get_attendance(payload: GetExamAttendance):
     return JSONResponse(attendance)
 
 
-@router.post("/attendance/{exam_id}/verify_students/")
-async def verify_students(exam_id: int, payload: AttendanceSchema):
-    attendance_id = take_attendance(payload.image, exam_id)
-    attendance = examAttedanceRespository.find_one({"_id": attendance_id})
-    student = userRespository.find_one({"_id": attendance["student_id"]})
-    confirmation = {
-        "id": attendance_id,
-        "student": {
-            "id": student["_id"],
-            "matric_no": student["matric_no"],
-            "image_path": student["image_path"],
-        },
-        "status": "PRESENT",
-    }
-    return JSONResponse(confirmation)
+@router.post(
+    "/attendance/{exam_id}/verify_students/", response_model=List[ExamAttendance]
+)
+async def verify_students(exam_id: str, file: UploadFile):
+
+    attendance = take_attendance(file, exam_id)
+    return attendance
 
 
 # @router.websocket("/video-stream")

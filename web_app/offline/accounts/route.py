@@ -1,11 +1,12 @@
 import io
 import base64
+from typing import List
 from PIL import Image
-
 from ..repository import userRespository
 from ..utils.images import compare_images
 from ..utils.images import preprocess_and_embed
 from ..authentication.auth import get_access_token
+from ..utils import image_utils
 from .schema import StudentInSchema, ImagePayload, StudentOutSchema, LoginSchema
 
 from fastapi import APIRouter, Depends
@@ -17,6 +18,23 @@ router = APIRouter(tags=["Accounts"], prefix="/accounts")
 @router.post("/", response_model=StudentOutSchema)
 async def create_student(payload: StudentInSchema = Depends()):
     return userRespository.insert_one(payload.__dict__)
+
+
+@router.get("/", response_model=List[StudentOutSchema])
+def get_all_students():
+    return userRespository.find_many()
+
+@router.delete("")
+def delete_student():
+    students: List[dict] = userRespository.find_many()
+    for student in students:
+        img = student.get("image")
+        print(img)
+        if img.split(".")[1] == "jfif" :
+            userRespository.delete_one({"_id": student["_id"]})
+            print(student)
+            
+    
 
 
 @router.post("/login")

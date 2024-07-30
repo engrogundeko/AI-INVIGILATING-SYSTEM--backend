@@ -1,11 +1,9 @@
 from datetime import datetime, date, time
-from typing import List
-from bson import ObjectId
-from pydantic import BaseModel
+from typing import List, Tuple
+from ..base import Model
 
 
-class Exam(BaseModel):
-    id: int
+class Exam(Model):
     name: str
     date: date
     start_time: time
@@ -16,7 +14,6 @@ class Exam(BaseModel):
 
 
 # class VideoRecording(BaseModel):
-#     id: int
 #     exam_id: int
 #     timestamp: datetime
 #     file_path = str
@@ -24,36 +21,53 @@ class Exam(BaseModel):
 #     resolution: str
 
 
-class SuspicionReport(BaseModel):
-    id: int
-    exam_id: int
-    student_id: int
-    timestamp: datetime
+class ExamLocation(Model):
+    exam_id: str
+    locations: List[dict]
 
 
-class ExamAttendance(BaseModel):
-    status: str
+class SuspiciousReport(Model):
+    frame_id: int
     exam_id: str
     student_id: int
+    timestamp: datetime
+    coordinates: Tuple[float, float]
+    confidence_score: float
+    pixel_changes: float
+    image_path: str
+
+
+class ExamAttendance(Model):
     status: str
+    exam_id: str
+    student_id: str
+    coordinate: Tuple[float, float, float, float]
 
 
-class ExamRegistration(BaseModel):
-    id: int
-    exam_id: Exam
-    student_id: int
-    status: str
+class ExamRegistration(Model):
+    exam_id: str
+    student_id: str
+    # status: str
 
 
-class Course(BaseModel):
-    id: int
+class Course(Model):
     name: str
+    code: str
     department: str
     faculty: str
 
 
-class Room(BaseModel):
-    id: int
+class Room(Model):
     name: str
     capacity: int
     building: str
+
+
+class Exam(Model):
+    name: str
+    date: datetime
+    start_time: str
+    end_time: str
+    room_id: str
+    course_id: str
+    invilgilator_id: List[str] | str

@@ -1,0 +1,2483 @@
+.background53 {
+    width: 345px;
+    height: 1325px;
+    position: relative;
+    background-color: #4d44b5;
+    display: none;
+    max-width: 100%;
+  }
+  .frame-child6 {
+    height: 48px;
+    width: 48px;
+    position: relative;
+    border-radius: 16px;
+    background-color: #fb7d5b;
+    display: none;
+  }
+  .a8 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    display: inline-block;
+    min-width: 27px;
+    z-index: 1;
+  }
+  .rectangle-parent3 {
+    border-radius: 16px;
+    background-color: #fb7d5b;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 10px 0px 11px;
+    z-index: 1;
+  }
+  .akademi8 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    z-index: 1;
+  }
+  .frame-parent30 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .side-menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 12px;
+  }
+  .home-icon9 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard60 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    min-width: 102px;
+  }
+  .navigation-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .dashboard59 {
+    align-self: stretch;
+    filter: drop-shadow(0px 20px 50px rgba(191, 21, 108, 0.05));
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 24px;
+    gap: 24px;
+  }
+  .student-icon9 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .email12 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    min-width: 81px;
+  }
+  .email-wrapper7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .students12 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .teacher-icon9 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .contact11 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    min-width: 84px;
+  }
+  .contact-wrapper7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .teachers10 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .calendar-icon14 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .crypto8 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 50px;
+  }
+  .crypto-wrapper6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .event9 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .finance-icon9 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard61 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    min-width: 72px;
+  }
+  .dashboard-wrapper45 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .finance9 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .food-icon8 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard62 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 45px;
+  }
+  .dashboard-wrapper46 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .food10 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    background-color: #f3f4ff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+    color: #4d44b5;
+  }
+  .user-icon14 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard63 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 41px;
+  }
+  .dashboard-wrapper47 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .user10 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .chat-icon4 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard64 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 45px;
+  }
+  .dashboard-wrapper48 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .chat4 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .activity-icon9 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard65 {
+    position: relative;
+    font-weight: 500;
+  }
+  .dashboard-wrapper49 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .activity9 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .list10 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    z-index: 1;
+  }
+  .content-container1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 34px 12px;
+    font-size: 18px;
+    color: #c1bbeb;
+  }
+  .akademi-school6 {
+    position: relative;
+    z-index: 1;
+  }
+  .made-with6 {
+    width: 245px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 19px 0px 0px;
+    gap: 15px;
+    font-size: 14px;
+  }
+  .side-menu9 {
+    width: 345px;
+    background-color: #4d44b5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 0px 334px 34px;
+    box-sizing: border-box;
+    gap: 46px;
+    max-width: calc(100% - 1525px);
+    flex-shrink: 0;
+  }
+  .student-details11 {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+  .search-icon5 {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 32px;
+  }
+  .search-here5 {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    min-width: 120px;
+    white-space: nowrap;
+  }
+  .search-input2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2.5px 0px 0px;
+  }
+  .search-bar-input {
+    border-radius: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 32px;
+    gap: 16px;
+  }
+  .search-bar9 {
+    flex: 1;
+    border-radius: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .notification-icon8 {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    transform: scale(2.667);
+  }
+  .wrapper-notification7 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bg21 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    box-shadow: 0px 20px 50px rgba(191, 21, 108, 0.05);
+    border-radius: 40px;
+    background-color: #fff;
+    display: none;
+  }
+  .gear-icon7 {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .setting7 {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 20px 50px rgba(191, 21, 108, 0.05);
+    border-radius: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px;
+    box-sizing: border-box;
+  }
+  .settings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 5px 0px 0px;
+  }
+  .nabila-a7 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 64px;
+    white-space: nowrap;
+  }
+  .admin7 {
+    position: relative;
+    display: inline-block;
+    min-width: 46px;
+  }
+  .user-role1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 18px;
+    color: #a098ae;
+  }
+  .user-profile1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+  .user-profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 7px 4px 0px 0px;
+  }
+  .placeholder59 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #c1bbeb;
+  }
+  .notification-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 14px;
+    color: #303972;
+  }
+  .user-header-actions {
+    align-self: stretch;
+    width: 727px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 64px;
+    max-width: 100%;
+    font-size: 18px;
+    color: #a098ae;
+  }
+  .user-header {
+    align-self: stretch;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 20px;
+    text-align: left;
+    font-size: 36px;
+    color: #303972;
+    font-family: Poppins;
+  }
+  .background54 {
+    align-self: stretch;
+    height: 498px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+  }
+  .dots-icon19 {
+    position: absolute;
+    top: 172px;
+    left: 951px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .cover-icon2 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: contain;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    transform: scale(1.714);
+  }
+  .wrapper-cover2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1017px;
+    height: 140px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .placeholder60 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 100px;
+    background-color: #c1bbeb;
+    border: 8px solid #fff;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .avatar2 {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    border-radius: 100px;
+    background-color: #c1bbeb;
+    border: 8px solid #fff;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+  }
+  .profile-header {
+    align-self: stretch;
+    height: 232px;
+    position: relative;
+  }
+  .title18 {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+    z-index: 1;
+  }
+  .title19 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: #a098ae;
+    display: inline-block;
+    min-width: 73px;
+    z-index: 1;
+  }
+  .name3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .name-container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 32px 12px;
+  }
+  .parents {
+    position: relative;
+    display: inline-block;
+    min-width: 72px;
+    z-index: 1;
+  }
+  .placeholder61 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 40px;
+    background-color: #fb7d5b;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .user-icon15 {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    top: 20%;
+    right: 20%;
+    bottom: 20%;
+    left: 20%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    z-index: 1;
+  }
+  .parent2 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #fb7d5b;
+    z-index: 1;
+  }
+  .justin-hope1 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 108px;
+    z-index: 1;
+  }
+  .contact-details4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .contact-icons3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    color: #303972;
+  }
+  .contact-labels1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .address2 {
+    position: relative;
+    display: inline-block;
+    min-width: 77px;
+    z-index: 1;
+  }
+  .bg22 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 40px;
+    background-color: #fb7d5b;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .location-icon3 {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .icon18 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #fb7d5b;
+    z-index: 1;
+  }
+  .title20 {
+    position: relative;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .icon-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    color: #303972;
+  }
+  .contact-labels2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .phone10 {
+    position: relative;
+    display: inline-block;
+    min-width: 60px;
+    z-index: 1;
+  }
+  .placeholder62 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 40px;
+    background-color: #fb7d5b;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .call-icon8 {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    top: 20%;
+    right: 20%;
+    bottom: 20%;
+    left: 20%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    z-index: 1;
+  }
+  .phone11 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #fb7d5b;
+    z-index: 1;
+  }
+  .div20 {
+    position: relative;
+    font-weight: 600;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .wrapper6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .phone-parent3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    color: #303972;
+  }
+  .contact-labels3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .email13 {
+    position: relative;
+    display: inline-block;
+    min-width: 53px;
+    z-index: 1;
+  }
+  .placeholder63 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 40px;
+    background-color: #fb7d5b;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .email-icon18 {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    top: 20%;
+    right: 20%;
+    bottom: 20%;
+    left: 20%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    z-index: 1;
+  }
+  .mail8 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #fb7d5b;
+    z-index: 1;
+  }
+  .hopemailcom {
+    position: relative;
+    font-weight: 600;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .email-address1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .email-value {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .email-value-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 2px;
+    color: #303972;
+  }
+  .email-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .contact-info4 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 56.3px;
+    max-width: 100%;
+  }
+  .contact-info-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 32px;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-size: 18px;
+    color: #a098ae;
+  }
+  .student-profile {
+    align-self: stretch;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 48px;
+    box-sizing: border-box;
+    gap: 24px;
+    max-width: 100%;
+  }
+  .bg23 {
+    width: 1017px;
+    height: 527px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .payment-history1 {
+    position: relative;
+    z-index: 1;
+  }
+  .icon19 {
+    height: 56px;
+    width: 56px;
+    position: relative;
+  }
+  .payment-date-values {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 112px;
+  }
+  .payment-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 0px 0px;
+  }
+  .payment-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .march-2021-13454 {
+    position: relative;
+    white-space: nowrap;
+  }
+  .payment-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 18px 20px 0px 0px;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .payment-amount-values {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 78px;
+    white-space: nowrap;
+  }
+  .payment-amount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 6px 0px 0px;
+  }
+  .complete {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 91px;
+  }
+  .payment-status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 0px 0px;
+    color: #4cbc9a;
+  }
+  .payment-list-header {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .icon20 {
+    height: 56px;
+    width: 56px;
+    position: relative;
+  }
+  .div21 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 112px;
+  }
+  .wrapper7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 18px 0px 0px;
+  }
+  .icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .march-2021-13455 {
+    position: relative;
+    white-space: nowrap;
+  }
+  .march-2021-1345-pm-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 18px 20px 0px 0px;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .div22 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 78px;
+    white-space: nowrap;
+  }
+  .wrapper8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 6px 0px 0px;
+  }
+  .pending {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 76px;
+  }
+  .pending-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 0px 0px;
+    color: #a098ae;
+  }
+  .payment-list-header1 {
+    width: 938px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 100%;
+  }
+  .icon21 {
+    height: 56px;
+    width: 56px;
+    position: relative;
+  }
+  .div23 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 112px;
+  }
+  .wrapper9 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 0px 0px;
+  }
+  .icon-parent1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .march-2021-13456 {
+    position: relative;
+    white-space: nowrap;
+  }
+  .march-2021-1345-pm-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 18px 20px 0px 0px;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .div24 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 78px;
+    white-space: nowrap;
+  }
+  .wrapper10 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 6px 0px 0px;
+  }
+  .canceled {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 89px;
+  }
+  .canceled-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 0px 0px;
+    color: #ff4550;
+  }
+  .payment-list-header2 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .icon22 {
+    height: 56px;
+    width: 56px;
+    position: relative;
+  }
+  .div25 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 112px;
+  }
+  .wrapper11 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 0px 0px;
+  }
+  .icon-parent2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .march-2021-13457 {
+    position: relative;
+    white-space: nowrap;
+  }
+  .march-2021-1345-pm-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 18px 20px 0px 0px;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .div26 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 78px;
+    white-space: nowrap;
+  }
+  .wrapper12 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 6px 0px 0px;
+  }
+  .complete1 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 91px;
+  }
+  .complete-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 0px 0px;
+    color: #4cbc9a;
+  }
+  .payment-list-header3 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .list11 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    max-width: 100%;
+    z-index: 1;
+    font-size: 18px;
+  }
+  .payment-history-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    max-width: 100%;
+  }
+  .span16 {
+    color: #303972;
+  }
+  .span17 {
+    color: #303972;
+  }
+  .showing-1-5-from-container3 {
+    position: relative;
+    z-index: 2;
+  }
+  .pagination-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 0px 0px;
+  }
+  .dropdown-icon7 {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+    z-index: 2;
+  }
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 9.5px 0px 0px;
+  }
+  .selectedpage3 {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.14);
+    border-radius: 40px;
+    background-color: #4d44b5;
+    display: none;
+  }
+  .dropdown-label {
+    position: relative;
+    display: inline-block;
+    min-width: 6.9px;
+    z-index: 1;
+  }
+  .dropdown-label-container {
+    flex: 1;
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.14);
+    border-radius: 40px;
+    background-color: #4d44b5;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 11px 21px 12px 22px;
+    z-index: 2;
+    color: #fff;
+  }
+  .background55 {
+    height: 51px;
+    width: 51px;
+    position: relative;
+    border-radius: 40px;
+    border: 2px solid #a098ae;
+    box-sizing: border-box;
+    display: none;
+  }
+  .div27 {
+    position: relative;
+    display: inline-block;
+    min-width: 11px;
+    z-index: 1;
+  }
+  .dropdown1 {
+    flex: 1;
+    border-radius: 40px;
+    border: 2px solid #a098ae;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 9px 20px;
+    z-index: 2;
+  }
+  .background56 {
+    height: 51px;
+    width: 51px;
+    position: relative;
+    border-radius: 40px;
+    border: 2px solid #a098ae;
+    box-sizing: border-box;
+    display: none;
+  }
+  .div28 {
+    position: relative;
+    display: inline-block;
+    min-width: 11px;
+    z-index: 1;
+  }
+  .dropdown2 {
+    flex: 1;
+    border-radius: 40px;
+    border: 2px solid #a098ae;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 9px 20px;
+    z-index: 2;
+  }
+  .dropdown-icon8 {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+    z-index: 2;
+  }
+  .dropdown3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 9.5px 0px 0px;
+  }
+  .pagination-controls1 {
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    font-size: 18px;
+  }
+  .pagination2 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .payment-history {
+    align-self: stretch;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 32px;
+    box-sizing: border-box;
+    gap: 48px;
+    max-width: 100%;
+    font-size: 24px;
+  }
+  .student-profile-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    max-width: 100%;
+  }
+  .background57 {
+    width: 418px;
+    height: 129px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .schedule-details1 {
+    position: relative;
+    z-index: 1;
+  }
+  .thursday-10th-april1 {
+    position: relative;
+    font-size: 14px;
+    color: #a098ae;
+    z-index: 1;
+  }
+  .schedule1 {
+    align-self: stretch;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 32px 20px 32px 32px;
+    box-sizing: border-box;
+    gap: 8px;
+    max-width: 100%;
+    font-size: 24px;
+  }
+  .background58 {
+    align-self: stretch;
+    width: 418px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .statuscolor4 {
+    align-self: stretch;
+    width: 24px;
+    position: relative;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #4d44b5;
+    z-index: 1;
+  }
+  .basic-algorithm {
+    position: relative;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .algorithm {
+    position: relative;
+    font-size: 14px;
+    color: #a098ae;
+    display: inline-block;
+    min-width: 69px;
+    z-index: 1;
+  }
+  .schedule-item-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  .calendar-icon15 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .march-20-20214 {
+    position: relative;
+    display: inline-block;
+    min-width: 101px;
+    z-index: 1;
+  }
+  .schedule-time1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .calendar-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .clock-icon4 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .am4 {
+    position: relative;
+    display: inline-block;
+    min-width: 113px;
+    z-index: 1;
+  }
+  .time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .schedule-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .schedule-icons {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .schedule-details-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 27px;
+  }
+  .schedule-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 0px 23px;
+  }
+  .schedule-item-container {
+    height: 183px;
+    width: 201px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .placeholder64 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 30px);
+    border-radius: 40px;
+    background-color: #c1bbeb;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .profilepicture15 {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #c1bbeb;
+    z-index: 1;
+  }
+  .student-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 0px 25px;
+  }
+  .schedule-11 {
+    align-self: stretch;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0px 32px 0px 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+    gap: 20px;
+  }
+  .background59 {
+    align-self: stretch;
+    width: 418px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .statuscolor5 {
+    align-self: stretch;
+    width: 24px;
+    position: relative;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #fb7d5b;
+    z-index: 1;
+  }
+  .basic-art {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 81px;
+    z-index: 1;
+  }
+  .art {
+    position: relative;
+    font-size: 14px;
+    color: #a098ae;
+    display: inline-block;
+    min-width: 20px;
+    z-index: 1;
+  }
+  .basic-art-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  .calendar-icon16 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .march-20-20215 {
+    position: relative;
+    display: inline-block;
+    min-width: 101px;
+    z-index: 1;
+  }
+  .march-20-2021-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .calendar-parent1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .clock-icon5 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .am5 {
+    position: relative;
+    display: inline-block;
+    min-width: 113px;
+    z-index: 1;
+  }
+  .am-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .clock-parent1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .frame-parent32 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .frame-parent31 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 27px;
+  }
+  .frame-wrapper15 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 0px 23px;
+  }
+  .statuscolor-parent {
+    height: 183px;
+    width: 201px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .placeholder65 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 30px);
+    border-radius: 40px;
+    background-color: #c1bbeb;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .profilepicture16 {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #c1bbeb;
+    z-index: 1;
+  }
+  .profilepicture-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 0px 25px;
+  }
+  .schedule-21 {
+    align-self: stretch;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0px 32px 0px 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+    gap: 20px;
+  }
+  .background60 {
+    align-self: stretch;
+    width: 418px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .statuscolor6 {
+    align-self: stretch;
+    width: 24px;
+    position: relative;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #fcc43e;
+    z-index: 1;
+  }
+  .html-css {
+    position: relative;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .programming {
+    position: relative;
+    font-size: 14px;
+    color: #a098ae;
+    display: inline-block;
+    min-width: 98px;
+    z-index: 1;
+  }
+  .html-css-class-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  .calendar-icon17 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .march-20-20216 {
+    position: relative;
+    display: inline-block;
+    min-width: 101px;
+    z-index: 1;
+  }
+  .march-20-2021-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .calendar-parent2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .clock-icon6 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .am6 {
+    position: relative;
+    display: inline-block;
+    min-width: 113px;
+    z-index: 1;
+  }
+  .am-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .clock-parent2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .frame-parent34 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .frame-parent33 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 27px;
+  }
+  .frame-wrapper16 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 0px 23px;
+  }
+  .statuscolor-group {
+    height: 183px;
+    width: 210px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .placeholder66 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 30px);
+    border-radius: 40px;
+    background-color: #c1bbeb;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .profilepicture17 {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #c1bbeb;
+    z-index: 1;
+  }
+  .profilepicture-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 0px 25px;
+  }
+  .schedule-31 {
+    align-self: stretch;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0px 32px 0px 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+    gap: 20px;
+  }
+  .background61 {
+    align-self: stretch;
+    width: 418px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .statuscolor7 {
+    align-self: stretch;
+    width: 24px;
+    position: relative;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #303972;
+    z-index: 1;
+  }
+  .simple-past-tense {
+    position: relative;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .english {
+    text-decoration: none;
+    position: relative;
+    font-size: 14px;
+    color: #a098ae;
+    display: inline-block;
+    min-width: 49px;
+    z-index: 1;
+  }
+  .simple-past-tense-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  .calendar-icon18 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .march-20-20217 {
+    position: relative;
+    display: inline-block;
+    min-width: 101px;
+    z-index: 1;
+  }
+  .march-20-2021-wrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .calendar-parent3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .clock-icon7 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .am7 {
+    position: relative;
+    display: inline-block;
+    min-width: 113px;
+    z-index: 1;
+  }
+  .am-wrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .clock-parent3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .frame-parent36 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .frame-parent35 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 27px;
+  }
+  .frame-wrapper17 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 0px 23px;
+  }
+  .statuscolor-container {
+    height: 183px;
+    width: 214px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .placeholder67 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 30px);
+    border-radius: 40px;
+    background-color: #c1bbeb;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .profilepicture18 {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #c1bbeb;
+    z-index: 1;
+  }
+  .profilepicture-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 0px 25px;
+  }
+  .schedule-41 {
+    align-self: stretch;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0px 32px 0px 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+    gap: 20px;
+  }
+  .schedule-list1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    max-width: 100%;
+  }
+  .background62 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 40px;
+    background-color: rgba(77, 68, 181, 0.1);
+  }
+  .view-more5 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Poppins;
+    color: #4d44b5;
+    text-align: left;
+    display: inline-block;
+    min-width: 95px;
+    z-index: 1;
+  }
+  .btnviewmore5 {
+    cursor: pointer;
+    border: none;
+    padding: 17px 20px 16px 21px;
+    background-color: transparent;
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    white-space: nowrap;
+  }
+  .schedule-list-group {
+    width: 418px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 48px;
+    min-width: 418px;
+    max-width: 100%;
+    font-size: 18px;
+  }
+  .content9 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    max-width: 100%;
+  }
+  .user-header-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    max-width: 100%;
+    text-align: left;
+    font-size: 32px;
+    color: #303972;
+    font-family: Poppins;
+  }
+  .header4 {
+    width: 1475px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 0px 0px;
+    box-sizing: border-box;
+    max-width: calc(100% - 395px);
+    flex-shrink: 0;
+  }
+  .student-details10 {
+    width: 100%;
+    height: 1255px;
+    position: relative;
+    background-color: #f3f4ff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 40px;
+    box-sizing: border-box;
+    gap: 50px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 36px;
+    color: #fff;
+    font-family: Poppins;
+  }
+  
+  @media screen and (max-width: 1650px) {
+    .side-menu9 {
+      max-width: 100%;
+    }
+  
+    .header4 {
+      display: none;
+    }
+  
+    .student-details10 {
+      padding-left: 20px;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    .side-menu9 {
+      display: none;
+      padding-top: 32px;
+      padding-bottom: 217px;
+      box-sizing: border-box;
+    }
+  
+    .user-profile1 {
+      display: none;
+    }
+  
+    .contact-info4 {
+      flex-wrap: wrap;
+    }
+  
+    .schedule-list-group {
+      flex: 1;
+    }
+  
+    .content9 {
+      flex-wrap: wrap;
+    }
+  
+    .header4 {
+      padding-top: 32px;
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+  
+    .student-details10 {
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .a8 {
+      font-size: 29px;
+    }
+  
+    .akademi8 {
+      font-size: 29px;
+    }
+  
+    .side-menu9 {
+      padding-top: 21px;
+      padding-bottom: 141px;
+      box-sizing: border-box;
+    }
+  
+    .user-header-actions {
+      gap: 32px;
+    }
+  
+    .title18 {
+      font-size: 26px;
+    }
+  
+    .contact-info4 {
+      gap: 28px;
+    }
+  
+    .student-profile {
+      padding-bottom: 31px;
+      box-sizing: border-box;
+    }
+  
+    .payment-list-header {
+      flex-wrap: wrap;
+    }
+  
+    .payment-list-header1 {
+      flex-wrap: wrap;
+    }
+  
+    .payment-list-header2 {
+      flex-wrap: wrap;
+    }
+  
+    .payment-list-header3 {
+      flex-wrap: wrap;
+    }
+  
+    .payment-history-container {
+      gap: 16px;
+    }
+  
+    .pagination2 {
+      flex-wrap: wrap;
+    }
+  
+    .payment-history {
+      gap: 24px;
+      padding-top: 21px;
+      padding-bottom: 21px;
+      box-sizing: border-box;
+    }
+  
+    .student-profile-container {
+      gap: 20px;
+      min-width: 100%;
+    }
+  
+    .content9 {
+      gap: 20px;
+    }
+  
+    .user-header-container {
+      gap: 20px;
+    }
+  
+    .header4 {
+      padding-top: 21px;
+      box-sizing: border-box;
+    }
+  
+    .student-details10 {
+      gap: 25px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .a8 {
+      font-size: 22px;
+    }
+  
+    .akademi8 {
+      font-size: 22px;
+    }
+  
+    .side-menu9 {
+      gap: 23px;
+    }
+  
+    .user-header-actions {
+      gap: 16px;
+    }
+  
+    .title18 {
+      font-size: 19px;
+    }
+  
+    .payment-history1 {
+      font-size: 19px;
+    }
+  
+    .schedule-details1 {
+      font-size: 19px;
+    }
+  
+    .schedule-11 {
+      flex-wrap: wrap;
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+  
+    .schedule-21 {
+      flex-wrap: wrap;
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+  
+    .schedule-31 {
+      flex-wrap: wrap;
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+  
+    .schedule-41 {
+      flex-wrap: wrap;
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+  
+    .schedule-list-group {
+      gap: 24px;
+      min-width: 100%;
+    }
+  }
+  
