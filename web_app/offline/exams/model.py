@@ -13,12 +13,12 @@ class Exam(Model):
     invilgilator_id: int
 
 
-# class VideoRecording(BaseModel):
-#     exam_id: int
-#     timestamp: datetime
-#     file_path = str
-#     duration: str
-#     resolution: str
+class VideoRecording(Model):
+    exam_id: int
+    timestamp: datetime
+    file_path: str
+    duration: str
+    resolution: str
 
 
 class ExamLocation(Model):
@@ -27,14 +27,13 @@ class ExamLocation(Model):
 
 
 class SuspiciousReport(Model):
-    frame_id: int
     exam_id: str
     student_id: int
     timestamp: datetime
+    all_cheating_scores: List[float]
     coordinates: Tuple[float, float]
-    confidence_score: float
-    pixel_changes: float
-    image_path: str
+    average_cheat: str
+    image_paths: str
 
 
 class ExamAttendance(Model):

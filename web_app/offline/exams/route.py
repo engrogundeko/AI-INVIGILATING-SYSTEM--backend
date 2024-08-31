@@ -9,7 +9,7 @@ from .schema import (
     CreateExamSchema,
     GetExamAttendance,
 )
-from .ai import ai_invigilating_system, take_attendance
+from .ai import AIInvigilatingSystem
 
 # from .services import take_attendance
 from ..repository import (
@@ -30,6 +30,8 @@ from fastapi import Request
 # model = YOLO("yolov8n.pt")
 router = APIRouter(tags=["Exams"], prefix="/exams")
 
+vid = r"C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\media\datasets\converted\exchange_6.mp4"
+
 
 # @role_required([Role.admin])
 @router.get("/video/{exam_id}")
@@ -37,15 +39,16 @@ async def video(exam_id: str):
     try:
 
         # def generate():
-        async for _ in ai_invigilating_system(exam_id):
-            continue
-                # print(frame)
-                # ret, buffer = cv2.imencode(".webp", frame)
-                # if ret:
-                #     yield (
-                #         b"--frame\r\n"
-                #         b"Content-Type: image/webp\r\n\r\n" + buffer.tobytes() + b"\r\n"
-                #     )
+        ais = AIInvigilatingSystem(vid, None, False)
+        ais(exam_id)
+        # continue
+        # print(frame)
+        # ret, buffer = cv2.imencode(".webp", frame)
+        # if ret:
+        #     yield (
+        #         b"--frame\r\n"
+        #         b"Content-Type: image/webp\r\n\r\n" + buffer.tobytes() + b"\r\n"
+        #     )
         return "Success"
         # return StreamingResponse(
         #     generate(), media_type="multipart/x-mixed-replace; boundary=frame"

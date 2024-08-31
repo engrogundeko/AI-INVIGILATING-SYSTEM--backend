@@ -3,16 +3,21 @@ from pydantic import BaseModel, field_validator
 from datetime import date, datetime, time
 
 class SuspiciousReportSchema(BaseModel):
-    frame_id: int
+
     exam_id: str
-    student_id: str
+    student_id: int
     timestamp: datetime
+    all_cheating_scores: List[float]
     coordinates: Tuple[float, float, float, float]
-    confidence_score: float
-    pixel_changes: float
-    image_path: str
+    average_cheat: str
+    image_paths: List[str]
 
-
+class VideoRecordingSchema(BaseModel):
+    exam_id: str
+    timestamp: datetime
+    file_path: str
+    duration: float
+    resolution: Tuple[int, int]
 class ExamAttendance(BaseModel):
     status: str
     exam_id: str
