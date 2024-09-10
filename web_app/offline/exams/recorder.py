@@ -13,7 +13,6 @@ class VideoRecorder:
         self.file_name = None
 
     def save_to_db(self, exam_id, date):
-        # print(self.file_name)
         vid_dur, width, height = self.get_video_duration()
         vid = VideoRecordingSchema(
             exam_id=exam_id,

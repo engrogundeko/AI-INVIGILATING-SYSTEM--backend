@@ -23,8 +23,8 @@ class MongoDBRepository:
     def find_one(self, query):
         return self.collection.find_one(query)
 
-    def find(self, query):
-        return self.collection.find(query)
+    def find(self, query, projection=None):
+        return self.collection.find(query, projection=projection)
 
     def find_many(self, query=None):
         if query:
@@ -53,12 +53,15 @@ courseRespository = MongoDBRepository(collection_name="course")
 videoRecordingRespository = MongoDBRepository(collection_name="recording")
 examAttedanceRespository = MongoDBRepository(collection_name="attendance")
 notificationRespository = MongoDBRepository(collection_name="notification")
-suspiciousReportRespository = MongoDBRepository(collection_name="suspicion")
-cheatingBehaviourRespository = MongoDBRepository(collection_name="behaviour")
+suspiciousReportRespository = MongoDBRepository(collection_name="suspicious")
+detectionRespository = MongoDBRepository(collection_name="detections")
 examRegistrationRespository = MongoDBRepository(collection_name="registration")
 userRoleRepository = MongoDBRepository(collection_name="role")
 examLocationRepo = MongoDBRepository(collection_name="examlocation")
-
+studentDataRepo = MongoDBRepository(collection_name="exam_data")
+sessionRepository = MongoDBRepository(collection_name="session")
+departmentRepository = MongoDBRepository(collection_name="department")
+facultyRepository = MongoDBRepository(collection_name="faculty")
 if __name__ == "__main__":
     pass
 # Initialize repository

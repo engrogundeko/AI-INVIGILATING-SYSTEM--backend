@@ -1,4 +1,3 @@
-import json
 import os
 import time
 import math
@@ -6,28 +5,31 @@ import winsound
 from threading import Thread
 from queue import Queue
 from datetime import datetime
-
-import joblib
+from bson import ObjectId
 
 from .recorder import VideoRecorder
-
-from .encoder import NumpyEncoder
-
-# from .attendance import take_attendance
-
 from .preprocessor import PreProcessor
-from ..config import IMAGE_RECORD_PATH, VIDEO_RECORD_PATH, AIS__MODEL, AIS_YOLO
+from ..config import (
+    IMAGE_RECORD_PATH,
+    VIDEO_RECORD_PATH,
+    AIS__MODEL,
+    AIS_YOLO,
+)
 
 from ..repository import (
     suspiciousReportRespository,
     examLocationRepo,
+    examRespository,
+    studentDataRepo,
 )
+from .timer import ExamTimer
 from .schema import SuspiciousReportSchema
 from ..utils import image_utils
 from .email import EmailHandler
 
 import cv2
 import anyio
+import joblib
 import anyio.to_process
 import anyio.to_thread
 from ultralytics import YOLO
@@ -41,8 +43,9 @@ class AIInvigilatingSystem:
     def __init__(
         self,
         video_path: str,
-        camera: int | str = 1,
+        camera: int = 1,
         record_video: bool = False,
+        use_timer: bool = False
     ):
         self.flows = []
         self.cheating_list = []
@@ -59,11 +62,16 @@ class AIInvigilatingSystem:
         self.alarm_duration = 500
         self.alarm_frequency = 2500
         self.expected_feature_length = 2
+        self.high_brightness_factor = 0.5
+        self.use_timer = use_timer
+        self.stop_thread = False
+        # self.low_brightness_factor = 0.1
 
         self.svm_model = self.load_ais_model()
         self.model = self.load_yolo()
 
         self.email = EmailHandler()
+        self.time = ExamTimer()
         self.preprocesor = PreProcessor()
         self.frame_queue = Queue(maxsize=10)
         self.result_queue = Queue()
@@ -103,7 +111,6 @@ class AIInvigilatingSystem:
     def save_to_db(self):
         self.evaluate_total_result()
         for log in self.cheating_list:
-            # print(log)
             suspicious = SuspiciousReportSchema(**log)
             suspiciousReportRespository.insert_one(suspicious.__dict__)
 
@@ -145,7 +152,6 @@ class AIInvigilatingSystem:
 
             X1c, Y1c = self._get_center(X1, Y1, X2, Y2)
             if self._match(X1c, Y1c, X2c, Y2c):
-                cheat["all_cheating_scores"].append(confidence_score)
 
                 id = cheat["student_id"]
 
@@ -165,14 +171,21 @@ class AIInvigilatingSystem:
                 x2 = min(frame.shape[1], x2 + self.expansion)
                 crp_frame = frame[y1:y2, x1:x2]
 
+                score = self.calculate_conf(crp_frame, confidence_score)
+
+                # if score > 0.5:
+                cheat["all_cheating_scores"].append(score)
+                cheat["timestamp"].append(datetime.now())
+
                 dt = datetime.now()
                 dg = dt.strftime("%H_%M_%S")
                 filename = f"{id}__{dg}"
                 path = self.save_image(crp_frame, filename)
                 cheat["image_paths"].append(path)
-                cheat["timestamp"] = dt
+                # cheat["timestamp"] = dt
 
-                break
+                return score
+                # return crp_frame
 
     def _match(self, x1, y1, x2, y2):
         distance = math.sqrt(((x2 - x1) ** 2) + ((y2 - y1) ** 2))
@@ -203,6 +216,27 @@ class AIInvigilatingSystem:
             unique_filename = f"{base_filename}_{counter:04d}.{extension}"
             counter += 1
         return unique_filename
+
+    def calculate_conf(self, frame, conf):
+        brightness = np.mean(frame)
+
+        normalized_brightness = brightness / 255
+        print(normalized_brightness)
+
+        if normalized_brightness > 0.7:
+            adjusted_score = conf - (
+                self.high_brightness_factor * normalized_brightness
+            )
+        # elif normalized_brightness < 0.3:
+        #     adjusted_score = conf + (
+        #         self.low_brightness_factor * (1 - normalized_brightness)
+        #     )
+        else:
+            adjusted_score = conf
+
+        adjusted_score = max(0, min(adjusted_score, 1))
+
+        return adjusted_score
 
     def save_image(self, frame, student_id) -> str:
         file_name = self._get_unique_filename(student_id, "jpg")
@@ -263,15 +297,20 @@ class AIInvigilatingSystem:
                             probabilities = self.svm_model.predict_proba(f_val)
 
                             if label == 1:
+                                confidence_score = probabilities[0, 1]
+                                score = self.evaluate_cheating(
+                                    x1, y1, x2, y2, confidence_score, frame
+                                )
+                                print("score", confidence_score, score)
+                                # score = self.calculate_conf(crop_frame, confidence_score)
 
                                 code = "Suspicious"
                                 colour = (0, 0, 255)
-                                confidence_score = probabilities[0, 1]
                                 cv2.rectangle(frame, (x1, y1), (x2, y2), colour, 2)
 
                                 cv2.putText(
                                     frame,
-                                    f"{code}: {confidence_score:.2f}%",
+                                    f"{code}: {score:.2f}%",
                                     (x1, y1 - 10),
                                     cv2.FONT_HERSHEY_SIMPLEX,
                                     0.5,
@@ -279,9 +318,6 @@ class AIInvigilatingSystem:
                                     2,
                                 )
 
-                                self.evaluate_cheating(
-                                    x1, y1, x2, y2, confidence_score, frame
-                                )
                     break
 
     def pre_process_frame(
@@ -349,101 +385,115 @@ class AIInvigilatingSystem:
             ret, frame = self.cap.read()
             if not ret:
                 break
+            if self.stop_thread:
+                break
             self.frame_queue.put(frame)
-
         self.frame_queue.put(None)
+        print("Producer thread ended and resources released.")
 
     def frame_consumer(self, exam_id):
-        prev_gray = None
-        prev_points = None
-        frame_counter = 0
-        fps = 0
-        timestamp = datetime.now()
-        start_time = time.time()
+        try:
+            prev_gray = None
+            prev_points = None
+            frame_counter = 0
+            fps = 0
+            timestamp = datetime.now()
+            start_time = time.time()
 
-        if self.record_video:
-            recorder = self.out
-            record = recorder.out(exam_id)
-
-        while True:
-            frame = self.frame_queue.get()
-            if frame is None:  # End of the stream
-                self.save_to_db
-                break
-
-            frame_counter += 1
-
-            # Calculate FPS
-            current_time = time.time()
-            elapsed_time = current_time - start_time
-            fps = (frame_counter / elapsed_time) if elapsed_time != 0 else 0
+            exam_name = examRespository.find_one({"_id": ObjectId(exam_id)})["name"]
 
             if self.record_video:
-                record.write(frame)
+                recorder = self.out
+                record = recorder.out(exam_id)
+                
+            while True:
+                frame = self.frame_queue.get()  
+                if frame is None:  # End of the stream
+                    self.save_to_db
+                    break
 
-            frame = cv2.resize(frame, (self.new_width, self.new_height))
-            if frame_counter == 1:  # Run YOLO detection only once on the first frame
-                results = self.model(frame, conf=0.25, iou=0.4)
+                frame_counter += 1
 
-                for result in results:
-                    count = 1
+                # Calculate FPS
+                current_time = time.time()
+                elapsed_time = current_time - start_time
+                fps = (frame_counter / elapsed_time) if elapsed_time != 0 else 0
 
-                    for bbox in result.boxes.xyxy:
-                        self.detected_bboxes.append(list(map(int, bbox)))
+                if self.record_video:
+                    record.write(frame)
+
+                frame = cv2.resize(frame, (self.new_width, self.new_height))
+                if frame_counter == 1:
+                    # start timer
+                    if self.use_timer:
+                        self.time.start_exam_timer(exam_id)
+
+                    results = studentDataRepo.find_one({"exam_id": exam_id})
+                    if results is None:
+                        raise ValueError("You have not yet capture students")
+                    detections = results["students_data"]
+
+                    for result in detections:
+                        bbox = result["coordinates"]
+                        box = list(map(int, bbox))
+                        self.detected_bboxes.append(box)
                         self.cheating_list.append(
                             {
                                 "exam_id": exam_id,
-                                "student_id": count,
-                                "coordinates": list(map(int, bbox)),
+                                "student_id": result["id"],
+                                "coordinates": box,
                                 "all_cheating_scores": [],
                                 "image_paths": [],
                                 "flows": [],
-                                "timestamp": timestamp,
+                                "timestamp": [],
                             }
                         )
-                        count += 1
+                if frame_counter % 5 == 0:
+                    gray_frame = self.pre_process_frame(frame)
 
-            if frame_counter % 5 == 0:
-                gray_frame = self.pre_process_frame(frame)
+                    if prev_gray is None:
+                        prev_gray = gray_frame
+                        prev_points = cv2.goodFeaturesToTrack(
+                            prev_gray,
+                            maxCorners=100,
+                            qualityLevel=0.3,
+                            minDistance=7,
+                            blockSize=7,
+                        )
+           
+                    else:
+                        prev_gray, prev_points, _ = self.process_frame(
+                            prev_gray, prev_points, gray_frame, frame
+                        )
 
-                if prev_gray is None:
-                    prev_gray = gray_frame
-                    prev_points = cv2.goodFeaturesToTrack(
-                        prev_gray,
-                        maxCorners=100,
-                        qualityLevel=0.3,
-                        minDistance=7,
-                        blockSize=7,
+                    # Display FPS on the frame
+                    show_frame = cv2.resize(frame, (self.dis_width, self.dis_height))
+                    cv2.putText(
+                        show_frame,
+                        f"FPS: {fps:.2f}",
+                        (10, 30),
+                        cv2.FONT_HERSHEY_SIMPLEX,
+                        1,
+                        (0, 255, 0),
+                        2,
+                        cv2.LINE_AA,
                     )
-                    # processed_frame = gray_frame
-                else:
-                    prev_gray, prev_points, _ = self.process_frame(
-                        prev_gray, prev_points, gray_frame, frame
-                    )
+   
+                    cv2.imshow(exam_name, show_frame)
+                if self.use_timer:
+                    if self.time.evaluate_time():
+                        self.stop_thread = True
 
-                # Display FPS on the frame
-                show_frame = cv2.resize(frame, (self.dis_width, self.dis_height))
-                cv2.putText(
-                    show_frame,
-                    f"FPS: {fps:.2f}",
-                    (10, 30),
-                    cv2.FONT_HERSHEY_SIMPLEX,
-                    1,
-                    (0, 255, 0),
-                    2,
-                    cv2.LINE_AA,
-                )
-                # yield show_frame
-                cv2.imshow("Automatic Invigilation System", show_frame)
 
-            if cv2.waitKey(1) & 0xFF == ord("q"):
-                break
-
-        self.cap.release()
-        if self.record_video:
-            record.release()
-            recorder.save_to_db(exam_id, timestamp)
-        cv2.destroyAllWindows()
+                if cv2.waitKey(1) & 0xFF == ord("q"):
+                    self.stop_thread = True
+        finally:
+            self.cap.release()
+            if self.record_video:
+                record.release()
+                recorder.save_to_db(exam_id, timestamp)
+            cv2.destroyAllWindows()
+            print("Consumer thread ended and resources released.")
 
     def main(self, exam_id):
         producer_thread = Thread(target=self.frame_producer)
@@ -454,7 +504,7 @@ class AIInvigilatingSystem:
 
         producer_thread.join()
         consumer_thread.join()
+        print("Both threads have completed.")
 
     def __call__(self, exam_id):
-        self._initialize_location(exam_id)
         self.main(exam_id)

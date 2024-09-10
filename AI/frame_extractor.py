@@ -96,11 +96,13 @@ def resize_frame(frame, percent):
     resized_frame = cv2.resize(frame, dimensions, interpolation=cv2.INTER_AREA)
     return resized_frame
 
-
+def run():
+    ...
+    
 def main():
 
     file_names = []
-    file_path = Path(IMG_IN_DIR)
+    file_path = Path(r"C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\media\datasets\frame_classifier\images\train")
     paths = [file.as_posix() for file in file_path.iterdir() if file.is_file()]
     for path in paths:
         file_name = os.path.basename(path).removesuffix(".mp4")

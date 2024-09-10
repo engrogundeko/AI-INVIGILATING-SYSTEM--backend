@@ -1,17 +1,18 @@
-import dotenv
-import os
+import cv2
 
+def list_cameras(max_devices=10):
+    available_cameras = []
+    for i in range(max_devices):
+        cap = cv2.VideoCapture(i)  # Try to open the camera
+        if cap.isOpened():
+            print(f"Camera {i} is available.")
+            available_cameras.append(i)
+            cap.release()  # Release the camera
+        else:
+            print(f"Camera {i} is not available.")
+    
+    return available_cameras
 
-dotenv.load_dotenv()
-
-# Loading environment variables into constants
-ROOT_DIR = os.environ.get("WORKING_DIR")
-
-IMG_IN_DIR = os.path.join(ROOT_DIR, "media", "datasets", "converted")
-IMG_OUT_DIR = os.path.join(ROOT_DIR, "media", "datasets", "frame_classifier", "image", "all")
-CLASS_DIRS = [
-    "back",
-    "exchange",
-    "normal",
-    "peek",
-]
+if __name__ == "__main__":
+    cameras = list_cameras()
+    print(f"Available cameras: {cameras}")

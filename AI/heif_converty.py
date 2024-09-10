@@ -4,8 +4,9 @@ from pathlib import Path
 import pillow_heif
 from PIL import Image
 
-img_path = r"C:\Users\Admin\Downloads\heic_files"
-dst = r"C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\heic"
+img_path = r"C:\Users\Admin\Videos\img"
+dst = r"C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\media\datasets\exams"
+
 
 def convert_heic_to_jpg(heic_path, jpg_path):
     pillow_heif.register_heif_opener()
@@ -20,10 +21,12 @@ def look_for_heif_files():
     for path in paths:
         convert_heic_to_jpg(path, dst)
 
-paths = os.listdir(dst)
+paths = os.listdir(img_path)
+print(paths)
 for path in paths:
     if not os.path.basename(path).split(".")[1] == "MOV":
         name_path = os.path.join(dst, os.path.basename(path).removesuffix(".HEIC"))
-        files_path = os.path.join(dst, path)
+        files_path = os.path.join(img_path, path)
+        print(files_path)
         convert_heic_to_jpg(files_path, f"{name_path}.jpg")
 

@@ -21,11 +21,15 @@ IMAGE_SAVE_DIR = os.path.join(DATABASE, "student_face")
 UNRECOGNISED_FACE = os.path.join(DATABASE, "unrecognised_faces")
 UNDETECTED_FACE = os.path.join(DATABASE, "undetected_face")
 MODELS_DIR = os.path.join(MEDIA_DIR, "models")
-AIS_YOLO = r"C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\aisv1n.pt"
+STUDENT_DATA = os.path.join(DATABASE, "student_data")
+
+AIS_YOLO = os.path.abspath(os.path.join(MODELS_DIR, "aisv4l.pt"))
+# AIS_YOLO = r"C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\aisv4l.pt"
 AIS_HEAD_MODEL = os.path.join(MODELS_DIR, "aisv1n.pt")
 AIS__MODEL = r"C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\ais_modelv5.pkl"
 
 class AIConstant:
+    time_format = "%H:%M:%S"
     PERSON_CLASS: int = 0
     VALID_ROLE: list = ["ADMIN", "STUDENT", "LECTURER", "INVIGILATOR"]
     PROB_ALLOWANCE: int = 0.6

@@ -1,43 +1,18 @@
-import os
-import cv2
-from deepface import DeepFace
-from config import IMG_OUT_DIR
-import numpy as np
-import matplotlib.pyplot as plt
+import csv
+import pandas as pd
 
+file = r"C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\dataset.csv"
+df = pd.read_csv(file)
 
-def detect_faces(path):
-    try:
-        detect = DeepFace.extract_faces(path, detector_backend="retinaface")
-        print(detect)
+# df = pd.read_csv(filename)
 
-        # Read the original image
-        original_image = cv2.imread(path)
+# List of columns you want to keep (based on your header)
+columns_to_keep = ["Avg Magnitude", "Std Magnitude", "Avg Direction", "Num Moving Points", "Object Size", "Label"]  # Example columns
 
-        # Convert the original image to RGB for plotting with matplotlib
-        original_image_rgb = cv2.cvtColor(original_image, cv2.COLOR_BGR2RGB)
+# Drop columns not in the list of columns to keep
+df = df[columns_to_keep]
 
-        for face in detect:
-            # Get facial area coordinates
-            x, y, w, h = (
-                face["facial_area"]["x"],
-                face["facial_area"]["y"],
-                face["facial_area"]["w"],
-                face["facial_area"]["h"],
-            )
+# Save the cleaned DataFrame back to a new CSV file
+df.to_csv("cleaned_features.csv", index=False)
 
-            # Draw rectangle on the original image
-            cv2.rectangle(original_image_rgb, (x, y), (x + w, y + h), (255, 0, 0), 2)
-
-        # Plot the image with all bounding boxes
-        plt.imshow(original_image_rgb)
-        plt.axis("off")  # Hide axes
-        plt.show()
-
-    except Exception as e:
-        print(f"Error detecting face: {e}")
-
-
-file = os.path.join(IMG_OUT_DIR, "exchange_2_0008.jpg")
-print(file)
-detect_faces(file)
+print("Columns not in header have been removed.")

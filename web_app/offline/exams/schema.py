@@ -1,12 +1,15 @@
 from typing import List, Tuple
+from fastapi.exceptions import RequestValidationError
 from pydantic import BaseModel, field_validator
 from datetime import date, datetime, time
+
+from ..repository import examRespository, courseRespository
 
 class SuspiciousReportSchema(BaseModel):
 
     exam_id: str
     student_id: int
-    timestamp: datetime
+    timestamp: List[datetime]
     all_cheating_scores: List[float]
     coordinates: Tuple[float, float, float, float]
     average_cheat: str
@@ -39,6 +42,7 @@ class CreateCourseShema(BaseModel):
     code: str
     department: str
     faculty: str
+    session: str
 
 
 class VideoSchema(BaseModel):
@@ -56,9 +60,17 @@ class CreateExamSchema(BaseModel):
     start_time: str
     end_time: str
     room_id: str
-    course_id: str
-    invilgilator_id: List[str] | str
+    session: str
+    course_code: str
+    # invilgilator_id: List[str] | str
 
+    @field_validator("course_code", mode="before")
+    def vallidate_course_code(cls, v):
+        course = courseRespository.find_one({"code": cls.course_code})
+        if course is None:
+            raise RequestValidationError("Course does not exist")
+        
+        
     @field_validator("date", mode="before")
     def convert_date(cls, v):
         if isinstance(v, date):

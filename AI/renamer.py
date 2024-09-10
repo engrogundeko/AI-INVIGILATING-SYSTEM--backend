@@ -1,29 +1,31 @@
-import os
-import shutil
-from glob import glob
+import tkinter as tk
+from tkinter import simpledialog
+from tkinter import Label
+from PIL import Image, ImageTk
 
-dst = r"C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\all"
-src = r"C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\media\datasets\frame_classifier\image"
+def show_image_and_get_input(image_path):
+    # Create the main window
+    root = tk.Tk()
+    root.title("Image and Input")
 
+    # Load the image
+    image = Image.open(image_path)
+    image = image.resize((300, 300))  # Resize the image as needed
+    photo = ImageTk.PhotoImage(image)
 
-def rename_and_copy_file(file, s, dst):
-    base = os.path.basename(file)
-    new_name = s + "_" + base
-    new_file_path = os.path.join(dst, new_name)
-    shutil.copyfile(file, new_file_path)
-    print(f"Copied file to the location: {new_file_path}")
+    # Create a label to display the image
+    image_label = Label(root, image=photo)
+    image_label.pack(pady=20)
 
+    # Ask for user input
+    user_input = simpledialog.askstring("Input", "Enter your input:")
 
-def main():
-    os.makedirs(dst, exist_ok=True)
-    paths = os.listdir(src)
-    for path in paths:
-        folder = os.path.join(src, path)
-        if os.path.isdir(folder):
-            files = glob(os.path.join(folder, "*.jpg"))
-            for file in files:
-                rename_and_copy_file(file, path, dst)
+    # Print user input in console or process it as needed
+    print(f"User input: {user_input}")
 
+    # Close the Tkinter window
+    root.mainloop()
 
-if __name__ == "__main__":
-    main()
+# Example usage
+show_image_and_get_input(r"C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\ais.jpg")
+        

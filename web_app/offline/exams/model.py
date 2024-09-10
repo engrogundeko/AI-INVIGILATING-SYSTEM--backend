@@ -48,12 +48,18 @@ class ExamRegistration(Model):
     student_id: str
     # status: str
 
+class FacultyResponse(Model):
+    name: str
+
+class DepartmentResponse(Model):
+    name: str
 
 class Course(Model):
     name: str
     code: str
     department: str
     faculty: str
+    session: str
 
 
 class Room(Model):
@@ -64,9 +70,9 @@ class Room(Model):
 
 class Exam(Model):
     name: str
-    date: datetime
+    date: str
     start_time: str
     end_time: str
     room_id: str
     course_id: str
-    invilgilator_id: List[str] | str
+    # invilgilator_id: List[str] | str
