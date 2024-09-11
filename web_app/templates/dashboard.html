@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{url_for("static", path="/css/dashboard.css")}}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mountains of Christmas:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <script src="{{url_for("static", path="/js/sidebar.js")}}" defer ></script>
+  </head>
+  <body>
+
+    <div id="sidebar-container"></div>
+
+    <section class="content2">
+        <div class="bg"></div>
+        <div class="content-container">
+          <h1 class="dashboard7">Dashboard</h1>
+          <div class="search-bar">
+            <div class="search-input-wrapper">
+              <img class="search-icon" alt="" src="./public/search.svg" />
+
+              <div class="search-placeholder">
+                <a class="search-here">Search here...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overview">
+          <div class="background1"></div>
+          <div class="overview-metrics">
+            <div class="metric-icons">
+              <img class="icon" loading="lazy" alt="" src="{{url_for("static", path="/image/icon.svg")}}" />
+            </div>
+            <div class="metric-labels">
+              <div class="students1">Students</div>
+              <b class="metric-separator">932</b>
+            </div>
+          </div>
+          <div class="overview-metrics1">
+            <div class="icon-wrapper">
+              <img
+                class="icon1"
+                loading="lazy"
+                alt=""
+                src=".{{url_for("static", path="/public/icon-1.svg")}}"
+              />
+            </div>
+            <div class="teachers-parent">
+              <div class="teachers1">Teachers</div>
+              <b class="b">754</b>
+            </div>
+          </div>
+          <div class="events-metric">
+            <div class="event-icon-container">
+              <div class="icon2">
+                <div class="border"></div>
+                <img
+                  class="calendar-icon1"
+                  alt=""
+                  src="./public/calendar-1.svg"
+                />
+              </div>
+            </div>
+            <div class="events-label-container">
+              <div class="events">Events</div>
+              <b class="events-separator">40</b>
+            </div>
+          </div>
+        </div>
+        <div class="school-performance-parent">
+          <div class="school-performance">
+            <div class="background2"></div>
+            <div class="performance-header">
+              <b class="school-performance1">School Performance</b>
+              <div class="performance-chart">
+                <div class="chart-container">
+                  <div class="chart-container-child"></div>
+                </div>
+                <div class="chart-legend">
+                  <div class="legend-items">
+                    <div class="this-week-item">
+                      <div class="this-week">This Week</div>
+                    </div>
+                    <div class="last-week-item">
+                      <div class="last-week-item-child"></div>
+                    </div>
+                    <div class="last-week">Last Week</div>
+                  </div>
+                  <div class="legend-separator">
+                    <b class="separator-placeholder">1.245</b>
+                    <b class="separator-placeholder1">1.356</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chart-area">
+              <div class="chart-content">
+                <div class="chart-grid">
+                  <div class="grid-placeholder">
+                    <div class="div">100</div>
+                    <div class="div1">75</div>
+                    <div class="div2">50</div>
+                    <div class="div3">25</div>
+                    <div class="div4">0</div>
+                  </div>
+                </div>
+                <div class="chart-bars">
+                  <div class="bar-container">
+                    <div class="bar-placeholder">
+                      <img class="line-icon" alt="" src="./public/line.svg" />
+
+                      <img
+                        class="chart-icon"
+                        loading="lazy"
+                        alt=""
+                        src="./public/chart.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="chart-labels">
+                    <div class="jan">Jan</div>
+                    <div class="feb">Feb</div>
+                    <div class="mar">Mar</div>
+                    <div class="apr">Apr</div>
+                    <div class="may">May</div>
+                    <div class="jun">Jun</div>
+                    <div class="jul">Jul</div>
+                    <div class="aug">Aug</div>
+                    <div class="sep">Sep</div>
+                    <div class="oct">Oct</div>
+                    <div class="nov">Nov</div>
+                    <div class="dec">Dec</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="unpaid-student">
+            <div class="background3"></div>
+            <div class="exams-header">
+              <b class="upcoming-examinations">Upcoming Examinations</b>
+            </div>
+            <div class="unpaid-list-container">
+              <div class="list1">
+                <div class="list-items">
+                  <div class="background4"></div>
+                  <div class="student-info">
+                    <div class="profilepicture">
+                      <div class="placeholder"></div>
+                    </div>
+                    <div class="student-names">
+                      <div class="samantha-william">Samantha William</div>
+                    </div>
+                  </div>
+                  <div class="invoice-status">
+                    <div class="inv-0001234">ID 123456789</div>
+                  </div>
+                  <div class="icon3">
+                    <div class="bg1"></div>
+                    <img
+                      class="user-icon1"
+                      loading="lazy"
+                      alt=""
+                      src="{{url_for("static", path="/public/user-1.svg")}}"
+                    />
+                  </div>
+                  <div class="invoice-details">
+                    <div class="invoice-info">
+                      <div class="inv-00012341">Class</div>
+                      <div class="vii-a">VII A</div>
+                    </div>
+                    <div class="invoice-date">
+                      <div class="date">$ 50,036</div>
+                    </div>
+                  </div>
+                  <div class="action-buttons1">
+                    <div class="button-container">
+                      <img
+                        class="print-icon"
+                        loading="lazy"
+                        alt=""
+                        src="./public/print.svg"
+                      />
+
+                      <img
+                        class="dots-icon"
+                        loading="lazy"
+                        alt=""
+                        src="{{url_for("static", path="/public/dots.svg")}}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="list-items1">
+                  <div class="background5"></div>
+                  <div class="profilepicture-parent">
+                    <div class="profilepicture1">
+                      <div class="placeholder1"></div>
+                    </div>
+                    <div class="tony-soap-wrapper">
+                      <div class="tony-soap">Tony Soap</div>
+                    </div>
+                  </div>
+                  <div class="inv-0001234-wrapper">
+                    <div class="inv-00012342">ID 123456789</div>
+                  </div>
+                  <div class="icon4">
+                    <div class="bg2"></div>
+                    <img
+                      class="user-icon2"
+                      loading="lazy"
+                      alt=""
+                      src="{{url_for("static", path="/public/user-1.svg")}}"
+                    />
+                  </div>
+                  <div class="frame-parent1">
+                    <div class="inv-0001234-parent">
+                      <div class="inv-00012343">Class</div>
+                      <div class="vii-a1">VII A</div>
+                    </div>
+                    <div class="date-wrapper">
+                      <div class="date1">$ 50,036</div>
+                    </div>
+                  </div>
+                  <div class="list-items-inner">
+                    <div class="print-parent">
+                      <img
+                        class="print-icon1"
+                        loading="lazy"
+                        alt=""
+                        src="{{url_for("static", path="/public/print.svg")}}"
+                      />
+
+                      <img
+                        class="dots-icon1"
+                        loading="lazy"
+                        alt=""
+                        src="{{url_for("static", path="/public/dots.svg")}}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="list-items2">
+                  <div class="background6"></div>
+                  <div class="profilepicture-group">
+                    <div class="profilepicture2">
+                      <div class="placeholder2"></div>
+                    </div>
+                    <div class="jordan-nico-wrapper">
+                      <div class="jordan-nico">Jordan Nico</div>
+                    </div>
+                  </div>
+                  <div class="inv-0001234-container">
+                    <div class="inv-00012344">ID 123456789</div>
+                  </div>
+                  <div class="icon5">
+                    <div class="bg3"></div>
+                    <img
+                      class="user-icon3"
+                      loading="lazy"
+                      alt=""
+                      src="{{url_for("static", path="/public/user-1.svg")}}"
+                    />
+                  </div>
+                  <div class="frame-parent2">
+                    <div class="inv-0001234-group">
+                      <div class="inv-00012345">Class</div>
+                      <div class="vii-a2">VII A</div>
+                    </div>
+                    <div class="date-container">
+                      <div class="date2">$ 50,036</div>
+                    </div>
+                  </div>
+                  <div class="list-items-child">
+                    <div class="print-group">
+                      <img
+                        class="print-icon2"
+                        loading="lazy"
+                        alt=""
+                        src="{{url_for("static", path="/public/print.svg")}}"
+                      />
+
+                      <img
+                        class="dots-icon2"
+                        loading="lazy"
+                        alt=""
+                        src="{{url_for("static", path="/public/dots.svg")}}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="list-items3">
+                  <div class="background7"></div>
+                  <div class="profilepicture-container">
+                    <div class="profilepicture3">
+                      <div class="placeholder3"></div>
+                    </div>
+                    <div class="karen-hope-wrapper">
+                      <div class="karen-hope">Karen Hope</div>
+                    </div>
+                  </div>
+                  <div class="inv-0001234-frame">
+                    <div class="inv-00012346">ID 123456789</div>
+                  </div>
+                  <div class="icon6">
+                    <div class="bg4"></div>
+                    <img
+                      class="user-icon4"
+                      loading="lazy"
+                      alt=""
+                      src="{{url_for("static", path="/public/user-1.svg")}}"
+                    />
+                  </div>
+                  <div class="frame-parent3">
+                    <div class="inv-0001234-parent1">
+                      <div class="inv-00012347">Class</div>
+                      <div class="vii-a3">VII A</div>
+                    </div>
+                    <div class="date-frame">
+                      <div class="date3">$ 50,036</div>
+                    </div>
+                  </div>
+                  <div class="list-items-inner1">
+                    <div class="print-container">
+                      <img
+                        class="print-icon3"
+                        loading="lazy"
+                        alt=""
+                        src="{{url_for("static", path="/public/print.svg")}}"
+                      />
+
+                      <img
+                        class="dots-icon3"
+                        loading="lazy"
+                        alt=""
+                        src="{{url_for("static", path="/public/dots.svg")}}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="list-items4">
+                  <div class="background8"></div>
+                  <div class="profilepicture-parent1">
+                    <div class="profilepicture4">
+                      <div class="placeholder4"></div>
+                    </div>
+                    <div class="nadila-adja-wrapper">
+                      <div class="nadila-adja">Nadila Adja</div>
+                    </div>
+                  </div>
+                  <div class="inv-0001234-wrapper1">
+                    <div class="inv-00012348">ID 123456789</div>
+                  </div>
+                  <div class="icon-parent">
+                    <div class="icon7">
+                      <div class="bg5"></div>
+                      <img
+                        class="user-icon5"
+                        loading="lazy"
+                        alt=""
+                        src="{{url_for("static", path="/public/user-1.svg")}}"
+                      />
+                    </div>
+                    <div class="user-class">
+                      <div class="inv-00012349">Class</div>
+                      <div class="vii-a4">VII A</div>
+                    </div>
+                  </div>
+                  <div class="date-wrapper1">
+                    <div class="date4">$ 50,036</div>
+                  </div>
+                  <div class="list-items-inner2">
+                    <div class="print-parent1">
+                      <img
+                        class="print-icon4"
+                        loading="lazy"
+                        alt=""
+                        src="{{url_for("static", path="/public/print.svg")}}"
+                      />
+
+                      <img class="dots-icon4" alt="" src="{{url_for("static", path="/public/dots.svg")}}" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination">
+                <div class="pagination-content">
+                  <div class="data-summary">
+                    <div class="showing-1-5-from-container">
+                      <span>Showing </span>
+                      <span class="span">1-5 </span>
+                      <span>from</span>
+                      <span class="span1"> 100 </span>
+                      <span>data</span>
+                    </div>
+                  </div>
+                  <div class="pagination-controls">
+                    <div class="control-items">
+                      <img
+                        class="dropdown-icon"
+                        loading="lazy"
+                        alt=""
+                        src="{{url_for("static", path="/public/dropdown@2xpng")}}"
+                      />
+                    </div>
+                    <div class="dropdown-parent">
+                      <div class="selectedpage"></div>
+                      <div class="div5">1</div>
+                    </div>
+                    <div class="control-items1">
+                      <div class="background9"></div>
+                      <div class="div6">2</div>
+                    </div>
+                    <div class="control-items2">
+                      <div class="background10"></div>
+                      <div class="div7">3</div>
+                    </div>
+                    <div class="control-items3">
+                      <img
+                        class="dropdown-icon1"
+                        loading="lazy"
+                        alt=""
+                        src="{{url_for("static", path="/public/dropdown-1@2x.png")}}"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="right-menu">
+        <div class="bg6"></div>
+        <div class="wrapper-notification-parent">
+          <div class="wrapper-notification">
+            <img
+              class="notification-icon"
+              loading="lazy"
+              alt=""
+              src="./public/notification.svg"
+            />
+          </div>
+          <div class="setting-wrapper">
+            <div class="setting">
+              <div class="bg7"></div>
+              <img class="gear-icon" alt="" src="{{url_for("static", path="/public/gear.svg")}}" />
+            </div>
+          </div>
+          <div class="frame-wrapper1">
+            <div class="nabila-a-parent">
+              <div class="nabila-a">Nabila A.</div>
+              <div class="admin-wrapper">
+                <div class="admin">Admin</div>
+              </div>
+            </div>
+          </div>
+          <div class="placeholder5"></div>
+        </div>
+        <div class="right-menu-container">
+          <div class="recent-students-container">
+            <div class="recent-students-header">
+              <b class="recent-students">Recent Students</b>
+              <div class="you-have-456-container">
+                <span>You have </span>
+                <span class="span2">456</span>
+                <span> students</span>
+              </div>
+            </div>
+            <div class="btncta">
+              <div class="background11"></div>
+              <h3 class="h3">+</h3>
+            </div>
+          </div>
+          <div class="student-list-container">
+            <div class="student-list-parent">
+              <div class="student-list-items">
+                <div class="profilepicture5">
+                  <div class="placeholder6"></div>
+                </div>
+                <div class="student-details-container">
+                  <div class="student-info1">
+                    <div class="samantha-william1">Samantha William</div>
+                    <div class="class-vii-a">Class VII A</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mail-button">
+                <div class="background12"></div>
+                <img class="email-icon" alt="" src="{{url_for("static", path="/public/email.svg")}}" />
+              </div>
+            </div>
+            <div class="student-list-parent1">
+              <div class="profilepicture-parent2">
+                <div class="profilepicture6">
+                  <div class="placeholder7"></div>
+                </div>
+                <div class="frame-wrapper2">
+                  <div class="tony-soap-parent">
+                    <div class="tony-soap1">Tony Soap</div>
+                    <div class="class-vii-a1">Class VII A</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mail-button1">
+                <div class="background13"></div>
+                <img class="email-icon1" alt="" src="{{url_for("static", path="/public/email-1.svg")}}" />
+              </div>
+            </div>
+            <div class="student-list-parent2">
+              <div class="profilepicture-parent3">
+                <div class="profilepicture7">
+                  <div class="placeholder8"></div>
+                </div>
+                <div class="frame-wrapper3">
+                  <div class="karen-hope-parent">
+                    <div class="karen-hope1">Karen Hope</div>
+                    <div class="class-vii-a2">Class VII A</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mail-button2">
+                <div class="background14"></div>
+                <img class="email-icon2" alt="" src="{{url_for("static", path="/public/email.svg")}}" />
+              </div>
+            </div>
+            <div class="student-list-parent3">
+              <div class="profilepicture-parent4">
+                <div class="profilepicture8">
+                  <div class="placeholder9"></div>
+                </div>
+                <div class="frame-wrapper4">
+                  <div class="jordan-nico-parent">
+                    <div class="jordan-nico1">Jordan Nico</div>
+                    <div class="class-vii-b">Class VII B</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mail-button3">
+                <div class="background15"></div>
+                <img class="email-icon3" alt="" src="{{url_for("static", path="/public/email.svg")}}" />
+              </div>
+            </div>
+            <div class="student-list-parent4">
+              <div class="profilepicture-parent5">
+                <div class="profilepicture9">
+                  <div class="placeholder10"></div>
+                </div>
+                <div class="frame-wrapper5">
+                  <div class="nadila-adja-parent">
+                    <div class="nadila-adja1">Nadila Adja</div>
+                    <div class="class-vii-b1">Class VII B</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mail-button4">
+                <div class="background16"></div>
+                <img
+                  class="email-icon4"
+                  loading="lazy"
+                  alt=""
+                  src="{{url_for("static", path="/public/email.svg")}}"
+                />
+              </div>
+            </div>
+            <button class="btnviewmore">
+              <div class="background17"></div>
+              <div class="view-more">View More</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,1753 @@
+.background44 {
+    height: 1325px;
+    width: 468px;
+    position: relative;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .background45 {
+    width: 345px;
+    height: 1255px;
+    position: relative;
+    background-color: #4d44b5;
+    display: none;
+    max-width: 100%;
+  }
+  .logo-child1 {
+    height: 48px;
+    width: 48px;
+    position: relative;
+    border-radius: 16px;
+    background-color: #fb7d5b;
+    display: none;
+  }
+  .a7 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    display: inline-block;
+    min-width: 27px;
+    z-index: 1;
+  }
+  .logo3 {
+    border-radius: 16px;
+    background-color: #fb7d5b;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 10px 0px 11px;
+    z-index: 1;
+  }
+  .akademi7 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    z-index: 1;
+  }
+  .logo-container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 20px 0px 0px;
+    gap: 16px;
+  }
+  .home-icon8 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard54 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 102px;
+  }
+  .dashboard-wrapper40 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .dashboard53 {
+    align-self: stretch;
+    filter: drop-shadow(0px 20px 50px rgba(191, 21, 108, 0.05));
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 24px;
+    gap: 24px;
+  }
+  .student-icon8 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .email11 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    min-width: 81px;
+  }
+  .email-wrapper6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .students11 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .teacher-icon8 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .contact10 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 84px;
+  }
+  .contact-wrapper6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .teachers9 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .calendar-icon9 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .crypto7 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 50px;
+  }
+  .crypto-wrapper5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .event8 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .finance-icon8 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard55 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 72px;
+  }
+  .dashboard-wrapper41 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .finance8 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .food-icon7 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard56 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 45px;
+  }
+  .dashboard-wrapper42 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .food9 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    background-color: #f3f4ff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+    color: #4d44b5;
+  }
+  .user-icon13 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard57 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 41px;
+  }
+  .dashboard-wrapper43 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .user9 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .activity-icon8 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard58 {
+    position: relative;
+    font-weight: 500;
+  }
+  .dashboard-wrapper44 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .activity8 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .list9 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    z-index: 1;
+    font-size: 18px;
+    color: #c1bbeb;
+  }
+  .side-menu8 {
+    width: 345px;
+    background-color: #4d44b5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 0px 481px 46px;
+    box-sizing: border-box;
+    gap: 46px;
+    max-width: 100%;
+  }
+  .teacher-details1 {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+  .search-icon4 {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 32px;
+  }
+  .search-here4 {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    min-width: 120px;
+    white-space: nowrap;
+  }
+  .search-placeholder-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2.5px 0px 0px;
+  }
+  .search-input-wrapper1 {
+    border-radius: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 32px;
+    gap: 16px;
+  }
+  .search-bar8 {
+    flex: 1;
+    border-radius: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .notification-icon7 {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    transform: scale(2.667);
+  }
+  .wrapper-notification6 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bg19 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    box-shadow: 0px 20px 50px rgba(191, 21, 108, 0.05);
+    border-radius: 40px;
+    background-color: #fff;
+    display: none;
+  }
+  .gear-icon6 {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .setting6 {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 20px 50px rgba(191, 21, 108, 0.05);
+    border-radius: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px;
+    box-sizing: border-box;
+  }
+  .setting-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 5px 0px 0px;
+  }
+  .nabila-a6 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 64px;
+    white-space: nowrap;
+  }
+  .admin6 {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    min-width: 46px;
+  }
+  .user-role-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 18px;
+    color: #a098ae;
+  }
+  .user-name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+  .user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 7px 4px 0px 0px;
+  }
+  .placeholder55 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #c1bbeb;
+  }
+  .wrapper-notification-parent1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 14px;
+    color: #303972;
+  }
+  .toolbar {
+    align-self: stretch;
+    width: 727px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 64px;
+    max-width: 100%;
+    font-size: 18px;
+    color: #a098ae;
+  }
+  .page-title {
+    align-self: stretch;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 20px;
+    text-align: left;
+    font-size: 36px;
+    color: #303972;
+    font-family: Poppins;
+  }
+  .background46 {
+    align-self: stretch;
+    height: 1065px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+  }
+  .dots-icon18 {
+    position: absolute;
+    top: 172px;
+    left: 951px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .cover-icon1 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: contain;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    transform: scale(1.714);
+  }
+  .wrapper-cover1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1017px;
+    height: 140px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .placeholder56 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 100px;
+    background-color: #c1bbeb;
+    border: 8px solid #fff;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .avatar1 {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    border-radius: 100px;
+    background-color: #c1bbeb;
+    border: 8px solid #fff;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+  }
+  .dots-parent {
+    align-self: stretch;
+    height: 232px;
+    position: relative;
+  }
+  .title15 {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+    z-index: 1;
+  }
+  .title16 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: #a098ae;
+    z-index: 1;
+  }
+  .teacher-title-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .bg20 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 40px;
+    background-color: #fb7d5b;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .location-icon2 {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .icon17 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #fb7d5b;
+    z-index: 1;
+  }
+  .title17 {
+    position: relative;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .contact-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .contact-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .placeholder57 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 40px;
+    background-color: #fb7d5b;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .call-icon7 {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    top: 20%;
+    right: 20%;
+    bottom: 20%;
+    left: 20%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    z-index: 1;
+  }
+  .phone9 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #fb7d5b;
+    z-index: 1;
+  }
+  .div19 {
+    position: relative;
+    font-weight: 600;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .wrapper5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .contact-icons1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .placeholder58 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    border-radius: 40px;
+    background-color: #fb7d5b;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .email-icon17 {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    top: 20%;
+    right: 20%;
+    bottom: 20%;
+    left: 20%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    z-index: 1;
+  }
+  .mail7 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #fb7d5b;
+    z-index: 1;
+  }
+  .historiamailcom {
+    position: relative;
+    font-weight: 600;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .historiamailcom-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .contact-icons2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .contact-info3 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 46.5px;
+    font-size: 18px;
+  }
+  .teacher-titles {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 12px;
+    gap: 40px;
+    font-size: 32px;
+  }
+  .about {
+    position: relative;
+    display: inline-block;
+    min-width: 83px;
+    z-index: 1;
+  }
+  .lorem-ipsum-dolor7 {
+    align-self: stretch;
+    position: relative;
+    font-size: 18px;
+    text-align: justify;
+    z-index: 1;
+  }
+  .about-parent {
+    width: 616px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .education {
+    position: relative;
+    z-index: 1;
+  }
+  .history-major-university-akad {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 24px;
+  }
+  .history-major-university-container {
+    align-self: stretch;
+    position: relative;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .degree {
+    position: relative;
+    display: inline-block;
+    min-width: 86px;
+    z-index: 1;
+  }
+  .separator {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 27px;
+    color: #a098ae;
+  }
+  .education-entries {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 9px;
+    text-align: justify;
+    font-size: 18px;
+  }
+  .education-details {
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 6px;
+    box-sizing: border-box;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .master-of-history-university {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 24px;
+  }
+  .master-of-history-container {
+    align-self: stretch;
+    position: relative;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .master-degree-year {
+    position: relative;
+    display: inline-block;
+    min-width: 91px;
+    z-index: 1;
+  }
+  .master-separator {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 27px;
+    color: #a098ae;
+  }
+  .master-degree-entry {
+    width: 444px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 9px;
+    max-width: 100%;
+    text-align: justify;
+    font-size: 18px;
+  }
+  .expertise {
+    position: relative;
+    display: inline-block;
+    min-width: 121px;
+    z-index: 1;
+  }
+  .world-history-philosophy {
+    align-self: stretch;
+    position: relative;
+    font-size: 18px;
+    text-align: justify;
+    z-index: 1;
+  }
+  .expertise-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .education-details-parent {
+    width: 616px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 31px;
+    max-width: 100%;
+  }
+  .teacher-titles-parent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 28px;
+    max-width: 100%;
+  }
+  .teacher-data {
+    width: 798px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 32px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .teacher-details2 {
+    flex: 1;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 93px;
+    box-sizing: border-box;
+    gap: 24px;
+    max-width: 100%;
+  }
+  .background47 {
+    width: 386px;
+    height: 129px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .schedule-details {
+    position: relative;
+    z-index: 1;
+  }
+  .thursday-10th-april {
+    position: relative;
+    font-size: 14px;
+    color: #a098ae;
+    z-index: 1;
+  }
+  .schedule {
+    align-self: stretch;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 32px 20px 32px 32px;
+    box-sizing: border-box;
+    gap: 8px;
+    max-width: 100%;
+    font-size: 24px;
+  }
+  .background48 {
+    align-self: stretch;
+    width: 386px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .statuscolor {
+    align-self: stretch;
+    width: 24px;
+    position: relative;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #4d44b5;
+    z-index: 1;
+  }
+  .world-history {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 124px;
+    z-index: 1;
+  }
+  .class-vii-b3 {
+    position: relative;
+    font-size: 14px;
+    color: #a098ae;
+    display: inline-block;
+    min-width: 75px;
+    z-index: 1;
+  }
+  .subject-and-class {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 29px 0px 0px;
+    gap: 5px;
+  }
+  .calendar-icon10 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .march-20-2021 {
+    position: relative;
+    display: inline-block;
+    min-width: 101px;
+    z-index: 1;
+  }
+  .schedule-dates {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .date-time-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 12px 0px 0px;
+    gap: 16px;
+  }
+  .clock-icon {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .am {
+    position: relative;
+    display: inline-block;
+    min-width: 113px;
+    z-index: 1;
+  }
+  .schedule-times {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .time-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .schedule-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .class-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 27px;
+  }
+  .class-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 0px 23px;
+  }
+  .schedule-1 {
+    align-self: stretch;
+    flex: 1;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 24px;
+    max-width: 100%;
+  }
+  .background49 {
+    align-self: stretch;
+    width: 386px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .statuscolor1 {
+    align-self: stretch;
+    width: 24px;
+    position: relative;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #fb7d5b;
+    z-index: 1;
+  }
+  .ancient-history {
+    position: relative;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .class-vii-a6 {
+    position: relative;
+    font-size: 14px;
+    color: #a098ae;
+    display: inline-block;
+    min-width: 76px;
+    z-index: 1;
+  }
+  .ancient-history-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 13px 0px 0px;
+    gap: 5px;
+  }
+  .calendar-icon11 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .march-20-20211 {
+    position: relative;
+    display: inline-block;
+    min-width: 101px;
+    z-index: 1;
+  }
+  .march-20-2021-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .calendar-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 12px 0px 0px;
+    gap: 16px;
+  }
+  .clock-icon1 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .am1 {
+    position: relative;
+    display: inline-block;
+    min-width: 113px;
+    z-index: 1;
+  }
+  .am-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .clock-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .frame-parent25 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .frame-parent24 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 27px;
+  }
+  .schedule-2-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 0px 23px;
+  }
+  .schedule-2 {
+    align-self: stretch;
+    height: 183px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 24px;
+    max-width: 100%;
+  }
+  .background50 {
+    align-self: stretch;
+    width: 386px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .statuscolor2 {
+    align-self: stretch;
+    width: 24px;
+    position: relative;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #fcc43e;
+    z-index: 1;
+  }
+  .culture {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 68px;
+    z-index: 1;
+  }
+  .class-viii-a {
+    position: relative;
+    font-size: 14px;
+    color: #a098ae;
+    display: inline-block;
+    min-width: 80px;
+    z-index: 1;
+  }
+  .culture-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 20px 0px 0px;
+    gap: 5px;
+  }
+  .calendar-icon12 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .march-20-20212 {
+    position: relative;
+    display: inline-block;
+    min-width: 101px;
+    z-index: 1;
+  }
+  .march-20-2021-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .calendar-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 12px 0px 0px;
+    gap: 16px;
+  }
+  .clock-icon2 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .am2 {
+    position: relative;
+    display: inline-block;
+    min-width: 113px;
+    z-index: 1;
+  }
+  .am-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .clock-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .frame-parent27 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .frame-parent26 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 27px;
+  }
+  .schedule-3-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 0px 23px;
+  }
+  .schedule-3 {
+    align-self: stretch;
+    height: 183px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 24px;
+    max-width: 100%;
+  }
+  .background51 {
+    align-self: stretch;
+    width: 386px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+    max-width: 100%;
+  }
+  .statuscolor3 {
+    align-self: stretch;
+    width: 24px;
+    position: relative;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #303972;
+    z-index: 1;
+  }
+  .world-history1 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 124px;
+    z-index: 1;
+  }
+  .class-vii-c1 {
+    position: relative;
+    font-size: 14px;
+    color: #a098ae;
+    display: inline-block;
+    min-width: 77px;
+    z-index: 1;
+  }
+  .world-history-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 29px 0px 0px;
+    gap: 5px;
+  }
+  .calendar-icon13 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .march-20-20213 {
+    position: relative;
+    display: inline-block;
+    min-width: 101px;
+    z-index: 1;
+  }
+  .march-20-2021-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .calendar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 12px 0px 0px;
+    gap: 16px;
+  }
+  .clock-icon3 {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 1;
+  }
+  .am3 {
+    position: relative;
+    display: inline-block;
+    min-width: 113px;
+    z-index: 1;
+  }
+  .am-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5px 0px 0px;
+  }
+  .clock-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .frame-parent29 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    color: #a098ae;
+  }
+  .frame-parent28 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 27px;
+  }
+  .schedule-4-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 0px 23px;
+  }
+  .schedule-4 {
+    align-self: stretch;
+    height: 183px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 24px;
+    max-width: 100%;
+  }
+  .schedule-list {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    max-width: 100%;
+  }
+  .background52 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 40px;
+    background-color: rgba(77, 68, 181, 0.1);
+  }
+  .view-more4 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Poppins;
+    color: #4d44b5;
+    text-align: left;
+    display: inline-block;
+    min-width: 95px;
+    z-index: 1;
+  }
+  .btnviewmore4 {
+    cursor: pointer;
+    border: none;
+    padding: 17px 20px 16px 21px;
+    background-color: transparent;
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    white-space: nowrap;
+  }
+  .schedule-list-parent {
+    height: 1065px;
+    width: 386px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 48px;
+    min-width: 386px;
+    max-width: 100%;
+    font-size: 18px;
+  }
+  .teacher-info {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 72px;
+    max-width: 100%;
+  }
+  .header3 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    max-width: 100%;
+    text-align: left;
+    font-size: 24px;
+    color: #303972;
+    font-family: Poppins;
+  }
+  .content8 {
+    width: 1475px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 0px 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .teacher-details {
+    width: 100%;
+    position: relative;
+    background-color: #f3f4ff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 36px;
+    color: #fff;
+    font-family: Poppins;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .teacher-details {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1350px) {
+    .side-menu8 {
+      padding-top: 32px;
+      padding-bottom: 313px;
+      box-sizing: border-box;
+    }
+  
+    .user-name-container {
+      display: none;
+    }
+  
+    .teacher-details2 {
+      padding-bottom: 60px;
+      box-sizing: border-box;
+    }
+  
+    .schedule-list-parent {
+      flex: 1;
+    }
+  
+    .teacher-info {
+      flex-wrap: wrap;
+    }
+  
+    .content8 {
+      padding-top: 32px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .a7 {
+      font-size: 29px;
+    }
+  
+    .akademi7 {
+      font-size: 29px;
+    }
+  
+    .side-menu8 {
+      padding-top: 21px;
+      padding-bottom: 203px;
+      box-sizing: border-box;
+    }
+  
+    .toolbar {
+      gap: 32px;
+    }
+  
+    .title15 {
+      font-size: 26px;
+    }
+  
+    .contact-info3 {
+      flex-wrap: wrap;
+      gap: 23px;
+    }
+  
+    .teacher-titles {
+      gap: 20px;
+    }
+  
+    .education-details-parent {
+      gap: 15px;
+    }
+  
+    .teacher-details2 {
+      padding-bottom: 39px;
+      box-sizing: border-box;
+      min-width: 100%;
+    }
+  
+    .teacher-info {
+      gap: 36px;
+    }
+  
+    .header3 {
+      gap: 20px;
+    }
+  
+    .content8 {
+      padding-top: 21px;
+      box-sizing: border-box;
+    }
+  
+    .teacher-details {
+      gap: 25px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .a7 {
+      font-size: 22px;
+    }
+  
+    .akademi7 {
+      font-size: 22px;
+    }
+  
+    .side-menu8 {
+      gap: 23px;
+      padding-left: 20px;
+      box-sizing: border-box;
+    }
+  
+    .toolbar {
+      gap: 16px;
+    }
+  
+    .title15 {
+      font-size: 19px;
+    }
+  
+    .about {
+      font-size: 19px;
+    }
+  
+    .education {
+      font-size: 19px;
+    }
+  
+    .expertise {
+      font-size: 19px;
+    }
+  
+    .schedule-details {
+      font-size: 19px;
+    }
+  
+    .schedule-list-parent {
+      gap: 24px;
+      min-width: 100%;
+    }
+  
+    .teacher-info {
+      gap: 18px;
+    }
+  }
+  

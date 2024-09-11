@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{url_for("static", path="/css/exam_list.css")}}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mountains of Christmas:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <script type="module">
+      import { createExamList } from './static/js/sidebar.js';
+      document.body.appendChild(createExamList());
+    </script>
+      <main class="content5">
+        <section class="header1">
+          <header class="search-bar-container">
+            <a class="food6">Food</a>
+            <div class="search-bar6">
+              <div class="search-bar7">
+                <div class="search-icon-container">
+                  <img class="search-icon3" alt="" src="{{url_for("static", path="/public/search.svg")}}" />
+
+                  <div class="search-placeholder-container">
+                    <a class="search-here3">Search here...</a>
+                  </div>
+                </div>
+              </div>
+              <div class="actions">
+                <div class="wrapper-notification4">
+                  <img
+                    class="notification-icon5"
+                    loading="lazy"
+                    alt=""
+                    src="{{url_for("static", path="/public/notification.svg")}}"
+                  />
+                </div>
+                <div class="settings-icon-container">
+                  <div class="setting4">
+                    <div class="bg14"></div>
+                    <img
+                      class="gear-icon4"
+                      loading="lazy"
+                      alt=""
+                      src="{{url_for("static", path="/public/gear.svg")}}"
+                    />
+                  </div>
+                </div>
+                <div class="profile2">
+                  <div class="profile-info2">
+                    <div class="nabila-a4">Nabila A.</div>
+                    <div class="profile-role-container">
+                      <div class="admin4">Admin</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="placeholder45"></div>
+              </div>
+            </div>
+          </header>
+          <div class=>
+            <button class="new-student-button">
+              <div class="wrapper">
+                <img class="icon9" alt="" src="./public/.svg" />
+              </div>
+              <div class="new-student">New Student</div>
+            </button>
+            <button class="new-student-button">
+              <div class="wrapper">
+                <img class="icon9" alt="" src="./public/.svg" />
+              </div>
+              <div class="new-student">New Student</div>
+            </button>
+            <button class="new-student-button">
+              <div class="wrapper">
+                <img class="icon9" alt="" src="./public/.svg" />
+              </div>
+              <div class="new-student">New Student</div>
+            </button>
+          </div>
+          <div class="contetnt">
+            <div class="background39"></div>
+            <div class="showing-1-5-from-container2">
+              <span>Showing </span>
+              <span class="span14">1-5 </span>
+              <span>from</span>
+              <span class="span15"> 100 </span>
+              <span>data</span>
+            </div>
+            <div class="data-separator"></div>
+            <div class="exam-header">
+              <b class="exams">Exams</b>
+              <div class="exam-filter">
+                <div class="menu-filter">
+                  <div class="all-menus">All Menus</div>
+                  <div class="breakfast">Breakfast</div>
+                  <div class="lunch">Lunch</div>
+                  <div class="snack">Snack</div>
+                </div>
+              </div>
+            </div>
+            <div class="exam-content">
+              <div class="exam-list-container">
+                <div class="exam-list-header">
+                  <div class="exam-list-header-items">
+                    <div class="exam-list-header-columns">
+                      <div class="exam-list-header-column-names"></div>
+                      <div class="exam-list-header-column-names1"></div>
+                      <div class="exam-list-header-column-names2"></div>
+                    </div>
+                  </div>
+                  <div class="exam-list-separator"></div>
+                </div>
+              </div>
+              <div class="exam-list-item">
+                <img
+                  class="exam-list-item-child"
+                  loading="lazy"
+                  alt=""
+                  src="./public/arrow-1.svg"
+                />
+
+                <div class="exam-list-item-content">
+                  <div class="exam-list-item-details">
+                    <div class="exam-list-item-title">
+                      <div class="placeholder46"></div>
+                      <div class="exam-list-item-name">
+                        <b class="beef-steak-with"
+                          >Beef Steak with Fried Potato</b
+                        >
+                      </div>
+                    </div>
+                    <div class="exam-list-item-rating">
+                      <div class="exam-list-item-rating-stars">
+                        <div class="exam-list-item-star">
+                          <img
+                            class="star-icon"
+                            loading="lazy"
+                            alt=""
+                            src="{{url_for("static", path="/public/star-1.svg")}}"
+                          />
+                        </div>
+                        <b class="exam-list-item1">4.9</b>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="exam-list-item-stats">
+                    <div class="exam-list-item-stats-container">
+                      <div class="exam-list-item-students">
+                        <img
+                          class="chart-icon1"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for("static", path="/public/chart1.svg")}}"
+                        />
+                      </div>
+                      <div class="exam-list-item-students-label">
+                        <b class="student-chart-value">1.456</b>
+                        <div class="total-students">Total Students</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="exam-list-item-interest">
+                    <div class="exam-list-item-interest-contai">
+                      <div class="exam-list-item-interest-chart">
+                        <b class="interest-chart-value">26%</b>
+                        <div class="exam-list-item-interest-label">
+                          <div class="interest">Interest</div>
+                        </div>
+                      </div>
+                      <div class="exam-list-item-interest-bars">
+                        <div class="circle-bar">
+                          <img
+                            class="circle-bar-icon"
+                            loading="lazy"
+                            alt=""
+                            src="{{url_for("static", path="/public/circle-bar.svg")}}"
+                          />
+
+                          <div class="interest-bar-value">50%</div>
+                        </div>
+                      </div>
+                      <div class="exam-list-item-interest-dots">
+                        <img
+                          class="dots-icon13"
+                          loading="lazy"
+                          alt=""
+                          src="{{url_for("static", path="/public/dots.svg")}}"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="exam-content-child"></div>
+            </div>
+            <div class="recommendations">
+              <div class="recommendation-items">
+                <div class="recommendation-item-containers">
+                  <div class="recommendation-item-names">
+                    <div class="placeholder47"></div>
+                    <div class="recommendation-item-names-fill">
+                      <b class="pancake-with-honey">Pancake with Honey</b>
+                    </div>
+                  </div>
+                  <div class="recommendation-item-ratings">
+                    <div class="recommendation-item-rating-sta">
+                      <div class="recommendation-item-stars">
+                        <img
+                          class="recommendation-item-star-icons"
+                          alt=""
+                          src="{{url_for("static", path="/public/star-1.svg")}}"
+                        />
+                      </div>
+                      <b class="recommendation-item-rating">4.7</b>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommendation-item-containers1">
+                  <div class="placeholder-parent1">
+                    <div class="placeholder48"></div>
+                    <div class="japanese-beef-ramen-wrapper">
+                      <b class="japanese-beef-ramen">Japanese Beef Ramen</b>
+                    </div>
+                  </div>
+                  <div class="recommendation-item-containers-inner">
+                    <div class="frame-parent18">
+                      <div class="star-wrapper">
+                        <img
+                          class="frame-child2"
+                          alt=""
+                          src="{{url_for("static", path="/public/star-1.svg")}}"
+                        />
+                      </div>
+                      <b class="b5">4.8</b>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommendation-item-containers2">
+                  <div class="placeholder-parent2">
+                    <div class="placeholder49"></div>
+                    <div class="mixed-salad-wrapper">
+                      <b class="mixed-salad">Mixed Salad</b>
+                    </div>
+                  </div>
+                  <div class="recommendation-item-containers-child">
+                    <div class="frame-parent19">
+                      <div class="star-container">
+                        <img
+                          class="frame-child3"
+                          alt=""
+                          src="{{url_for("static", path="/public/star-1.svg")}}"
+                        />
+                      </div>
+                      <b class="b6">4.2</b>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommendation-item-containers3">
+                  <div class="placeholder50"></div>
+                  <div class="beef-meatball-with-vegetable-wrapper">
+                    <b class="beef-meatball-with"
+                      >Beef Meatball with Vegetable</b
+                    >
+                  </div>
+                  <div class="recommendation-item-star-conta">
+                    <div class="recommendation-item-star-conta1">
+                      <div class="recommendation-item-single-sta">
+                        <img
+                          class="recommendation-item-single-sta1"
+                          alt=""
+                          src="{{url_for("static", path="/public/star-1.svg")}}"
+                        />
+                      </div>
+                      <b class="recommendation-item-single">4.5</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="recommendation-item-stats">
+                <div class="recommendation-item-stats-cont">
+                  <div class="recommendation-item-students">
+                    <img
+                      class="recommendation-item-students-child"
+                      alt=""
+                      src="{{url_for("static", path="/public/arrow-1.svg")}}"
+                    />
+
+                    <div class="chart-details">
+                      <div class="total-students1">
+                        <div class="students-chart">
+                          <img
+                            class="chart-icon2"
+                            alt=""
+                            src="{{url_for("static", path="/public/chart1.svg")}}"
+                          />
+                        </div>
+                        <div class="students-total">
+                          <b class="count-label">1.456</b>
+                          <div class="total-students2">Total Students</div>
+                        </div>
+                      </div>
+                      <div class="interest-label-parent">
+                        <b class="interest-label">26%</b>
+                        <div class="interest-title">
+                          <div class="interest1">Interest</div>
+                        </div>
+                      </div>
+                      <div class="circle-bar-wrapper">
+                        <div class="circle-bar1">
+                          <img
+                            class="circle-bar-icon1"
+                            alt=""
+                            src="{{url_for("static", path="/public/circle-bar.svg")}}"
+                          />
+
+                          <div class="chart-label">50%</div>
+                        </div>
+                      </div>
+                      <div class="dots-menu">
+                        <img
+                          class="dots-icon14"
+                          alt=""
+                          src="{{url_for("static", path="/public/dots.svg")}}"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="metrics-comparison-parent">
+                    <div class="metrics-comparison">
+                      <img
+                        class="metrics-comparison-child"
+                        alt=""
+                        src="./public/arrow-1.svg"
+                      />
+
+                      <div class="order-comparison">
+                        <div class="order-charts">
+                          <div class="order-chart-icons">
+                            <img
+                              class="chart-icon3"
+                              alt=""
+                              src="{{url_for("static", path="/public/chart1.svg")}}"
+                            />
+                          </div>
+                          <div class="order-total-labels">
+                            <b class="order-count-label">1.456</b>
+                            <div class="total-order">Total Order</div>
+                          </div>
+                        </div>
+                        <div class="interest-comparison">
+                          <b class="interest-count-label">26%</b>
+                          <div class="interest-title-comparison">
+                            <div class="interest2">Interest</div>
+                          </div>
+                        </div>
+                        <div class="interest-chart-comparison">
+                          <div class="circle-bar-comparison">
+                            <div class="circle-bar2">
+                              <img
+                                class="circle-bar-icon2"
+                                alt=""
+                                src="{{url_for("static", path="/public/circle-bar.svg")}}"
+                              />
+
+                              <div class="interest-chart-label">50%</div>
+                            </div>
+                            <div class="dots-comparison">
+                              <img
+                                class="dots-icon15"
+                                alt=""
+                                src="{{url_for("static", path="/public/dots.svg")}}"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="metrics-comparison1">
+                      <img
+                        class="metrics-comparison-item"
+                        alt=""
+                        src="./public/arrow-1.svg"
+                      />
+
+                      <div class="frame-parent20">
+                        <div class="frame-parent21">
+                          <div class="chart-wrapper">
+                            <img
+                              class="chart-icon4"
+                              alt=""
+                              src="{{url_for("static", path="/public/chart1.svg")}}"
+                            />
+                          </div>
+                          <div class="group">
+                            <b class="b7">1.456</b>
+                            <div class="total-order1">Total Order</div>
+                          </div>
+                        </div>
+                        <div class="parent1">
+                          <b class="b8">26%</b>
+                          <div class="interest-wrapper">
+                            <div class="interest3">Interest</div>
+                          </div>
+                        </div>
+                        <div class="frame-wrapper14">
+                          <div class="circle-bar-parent">
+                            <div class="circle-bar3">
+                              <img
+                                class="circle-bar-icon3"
+                                alt=""
+                                src="{{url_for("static", path="/public/circle-bar.svg")}}"
+                              />
+
+                              <div class="div16">50%</div>
+                            </div>
+                            <div class="dots-wrapper4">
+                              <img
+                                class="dots-icon16"
+                                alt=""
+                                src="{{url_for("static", path="/public/dots.svg")}}"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="total-orders-parent">
+                      <div class="total-orders">
+                        <div class="order-chart">
+                          <img
+                            class="chart-icon5"
+                            alt=""
+                            src="{{url_for("static", path="/public/chart1.svg")}}"
+                          />
+                        </div>
+                        <div class="order-total">
+                          <b class="order-count">1.456</b>
+                          <div class="total-order2">Total Order</div>
+                        </div>
+                      </div>
+                      <div class="interest-and-dropdown">
+                        <div class="interest-dropdown">
+                          <b class="interest-dropdown-label">26%</b>
+                          <div class="dropdown-title">
+                            <div class="interest-dropdown-content-parent">
+                              <div class="interest-dropdown-content">
+                                <div class="interest-parent">
+                                  <div class="interest4">Interest</div>
+                                  <div class="dropdown-icon-container">
+                                    <img
+                                      class="dropdown-icon5"
+                                      loading="lazy"
+                                      alt=""
+                                      src="{{url_for("static", path="/public/dropdown@2x.png")}}"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="placeholder51">
+                                <div class="selectedpage2"></div>
+                                <div class="placeholder-label">1</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-comparison">
+                          <div class="background40"></div>
+                          <div class="placeholder52">2</div>
+                          <div class="circle-bar4">
+                            <img
+                              class="circle-bar-icon4"
+                              alt=""
+                              src=".{{url_for("static", path="/public/circle-bar.svg")}}"
+                            />
+
+                            <div class="dropdown-chart-label">50%</div>
+                          </div>
+                        </div>
+                        <div class="dropdown-comparison1">
+                          <div class="background41"></div>
+                          <div class="div17">3</div>
+                        </div>
+                        <div class="dots-and-dropdown-wrapper">
+                          <div class="dots-and-dropdown">
+                            <img
+                              class="dropdown-icon6"
+                              alt=""
+                              src="./public/dropdown-1@2x.png"
+                            />
+
+                            <img
+                              class="dots-icon17"
+                              alt=""
+                              src="./public/dots.svg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <img
+                        class="arrow-icon"
+                        alt=""
+                        src="./public/arrow-1.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+</html>

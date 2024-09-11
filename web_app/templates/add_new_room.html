@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{url_for("static", path="/css/add_new_room.css")}}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mountains of Christmas:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="add-new-room">
+      <div class="side-menu10">
+        <div class="background63"></div>
+        <div class="side-menu-inner2">
+          <div class="frame-parent37">
+            <div class="rectangle-parent4">
+              <div class="frame-child7"></div>
+              <a class="a9">A</a>
+            </div>
+            <a class="akademi9">AIS</a>
+          </div>
+        </div>
+        <div class="content10">
+          <div class="list12">
+            <div class="dashboard66">
+              <img
+                class="home-icon10"
+                loading="lazy"
+                alt=""
+                src="{{url_for("static", path="/public/home1.svg")}}"
+              />
+
+              <div class="dashboard-wrapper50">
+                <a class="dashboard67" href="{{url_for("dashboard")}}">Dashboard</a>
+              </div>
+            </div>
+            <div class="students13">
+              <img
+                class="student-icon10"
+                loading="lazy"
+                alt=""
+                src="{{url_for("static", path="/public/student.svg")}}"
+              />
+
+              <div class="email-wrapper8">
+                <a class="email14" href="{{url_for("student_list")}}">Students</a>
+              </div>
+            </div>
+            <div class="teachers11">
+              <img
+                class="teacher-icon10"
+                loading="lazy"
+                alt=""
+                src="./public/teacher1.svg"
+              />
+
+              <div class="contact-wrapper8">
+                <a class="contact12" href="{{url_for("teacher_details")}}">Lecturers</a>
+              </div>
+            </div>
+            <div class="event10">
+              <img
+                class="calendar-icon19"
+                loading="lazy"
+                alt=""
+                src="{{url_for("static", path="/public/calender.svg")}}"
+              />
+
+              <div class="crypto-wrapper7">
+                <div class=crypto9>
+                <a class="contact12" href="{{url_for("exam_list")}}">Exams</a>
+                </div></div>
+            </div>
+            <div class="finance10">
+              <img
+                class="finance-icon10"
+                loading="lazy"
+                alt=""
+                src="{{url_for("static", path="/public/finance.svg")}}"
+              />
+
+              <div class="dashboard-wrapper51">
+                <div class="dashboard68">Finance</div>
+              </div>
+            </div>
+            <div class="food11">
+              <img
+                class="food-icon9"
+                loading="lazy"
+                alt=""
+                src="{{url_for("static", path="/public/food.svg")}}"
+              />
+
+              <div class="dashboard-wrapper52">
+                <div class="dashboard69">Food</div>
+              </div>
+            </div>
+            <div class="user11">
+              <img
+                class="user-icon16"
+                loading="lazy"
+                alt=""
+                src="{{url_for("static", path="/public/user.svg")}}"
+              />
+
+              <div class="dashboard-wrapper53">
+                <div class="dashboard70">User</div>
+              </div>
+            </div>
+            <div class="chat5">
+              <img
+                class="chat-icon5"
+                loading="lazy"
+                alt=""
+                src="{{url_for("static", path="/public/chat.svg")}}"
+              />
+
+              <div class="dashboard-wrapper54">
+                <div class="dashboard71">Chat</div>
+              </div>
+            </div>
+            <div class="activity10">
+              <img
+                class="activity-icon10"
+                loading="lazy"
+                alt=""
+                src="{{url_for("static", path="/public/activity.svg")}}"
+              />
+
+              <div class="dashboard-wrapper55">
+                <div class="dashboard72">Lastest Activity</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="main1">
+        <section class="room-creation">
+          <h1 class="create-room">Create Room</h1>
+          <div class="room-form">
+            <div class="student-details12">
+              <div class="bg24"></div>
+              <div class="title21">
+                <div class="title-child2"></div>
+              </div>
+              <div class="details-rows-wrapper">
+                <div class="details-rows">
+                  <div class="name4">Name *</div>
+                  <div class="details-inputs">
+                    <div class="form48">
+                      <div class="form49"></div>
+                      <input
+                        class="samantha4"
+                        placeholder="Samantha"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="last-name2"></div>
+              <div class="student-details-inner5">
+                <div class="building-parent">
+                  <div class="building">Building</div>
+                  <div class="form50">
+                    <div class="form51"></div>
+                    <input
+                      class="februari-19973"
+                      placeholder="24 Februari 1997"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="student-details-inner6">
+                <div class="capacity-parent">
+                  <div class="capacity">Capacity</div>
+                  <div class="form52">
+                    <div class="form53"></div>
+                    <input
+                      class="williammailcom3"
+                      placeholder="william@mail.com"
+                      type="text"
+                    />
+                  </div>
+                  <div class="submission">
+                    <button class="submit-button3">
+                      <div class="submit4">Submit</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

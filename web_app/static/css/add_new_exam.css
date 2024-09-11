@@ -1,0 +1,1254 @@
+.background37 {
+    width: 345px;
+    height: 1688px;
+    position: relative;
+    background-color: #4d44b5;
+    display: none;
+    max-width: 100%;
+  }
+  .frame-child1 {
+    height: 48px;
+    width: 48px;
+    position: relative;
+    border-radius: 16px;
+    background-color: #fb7d5b;
+    display: none;
+  }
+  .a3 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    display: inline-block;
+    min-width: 27px;
+    z-index: 1;
+  }
+  .group-div {
+    border-radius: 16px;
+    background-color: #fb7d5b;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 10px 0px 11px;
+    z-index: 1;
+  }
+  .akademi3 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    z-index: 1;
+  }
+  .frame-parent16 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .side-menu-child {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 12px;
+  }
+  .home-icon4 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard28 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 102px;
+  }
+  .dashboard-wrapper18 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .dashboard27 {
+    align-self: stretch;
+    filter: drop-shadow(0px 20px 50px rgba(191, 21, 108, 0.05));
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 24px;
+    gap: 24px;
+  }
+  .student-icon4 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .email5 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 81px;
+  }
+  .email-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .students7 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .teacher-icon4 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .contact6 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 84px;
+  }
+  .contact-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .teachers5 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    background-color: #f3f4ff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+    color: #4d44b5;
+  }
+  .calendar-icon5 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .crypto3 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 50px;
+  }
+  .crypto-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .event4 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .finance-icon4 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard29 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 72px;
+  }
+  .dashboard-wrapper19 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .finance4 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .food-icon3 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard30 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 45px;
+  }
+  .dashboard-wrapper20 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .food4 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .user-icon9 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard31 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 41px;
+  }
+  .dashboard-wrapper21 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .user4 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .chat-icon2 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard32 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 45px;
+  }
+  .dashboard-wrapper22 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .chat2 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .activity-icon4 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard33 {
+    position: relative;
+    font-weight: 500;
+  }
+  .dashboard-wrapper23 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .activity4 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .list5 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    z-index: 1;
+  }
+  .list-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 34px 12px;
+    font-size: 18px;
+    color: #c1bbeb;
+  }
+  .akademi-school4 {
+    position: relative;
+    z-index: 1;
+  }
+  .made-with4 {
+    width: 245px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  .akademi-school-admission-das-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 19px 0px 0px;
+    gap: 15px;
+    font-size: 14px;
+  }
+  .side-menu4 {
+    width: 345px;
+    background-color: #4d44b5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 0px 697px 34px;
+    box-sizing: border-box;
+    gap: 46px;
+    max-width: 100%;
+  }
+  .create-exam {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  .notification-icon4 {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    transform: scale(2.667);
+  }
+  .wrapper-notification3 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bg12 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    box-shadow: 0px 20px 50px rgba(191, 21, 108, 0.05);
+    border-radius: 40px;
+    background-color: #fff;
+    display: none;
+  }
+  .gear-icon3 {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .setting3 {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 20px 50px rgba(191, 21, 108, 0.05);
+    border-radius: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px;
+    box-sizing: border-box;
+  }
+  .setting-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 5px 0px 0px;
+  }
+  .nabila-a3 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 64px;
+  }
+  .admin3 {
+    position: relative;
+    display: inline-block;
+    min-width: 46px;
+  }
+  .admin-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 18px;
+    color: #a098ae;
+  }
+  .nabila-a-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+  .frame-wrapper13 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 7px 4px 0px 0px;
+  }
+  .placeholder44 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #c1bbeb;
+  }
+  .wrapper-notification-container {
+    height: 60px;
+    width: 313px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 14px;
+  }
+  .create-exam-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .bg13 {
+    align-self: stretch;
+    height: 753px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+  }
+  .title-child {
+    height: 60px;
+    width: 1475px;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #4d44b5;
+    display: none;
+    max-width: 100%;
+  }
+  .exam-details1 {
+    width: 241.9px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .title11 {
+    align-self: stretch;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #4d44b5;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 40px;
+    box-sizing: border-box;
+    max-width: 100%;
+    z-index: 1;
+    font-size: 24px;
+    color: #fff;
+  }
+  .name1 {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form1 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .samantha {
+    width: 75px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+    z-index: 1;
+  }
+  .form {
+    flex: 1;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .name-input {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 1px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .name-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .date6 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 44px;
+    z-index: 1;
+  }
+  .form3 {
+    height: 48px;
+    width: 571px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .februari-1997 {
+    width: 413px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    max-width: 100%;
+    padding: 0;
+    z-index: 1;
+  }
+  .form2 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 28px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .date-time-fields {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .room {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form5 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .williammailcom {
+    width: 450px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+    max-width: 100%;
+    padding: 0;
+    z-index: 1;
+  }
+  .form4 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .room-invigilator {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .room-invigilator-fields {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 1px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .name-time-fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 33px;
+    min-width: 376px;
+    max-width: 100%;
+  }
+  .start-time {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form7 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .input {
+    width: 39px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0;
+    z-index: 1;
+  }
+  .form6 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .start-time-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .end-time {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form9 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .input1 {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    flex: 1;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    min-width: 250px;
+    white-space: nowrap;
+    max-width: 100%;
+    padding: 0;
+    z-index: 1;
+  }
+  .form8 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 12px 10px 14px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .end-time-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .invigilator {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form11 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .samantha1 {
+    width: 75px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+    z-index: 1;
+  }
+  .form10 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .invigilator-parent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .name-time-fields-inner {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 1px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .name-time-fields1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 33px;
+    min-width: 376px;
+    max-width: 100%;
+  }
+  .exam-details-input-fields {
+    width: 1179px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 23px;
+    max-width: 100%;
+  }
+  .exam-details-input-fields-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .course {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form13 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .ece-599 {
+    width: 450px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    max-width: 100%;
+    padding: 0;
+    z-index: 1;
+  }
+  .form12 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .course-parent {
+    width: 577px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    max-width: 100%;
+  }
+  .student-details-inner4 {
+    width: 1091px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .student-details6 {
+    align-self: stretch;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 201px;
+    box-sizing: border-box;
+    gap: 34px;
+    max-width: 100%;
+    font-size: 18px;
+  }
+  .frame-parent17 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    max-width: 100%;
+  }
+  .save-as-draft {
+    position: relative;
+    font-size: 18px;
+    font-family: Poppins;
+    color: #4d44b5;
+    text-align: left;
+    display: inline-block;
+    min-width: 120px;
+  }
+  .draft-button {
+    cursor: pointer;
+    border: 2px solid #4d44b5;
+    padding: 14px 22px;
+    background-color: transparent;
+    flex: 1;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .draft-button:hover {
+    background-color: rgba(115, 107, 219, 0.09);
+    border: 2px solid #736bdb;
+    box-sizing: border-box;
+  }
+  .submit1 {
+    position: relative;
+    font-size: 18px;
+    font-family: Poppins;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    min-width: 64px;
+  }
+  .submit-button {
+    cursor: pointer;
+    border: none;
+    padding: 16.5px 24px;
+    background-color: #4d44b5;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .submit-button:hover {
+    background-color: #736bdb;
+  }
+  .draft-button-parent {
+    width: 326px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 20px;
+    box-sizing: border-box;
+    gap: 26px;
+    max-width: 100%;
+  }
+  .frame-section {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 685px;
+    max-width: 100%;
+    text-align: left;
+    font-size: 36px;
+    color: #303972;
+    font-family: Poppins;
+  }
+  .add-new-exam-inner {
+    width: 1475px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 0px 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .add-new-exam {
+    width: 100%;
+    position: relative;
+    background-color: #f3f4ff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 36px;
+    color: #fff;
+    font-family: Poppins;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .add-new-exam {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1350px) {
+    .side-menu4 {
+      padding-top: 32px;
+      padding-bottom: 453px;
+      box-sizing: border-box;
+    }
+  
+    .exam-details-input-fields {
+      flex-wrap: wrap;
+    }
+  
+    .frame-section {
+      gap: 342px;
+    }
+  
+    .add-new-exam-inner {
+      padding-top: 32px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .a3 {
+      font-size: 29px;
+    }
+  
+    .akademi3 {
+      font-size: 29px;
+    }
+  
+    .side-menu4 {
+      padding-top: 21px;
+      padding-bottom: 294px;
+      box-sizing: border-box;
+    }
+  
+    .create-exam {
+      font-size: 29px;
+    }
+  
+    .create-exam-parent {
+      flex-wrap: wrap;
+    }
+  
+    .name-time-fields {
+      gap: 16px;
+      min-width: 100%;
+    }
+  
+    .name-time-fields1 {
+      gap: 16px;
+      min-width: 100%;
+    }
+  
+    .student-details6 {
+      gap: 17px;
+      padding-bottom: 131px;
+      box-sizing: border-box;
+    }
+  
+    .frame-parent17 {
+      gap: 20px;
+    }
+  
+    .frame-section {
+      gap: 171px;
+    }
+  
+    .add-new-exam-inner {
+      padding-top: 21px;
+      box-sizing: border-box;
+    }
+  
+    .add-new-exam {
+      gap: 25px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .a3 {
+      font-size: 22px;
+    }
+  
+    .akademi3 {
+      font-size: 22px;
+    }
+  
+    .side-menu4 {
+      gap: 23px;
+    }
+  
+    .create-exam {
+      font-size: 22px;
+    }
+  
+    .exam-details1 {
+      font-size: 19px;
+    }
+  
+    .frame-section {
+      gap: 86px;
+    }
+  
+    .add-new-exam-inner {
+      padding-top: 20px;
+      box-sizing: border-box;
+    }
+  }
+  

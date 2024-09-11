@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{url_for("static", path="/css/students_details.css")}}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mountains of Christmas:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="student-details10">
+      <div class="side-menu9">
+        <div class="background53"></div>
+        <div class="side-menu-container">
+          <div class="frame-parent30">
+            <div class="rectangle-parent3">
+              <div class="frame-child6"></div>
+              <a class="a8">A</a>
+            </div>
+            <a class="akademi8">AIS</a>
+          </div>
+        </div>
+        <div class="content-container1">
+          <div class="list10">
+            <div class="dashboard59">
+              <img
+                class="home-icon9"
+                loading="lazy"
+                alt=""
+                src="{{url_for("static", path="/public/home1.svg")}}"
+              />
+
+              <div class="navigation-item-container">
+                <a class="dashboard60">Dashboard</a>
+              </div>
+            </div>
+            <div class="students12">
+              <img
+                class="student-icon9"
+                loading="lazy"
+                alt=""
+                src="{{url_for("static", path="/public/student.svg")}}"
+              />
+
+              <div class="email-wrapper7">
+                <a class="email12">Students</a>
+              </div>
+            </div>
+            <div class="teachers10">
+              <img
+                class="teacher-icon9"
+                loading="lazy"
+                alt=""
+                src="{{url_for("static", path="/public/teacher.svg")}}"
+              />
+
+              <div class="contact-wrapper7">
+                <a class="contact11">Lecturers</a>
+              </div>
+            </div>
+            <div class="event9">
+              <img
+                class="calendar-icon14"
+                loading="lazy"
+                alt=""
+                src="{{url_for("static", path="/public/calender.svg")}}"
+              />
+
+              <div class="crypto-wrapper6">
+                <div class="crypto8">Exams</div>
+              </div>
+            </div>
+            <div class="finance9">
+              <img
+                class="finance-icon9"
+                loading="lazy"
+                alt=""
+                src="{{url_for("static", path="/public/finance.svg")}}"
+              />
+
+              <div class="dashboard-wrapper45">
+                <a class="dashboard61">Finance</a>
+              </div>
+            </div>
+            <div class="food10">
+              <img
+                class="food-icon8"
+                loading="lazy"
+                alt=""
+                src="./public/food1.svg"
+              />
+
+              <div class="dashboard-wrapper46">
+                <div class="dashboard62">Food</div>
+              </div>
+            </div>
+            <div class="user10">
+              <img
+                class="user-icon14"
+                loading="lazy"
+                alt=""
+                src="./public/user.svg"
+              />
+
+              <div class="dashboard-wrapper47">
+                <div class="dashboard63">User</div>
+              </div>
+            </div>
+            <div class="chat4">
+              <img
+                class="chat-icon4"
+                loading="lazy"
+                alt=""
+                src="./public/chat.svg"
+              />
+
+              <div class="dashboard-wrapper48">
+                <div class="dashboard64">Chat</div>
+              </div>
+            </div>
+            <div class="activity9">
+              <img
+                class="activity-icon9"
+                loading="lazy"
+                alt=""
+                src="./public/activity.svg"
+              />
+
+              <div class="dashboard-wrapper49">
+                <div class="dashboard65">Lastest Activity</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-container">
+          <b class="akademi-school6">Akademi - School Admission Dashboard</b>
+          <div class="made-with6">Made with ♥ by Peterdraw</div>
+        </div>
+      </div>
+      <main class="header4">
+        <section class="user-header-container">
+          <header class="user-header">
+            <h1 class="student-details11">Student Details</h1>
+            <div class="user-header-actions">
+              <div class="search-bar9">
+                <div class="search-bar-input">
+                  <img class="search-icon5" alt="" src="./public/search.svg" />
+
+                  <div class="search-input2">
+                    <a class="search-here5">Search here...</a>
+                  </div>
+                </div>
+              </div>
+              <div class="notification-container">
+                <div class="wrapper-notification7">
+                  <img
+                    class="notification-icon8"
+                    loading="lazy"
+                    alt=""
+                    src="./public/notification.svg"
+                  />
+                </div>
+                <div class="settings-container">
+                  <div class="setting7">
+                    <div class="bg21"></div>
+                    <img
+                      class="gear-icon7"
+                      loading="lazy"
+                      alt=""
+                      src="./public/gear.svg"
+                    />
+                  </div>
+                </div>
+                <div class="user-profile-container">
+                  <div class="user-profile1">
+                    <div class="nabila-a7">Nabila A.</div>
+                    <div class="user-role1">
+                      <div class="admin7">Admin</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="placeholder59"></div>
+              </div>
+            </div>
+          </header>
+          <div class="content9">
+            <div class="student-profile-container">
+              <div class="student-profile">
+                <div class="background54"></div>
+                <div class="profile-header">
+                  <img
+                    class="dots-icon19"
+                    loading="lazy"
+                    alt=""
+                    src="./public/dots.svg"
+                  />
+
+                  <div class="wrapper-cover2">
+                    <img
+                      class="cover-icon2"
+                      loading="lazy"
+                      alt=""
+                      src="./public/cover2@2x.png"
+                    />
+                  </div>
+                  <div class="avatar2">
+                    <div class="placeholder60"></div>
+                  </div>
+                </div>
+                <div class="name-container1">
+                  <div class="name3">
+                    <h2 class="title18">Karen Hope</h2>
+                    <div class="title19">Student</div>
+                  </div>
+                </div>
+                <div class="contact-info-container">
+                  <div class="contact-info4">
+                    <div class="contact-labels1">
+                      <div class="parents">Parents:</div>
+                      <div class="contact-icons3">
+                        <div class="parent2">
+                          <div class="placeholder61"></div>
+                          <img
+                            class="user-icon15"
+                            alt=""
+                            src="./public/user-1.svg"
+                          />
+                        </div>
+                        <div class="contact-details4">
+                          <div class="justin-hope1">Justin Hope</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact-labels2">
+                      <div class="address2">Address:</div>
+                      <div class="icon-group">
+                        <div class="icon18">
+                          <div class="bg22"></div>
+                          <img
+                            class="location-icon3"
+                            loading="lazy"
+                            alt=""
+                            src="./public/location1.svg"
+                          />
+                        </div>
+                        <div class="title-wrapper">
+                          <div class="title20">Jakarta, Indonesia</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact-labels3">
+                      <div class="phone10">Phone:</div>
+                      <div class="phone-parent3">
+                        <div class="phone11">
+                          <div class="placeholder62"></div>
+                          <img
+                            class="call-icon8"
+                            loading="lazy"
+                            alt=""
+                            src="./public/call.svg"
+                          />
+                        </div>
+                        <div class="wrapper6">
+                          <div class="div20">+12 345 6789 0</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="email-container1">
+                      <div class="email13">Email:</div>
+                      <div class="email-value-container">
+                        <div class="email-value">
+                          <div class="mail8">
+                            <div class="placeholder63"></div>
+                            <img
+                              class="email-icon18"
+                              loading="lazy"
+                              alt=""
+                              src="./public/email1.svg"
+                            />
+                          </div>
+                          <div class="email-address1">
+                            <div class="hopemailcom">Hope@mail.com</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-history">
+                <div class="bg23"></div>
+                <div class="payment-history-container">
+                  <b class="payment-history1">Payment History</b>
+                  <div class="list11">
+                    <div class="payment-list-header">
+                      <div class="payment-icons">
+                        <img
+                          class="icon19"
+                          loading="lazy"
+                          alt=""
+                          src="./public/icon2.svg"
+                        />
+
+                        <div class="payment-date">
+                          <div class="payment-date-values">#123456789</div>
+                        </div>
+                      </div>
+                      <div class="payment-time">
+                        <div class="march-2021-13454">
+                          2 March 2021, 13:45 PM
+                        </div>
+                      </div>
+                      <div class="payment-amount">
+                        <div class="payment-amount-values">$ 50,036</div>
+                      </div>
+                      <div class="payment-status">
+                        <div class="complete">Complete</div>
+                      </div>
+                    </div>
+                    <div class="payment-list-header1">
+                      <div class="icon-container">
+                        <img class="icon20" alt="" src="./public/icon2.svg" />
+
+                        <div class="wrapper7">
+                          <div class="div21">#123456789</div>
+                        </div>
+                      </div>
+                      <div class="march-2021-1345-pm-wrapper">
+                        <div class="march-2021-13455">
+                          2 March 2021, 13:45 PM
+                        </div>
+                      </div>
+                      <div class="wrapper8">
+                        <div class="div22">$ 50,036</div>
+                      </div>
+                      <div class="pending-wrapper">
+                        <div class="pending">Pending</div>
+                      </div>
+                    </div>
+                    <div class="payment-list-header2">
+                      <div class="icon-parent1">
+                        <img class="icon21" alt="" src="./public/icon2.svg" />
+
+                        <div class="wrapper9">
+                          <div class="div23">#123456789</div>
+                        </div>
+                      </div>
+                      <div class="march-2021-1345-pm-container">
+                        <div class="march-2021-13456">
+                          2 March 2021, 13:45 PM
+                        </div>
+                      </div>
+                      <div class="wrapper10">
+                        <div class="div24">$ 50,036</div>
+                      </div>
+                      <div class="canceled-wrapper">
+                        <div class="canceled">Canceled</div>
+                      </div>
+                    </div>
+                    <div class="payment-list-header3">
+                      <div class="icon-parent2">
+                        <img class="icon22" alt="" src="./public/icon2.svg" />
+
+                        <div class="wrapper11">
+                          <div class="div25">#123456789</div>
+                        </div>
+                      </div>
+                      <div class="march-2021-1345-pm-frame">
+                        <div class="march-2021-13457">
+                          2 March 2021, 13:45 PM
+                        </div>
+                      </div>
+                      <div class="wrapper12">
+                        <div class="div26">$ 50,036</div>
+                      </div>
+                      <div class="complete-wrapper">
+                        <div class="complete1">Complete</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pagination2">
+                  <div class="pagination-info">
+                    <div class="showing-1-5-from-container3">
+                      <span>Showing </span>
+                      <span class="span16">1-5 </span>
+                      <span>from</span>
+                      <span class="span17"> 100 </span>
+                      <span>data</span>
+                    </div>
+                  </div>
+                  <div class="pagination-controls1">
+                    <div class="dropdown">
+                      <img
+                        class="dropdown-icon7"
+                        loading="lazy"
+                        alt=""
+                        src="./public/dropdown@2x.png"
+                      />
+                    </div>
+                    <div class="dropdown-label-container">
+                      <div class="selectedpage3"></div>
+                      <div class="dropdown-label">1</div>
+                    </div>
+                    <div class="dropdown1">
+                      <div class="background55"></div>
+                      <div class="div27">2</div>
+                    </div>
+                    <div class="dropdown2">
+                      <div class="background56"></div>
+                      <div class="div28">3</div>
+                    </div>
+                    <div class="dropdown3">
+                      <img
+                        class="dropdown-icon8"
+                        alt=""
+                        src="./public/dropdown-1@2x.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-list-group">
+              <div class="schedule-list1">
+                <div class="schedule1">
+                  <div class="background57"></div>
+                  <b class="schedule-details1">Schedule Details</b>
+                  <div class="thursday-10th-april1">
+                    Thursday, 10th April , 2021
+                  </div>
+                </div>
+                <div class="schedule-11">
+                  <div class="background58"></div>
+                  <div class="schedule-item-container">
+                    <div class="statuscolor4"></div>
+                    <div class="schedule-content">
+                      <div class="schedule-details-container">
+                        <div class="schedule-item-details">
+                          <div class="basic-algorithm">Basic Algorithm</div>
+                          <div class="algorithm">Algorithm</div>
+                        </div>
+                        <div class="schedule-icons">
+                          <div class="calendar-icons">
+                            <img
+                              class="calendar-icon15"
+                              alt=""
+                              src="./public/calendar-11.svg"
+                            />
+
+                            <div class="schedule-time1">
+                              <div class="march-20-20214">March 20, 2021</div>
+                            </div>
+                          </div>
+                          <div class="schedule-icon">
+                            <img
+                              class="clock-icon4"
+                              alt=""
+                              src="./public/clock.svg"
+                            />
+
+                            <div class="time">
+                              <div class="am4">09.00 - 10.00 AM</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="student-picture">
+                    <div class="profilepicture15">
+                      <div class="placeholder64"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-21">
+                  <div class="background59"></div>
+                  <div class="statuscolor-parent">
+                    <div class="statuscolor5"></div>
+                    <div class="frame-wrapper15">
+                      <div class="frame-parent31">
+                        <div class="basic-art-parent">
+                          <div class="basic-art">Basic Art</div>
+                          <div class="art">Art</div>
+                        </div>
+                        <div class="frame-parent32">
+                          <div class="calendar-parent1">
+                            <img
+                              class="calendar-icon16"
+                              alt=""
+                              src="./public/calendar-11.svg"
+                            />
+
+                            <div class="march-20-2021-wrapper1">
+                              <div class="march-20-20215">March 20, 2021</div>
+                            </div>
+                          </div>
+                          <div class="clock-parent1">
+                            <img
+                              class="clock-icon5"
+                              alt=""
+                              src="./public/clock.svg"
+                            />
+
+                            <div class="am-wrapper1">
+                              <div class="am5">09.00 - 10.00 AM</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profilepicture-wrapper">
+                    <div class="profilepicture16">
+                      <div class="placeholder65"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-31">
+                  <div class="background60"></div>
+                  <div class="statuscolor-group">
+                    <div class="statuscolor6"></div>
+                    <div class="frame-wrapper16">
+                      <div class="frame-parent33">
+                        <div class="html-css-class-parent">
+                          <div class="html-css">HTML & CSS Class</div>
+                          <div class="programming">Programming</div>
+                        </div>
+                        <div class="frame-parent34">
+                          <div class="calendar-parent2">
+                            <img
+                              class="calendar-icon17"
+                              alt=""
+                              src="./public/calendar-11.svg"
+                            />
+
+                            <div class="march-20-2021-wrapper2">
+                              <div class="march-20-20216">March 20, 2021</div>
+                            </div>
+                          </div>
+                          <div class="clock-parent2">
+                            <img
+                              class="clock-icon6"
+                              alt=""
+                              src="./public/clock.svg"
+                            />
+
+                            <div class="am-wrapper2">
+                              <div class="am6">09.00 - 10.00 AM</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profilepicture-frame">
+                    <div class="profilepicture17">
+                      <div class="placeholder66"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-41">
+                  <div class="background61"></div>
+                  <div class="statuscolor-container">
+                    <div class="statuscolor7"></div>
+                    <div class="frame-wrapper17">
+                      <div class="frame-parent35">
+                        <div class="simple-past-tense-parent">
+                          <div class="simple-past-tense">Simple Past Tense</div>
+                          <a class="english">English</a>
+                        </div>
+                        <div class="frame-parent36">
+                          <div class="calendar-parent3">
+                            <img
+                              class="calendar-icon18"
+                              alt=""
+                              src="./public/calendar-11.svg"
+                            />
+
+                            <div class="march-20-2021-wrapper3">
+                              <div class="march-20-20217">March 20, 2021</div>
+                            </div>
+                          </div>
+                          <div class="clock-parent3">
+                            <img
+                              class="clock-icon7"
+                              alt=""
+                              src="./public/clock.svg"
+                            />
+
+                            <div class="am-wrapper3">
+                              <div class="am7">09.00 - 10.00 AM</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profilepicture-wrapper1">
+                    <div class="profilepicture18">
+                      <div class="placeholder67"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btnviewmore5">
+                <div class="background62"></div>
+                <div class="view-more5">View More</div>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

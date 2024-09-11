@@ -1,0 +1,816 @@
+.background63 {
+    width: 345px;
+    height: 1688px;
+    position: relative;
+    background-color: #4d44b5;
+    display: none;
+    max-width: 100%;
+  }
+  .frame-child7 {
+    height: 48px;
+    width: 48px;
+    position: relative;
+    border-radius: 16px;
+    background-color: #fb7d5b;
+    display: none;
+  }
+  .a9 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    display: inline-block;
+    min-width: 27px;
+    z-index: 1;
+  }
+  .rectangle-parent4 {
+    border-radius: 16px;
+    background-color: #fb7d5b;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 10px 0px 11px;
+    z-index: 1;
+  }
+  .akademi9 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    color: inherit;
+    z-index: 1;
+  }
+  .frame-parent37 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .side-menu-inner2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 12px;
+  }
+  .home-icon10 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard67 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    min-width: 102px;
+  }
+  .dashboard-wrapper50 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .dashboard66 {
+    align-self: stretch;
+    filter: drop-shadow(0px 20px 50px rgba(191, 21, 108, 0.05));
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 24px;
+    gap: 24px;
+  }
+  .student-icon10 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .email14 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    min-width: 81px;
+  }
+  .email-wrapper8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .students13 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .teacher-icon10 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .contact12 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    min-width: 84px;
+  }
+  .contact-wrapper8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .teachers11 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    background-color: #f3f4ff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+    color: #4d44b5;
+  }
+  .calendar-icon19 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .crypto9 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 50px;
+  }
+  .crypto-wrapper7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .event10 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .finance-icon10 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard68 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 72px;
+  }
+  .dashboard-wrapper51 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .finance10 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .food-icon9 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard69 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 45px;
+  }
+  .dashboard-wrapper52 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .food11 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .user-icon16 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard70 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 41px;
+  }
+  .dashboard-wrapper53 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .user11 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .chat-icon5 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard71 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 45px;
+  }
+  .dashboard-wrapper54 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .chat5 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .activity-icon10 {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dashboard72 {
+    position: relative;
+    font-weight: 500;
+  }
+  .dashboard-wrapper55 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6.5px 0px 0px;
+  }
+  .activity10 {
+    align-self: stretch;
+    border-radius: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 24px;
+    gap: 24px;
+  }
+  .list12 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    z-index: 1;
+  }
+  .content10 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 34px 12px;
+    font-size: 18px;
+    color: #c1bbeb;
+  }
+  .akademi-school7 {
+    position: relative;
+    z-index: 1;
+  }
+  .made-with7 {
+    width: 245px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  .footer3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 19px 0px 0px;
+    gap: 15px;
+    font-size: 14px;
+  }
+  .side-menu10 {
+    width: 345px;
+    background-color: #4d44b5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 0px 697px 34px;
+    box-sizing: border-box;
+    gap: 46px;
+    max-width: 100%;
+  }
+  .create-room {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  .bg24 {
+    align-self: stretch;
+    height: 753px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+  }
+  .title-child2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #4d44b5;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .title21 {
+    align-self: stretch;
+    height: 60px;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #4d44b5;
+    z-index: 1;
+  }
+  .name4 {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form49 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .samantha4 {
+    width: 75px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+    z-index: 1;
+  }
+  .form48 {
+    flex: 1;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .details-inputs {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 1px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .details-rows {
+    width: 578px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .details-rows-wrapper {
+    width: 1090px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .last-name2 {
+    width: 577px;
+    display: none;
+    max-width: 100%;
+  }
+  .building {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 75px;
+    z-index: 1;
+  }
+  .form51 {
+    height: 48px;
+    width: 571px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .februari-19973 {
+    width: 413px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    max-width: 100%;
+    padding: 0;
+    z-index: 1;
+  }
+  .form50 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 28px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .building-parent {
+    width: 571px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .student-details-inner5 {
+    width: 1083px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .capacity {
+    width: 192px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+  }
+  .form53 {
+    height: 48px;
+    width: 577px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .williammailcom3 {
+    width: 450px;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 14px;
+    background-color: transparent;
+    height: 21px;
+    position: relative;
+    color: #a098ae;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+    max-width: 100%;
+    padding: 0;
+    z-index: 1;
+  }
+  .form52 {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #c1bbeb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 13px 14px 10px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .capacity-parent {
+    width: 577px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .student-details-inner6 {
+    width: 1091px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .student-details12 {
+    flex: 1;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 319px;
+    box-sizing: border-box;
+    gap: 33.7px;
+    max-width: 100%;
+  }
+  .room-form {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 639px;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-size: 18px;
+  }
+  .submit4 {
+    position: relative;
+    font-size: 18px;
+    font-family: Poppins;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    min-width: 64px;
+  }
+  .submit-button3 {
+    cursor: pointer;
+    border: none;
+    padding: 16.5px 24px;
+    background-color: #4d44b5;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .submit-button3:hover {
+    background-color: #736bdb;
+  }
+  .submission {
+    align-self: stretch;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .room-creation {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 46px;
+    max-width: 100%;
+    text-align: left;
+    font-size: 36px;
+    color: #303972;
+    font-family: Poppins;
+  }
+  .main1 {
+    width: 1475px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 0px 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .add-new-room {
+    width: 100%;
+    position: relative;
+    background-color: #f3f4ff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 36px;
+    color: #fff;
+    font-family: Poppins;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .add-new-room {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1350px) {
+    .side-menu10 {
+      padding-top: 32px;
+      padding-bottom: 453px;
+      box-sizing: border-box;
+    }
+  
+    .room-form {
+      padding-bottom: 415px;
+      box-sizing: border-box;
+    }
+  
+    .main1 {
+      padding-top: 32px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .a9 {
+      font-size: 29px;
+    }
+  
+    .akademi9 {
+      font-size: 29px;
+    }
+  
+    .side-menu10 {
+      padding-top: 21px;
+      padding-bottom: 294px;
+      box-sizing: border-box;
+    }
+  
+    .create-room {
+      font-size: 29px;
+    }
+  
+    .student-details12 {
+      gap: 17px;
+      padding-bottom: 207px;
+      box-sizing: border-box;
+    }
+  
+    .room-form {
+      padding-bottom: 270px;
+      box-sizing: border-box;
+    }
+  
+    .room-creation {
+      gap: 23px;
+    }
+  
+    .main1 {
+      padding-top: 21px;
+      box-sizing: border-box;
+    }
+  
+    .add-new-room {
+      gap: 25px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .a9 {
+      font-size: 22px;
+    }
+  
+    .akademi9 {
+      font-size: 22px;
+    }
+  
+    .side-menu10 {
+      gap: 23px;
+    }
+  
+    .create-room {
+      font-size: 22px;
+    }
+  
+    .main1 {
+      padding-top: 20px;
+      box-sizing: border-box;
+    }
+  }
+  

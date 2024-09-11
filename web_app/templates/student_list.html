@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{url_for("static", path="/css/student_list.css")}}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mountains of Christmas:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="students4">
+      <div class="side-menu3">
+        <div class="background33"></div>
+        <div class="menu-content-wrapper">
+          <div class="menu-content">
+            <div class="rectangle-container">
+              <div class="rectangle-div"></div>
+              <a class="a2">A</a>
+            </div>
+            <a class="akademi2">Akademi</a>
+          </div>
+        </div>
+        <div class="content3">
+          <div class="list4">
+            <div class="dashboard20">
+              <img
+                class="home-icon3"
+                loading="lazy"
+                alt=""
+                src="./public/home1.svg"
+              />
+
+              <div class="dashboard-wrapper12">
+                <div class="dashboard21">Dashboard</div>
+              </div>
+            </div>
+            <div class="students5">
+              <img
+                class="student-icon3"
+                loading="lazy"
+                alt=""
+                src="./public/student1.svg"
+              />
+
+              <div class="email-wrapper1">
+                <div class="email4">Students</div>
+              </div>
+            </div>
+            <div class="teachers4">
+              <img
+                class="teacher-icon3"
+                loading="lazy"
+                alt=""
+                src="./public/teacher.svg"
+              />
+
+              <div class="contact-wrapper1">
+                <div class="contact4">Teachers</div>
+              </div>
+            </div>
+            <div class="event3">
+              <img
+                class="calendar-icon4"
+                loading="lazy"
+                alt=""
+                src="./public/calendar.svg"
+              />
+
+              <div class="crypto-frame">
+                <div class="crypto2">Event</div>
+              </div>
+            </div>
+            <div class="finance3">
+              <img
+                class="finance-icon3"
+                loading="lazy"
+                alt=""
+                src="./public/finance.svg"
+              />
+
+              <div class="dashboard-wrapper13">
+                <div class="dashboard22">Finance</div>
+              </div>
+            </div>
+            <div class="food3">
+              <img
+                class="food-icon2"
+                loading="lazy"
+                alt=""
+                src="./public/food.svg"
+              />
+
+              <div class="dashboard-wrapper14">
+                <div class="dashboard23">Food</div>
+              </div>
+            </div>
+            <div class="user3">
+              <img
+                class="user-icon8"
+                loading="lazy"
+                alt=""
+                src="./public/user.svg"
+              />
+
+              <div class="dashboard-wrapper15">
+                <div class="dashboard24">User</div>
+              </div>
+            </div>
+            <div class="chat1">
+              <img
+                class="chat-icon1"
+                loading="lazy"
+                alt=""
+                src="./public/chat.svg"
+              />
+
+              <div class="dashboard-wrapper16">
+                <div class="dashboard25">Chat</div>
+              </div>
+            </div>
+            <div class="activity3">
+              <img
+                class="activity-icon3"
+                loading="lazy"
+                alt=""
+                src="./public/activity.svg"
+              />
+
+              <div class="dashboard-wrapper17">
+                <div class="dashboard26">Lastest Activity</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <b class="akademi-school3">Akademi - School Admission Dashboard</b>
+          <div class="made-with3">Made with ♥ by Peterdraw</div>
+        </div>
+      </div>
+      <main class="header">
+        <section class="search-notification-parent">
+          <div class="search-notification">
+            <a class="students6">Students</a>
+            <div class="notification-setting">
+              <div class="wrapper-notification2">
+                <img
+                  class="notification-icon3"
+                  loading="lazy"
+                  alt=""
+                  src="./public/notification.svg"
+                />
+              </div>
+              <div class="setting-new-student">
+                <div class="setting2">
+                  <div class="bg11"></div>
+                  <img
+                    class="gear-icon2"
+                    loading="lazy"
+                    alt=""
+                    src="./public/gear.svg"
+                  />
+                </div>
+              </div>
+              <div class="profile1">
+                <div class="profile-info1">
+                  <div class="nabila-a2">Nabila A.</div>
+                  <div class="profile-role">
+                    <div class="admin2">Admin</div>
+                  </div>
+                </div>
+              </div>
+              <div class="placeholder25"></div>
+            </div>
+          </div>
+          <div class="search-notification1">
+            <div class="search-bar4">
+              <div class="search-bar5">
+                <img class="search-icon2" alt="" src="./public/search.svg" />
+
+                <div class="search-input1">
+                  <div class="search-here2">Search here...</div>
+                </div>
+              </div>
+            </div>
+            <div class="sort-parent">
+              <div class="sort">
+                <div class="dropdown-sort">
+                  <div class="newest">Newest</div>
+                </div>
+                <img
+                  class="dropdown-icon2"
+                  alt=""
+                  src="./public/dropdown.svg"
+                />
+              </div>
+              <button class="new-student-button">
+                <div class="wrapper">
+                  <img class="icon9" alt="" src="./public/.svg" />
+                </div>
+                <div class="new-student">New Student</div>
+              </button>
+            </div>
+          </div>
+          <div class="students-list">
+            <div class="background34"></div>
+            <div class="list-container">
+              <div class="list-content">
+                <div class="list-item">
+                  <input class="check" type="checkbox" />
+
+                  <div class="name-header">
+                    <div class="name">Name</div>
+                  </div>
+                </div>
+                <div class="table-header">
+                  <div class="table-header-items">
+                    <div class="table-header-names">
+                      <div class="id">ID</div>
+                    </div>
+                    <div class="table-header-names1">
+                      <div class="date5">Date</div>
+                    </div>
+                    <div class="table-header-names2">
+                      <div class="parent-name">Parent Name</div>
+                    </div>
+                    <div class="table-header-names3">
+                      <div class="city">City</div>
+                    </div>
+                    <div class="table-header-names4">
+                      <div class="contact5">Contact</div>
+                    </div>
+                    <div class="grade">Grade</div>
+                    <div class="action">Action</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="student-info2">
+              <div class="student-details">
+                <div class="border1"></div>
+                <div class="selected"></div>
+                <div class="student-selection">
+                  <div class="selection-checkbox">
+                    <div class="selected1"></div>
+                    <div class="checkedbox-wrapper">
+                      <input class="checkedbox" type="checkbox" />
+                    </div>
+                  </div>
+                  <div class="placeholder26"></div>
+                  <div class="student-name">
+                    <b class="samanta-william">Samanta William</b>
+                  </div>
+                </div>
+                <div class="date-placeholder">
+                  <div class="empty">#123456789</div>
+                </div>
+                <div class="date-column">
+                  <div class="march-25-2021">March 25, 2021</div>
+                </div>
+                <div class="parent">
+                  <div class="mana-william">Mana William</div>
+                </div>
+                <div class="city-info">
+                  <div class="jakarta">Jakarta</div>
+                </div>
+                <div class="contact-details2">
+                  <div class="contact-info1">
+                    <div class="phone1">
+                      <div class="placeholder27"></div>
+                      <img
+                        class="call-icon1"
+                        loading="lazy"
+                        alt=""
+                        src="./public/call1.svg"
+                      />
+                    </div>
+                    <div class="mail1">
+                      <div class="placeholder28"></div>
+                      <img
+                        class="email-icon11"
+                        loading="lazy"
+                        alt=""
+                        src="./public/email1.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="grade-details">
+                  <button class="status">
+                    <div class="vii-a5">VII A</div>
+                  </button>
+                </div>
+                <div class="dots-wrapper">
+                  <img
+                    class="dots-icon7"
+                    loading="lazy"
+                    alt=""
+                    src="./public/dots.svg"
+                  />
+                </div>
+              </div>
+              <div class="student-details1">
+                <div class="border2"></div>
+                <div class="selected2"></div>
+                <div class="frame-parent11">
+                  <div class="check-wrapper">
+                    <input class="check1" type="checkbox" />
+                  </div>
+                  <div class="placeholder29"></div>
+                  <div class="tony-soap-container">
+                    <b class="tony-soap5">Tony Soap</b>
+                  </div>
+                </div>
+                <div class="frame">
+                  <div class="div8">#123456789</div>
+                </div>
+                <div class="march-25-2021-wrapper">
+                  <div class="march-25-20211">March 25, 2021</div>
+                </div>
+                <div class="james-soap-wrapper">
+                  <div class="james-soap">James Soap</div>
+                </div>
+                <div class="jakarta-wrapper">
+                  <div class="jakarta1">Jakarta</div>
+                </div>
+                <div class="student-details-inner">
+                  <div class="phone-parent">
+                    <div class="phone2">
+                      <div class="placeholder30"></div>
+                      <img
+                        class="call-icon2"
+                        loading="lazy"
+                        alt=""
+                        src="./public/call1.svg"
+                      />
+                    </div>
+                    <div class="mail2">
+                      <div class="placeholder31"></div>
+                      <img
+                        class="email-icon12"
+                        loading="lazy"
+                        alt=""
+                        src="./public/email1.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="status-wrapper">
+                  <div class="status1">
+                    <div class="vii-b">VII B</div>
+                  </div>
+                </div>
+                <div class="dots-container">
+                  <img
+                    class="dots-icon8"
+                    loading="lazy"
+                    alt=""
+                    src="./public/dots.svg"
+                  />
+                </div>
+              </div>
+              <div class="student-details2">
+                <div class="border3"></div>
+                <div class="selected3"></div>
+                <div class="frame-parent12">
+                  <div class="selected-parent">
+                    <div class="selected4"></div>
+                    <input class="checkedbox1" type="checkbox" />
+                  </div>
+                  <div class="placeholder-wrapper">
+                    <div class="placeholder32"></div>
+                  </div>
+                  <div class="karen-hope-frame">
+                    <b class="karen-hope5">Karen Hope</b>
+                  </div>
+                </div>
+                <div class="wrapper1">
+                  <div class="div9">#123456789</div>
+                </div>
+                <div class="march-25-2021-container">
+                  <div class="march-25-20212">March 25, 2021</div>
+                </div>
+                <div class="justin-hope-wrapper">
+                  <div class="justin-hope">Justin Hope</div>
+                </div>
+                <div class="jakarta-container">
+                  <div class="jakarta2">Jakarta</div>
+                </div>
+                <div class="student-details-child">
+                  <div class="phone-group">
+                    <div class="phone3">
+                      <div class="placeholder33"></div>
+                      <img
+                        class="call-icon3"
+                        loading="lazy"
+                        alt=""
+                        src="./public/call1.svg"
+                      />
+                    </div>
+                    <div class="mail3">
+                      <div class="placeholder34"></div>
+                      <img
+                        class="email-icon13"
+                        loading="lazy"
+                        alt=""
+                        src="./public/email1.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="status-container">
+                  <div class="status2">
+                    <div class="vii-c">VII C</div>
+                  </div>
+                </div>
+                <div class="dots-frame">
+                  <img
+                    class="dots-icon9"
+                    loading="lazy"
+                    alt=""
+                    src="./public/dots.svg"
+                  />
+                </div>
+              </div>
+              <div class="student-details3">
+                <div class="border4"></div>
+                <div class="selected5"></div>
+                <div class="frame-parent13">
+                  <div class="check-container">
+                    <input class="check2" type="checkbox" />
+                  </div>
+                  <div class="placeholder35"></div>
+                  <div class="jordan-nico-frame">
+                    <b class="jordan-nico4">Jordan Nico</b>
+                  </div>
+                </div>
+                <div class="wrapper2">
+                  <div class="div10">#123456789</div>
+                </div>
+                <div class="march-25-2021-frame">
+                  <div class="march-25-20213">March 25, 2021</div>
+                </div>
+                <div class="amanda-nico-wrapper">
+                  <div class="amanda-nico">Amanda Nico</div>
+                </div>
+                <div class="jakarta-frame">
+                  <div class="jakarta3">Jakarta</div>
+                </div>
+                <div class="student-details-inner1">
+                  <div class="phone-container">
+                    <div class="phone4">
+                      <div class="placeholder36"></div>
+                      <img
+                        class="call-icon4"
+                        loading="lazy"
+                        alt=""
+                        src="./public/call1.svg"
+                      />
+                    </div>
+                    <div class="mail4">
+                      <div class="placeholder37"></div>
+                      <img
+                        class="email-icon14"
+                        loading="lazy"
+                        alt=""
+                        src="./public/email1.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="status-frame">
+                  <button class="status3">
+                    <div class="vii-a6">VII A</div>
+                  </button>
+                </div>
+                <div class="dots-wrapper1">
+                  <img class="dots-icon10" alt="" src="./public/dots.svg" />
+                </div>
+              </div>
+              <div class="student-details4">
+                <div class="border5"></div>
+                <div class="selected6"></div>
+                <div class="frame-parent14">
+                  <div class="selected-group">
+                    <div class="selected7"></div>
+                    <input class="checkedbox2" type="checkbox" />
+                  </div>
+                  <div class="placeholder-frame">
+                    <div class="placeholder38"></div>
+                  </div>
+                  <div class="nadila-adja-container">
+                    <b class="nadila-adja4">Nadila Adja</b>
+                  </div>
+                </div>
+                <div class="wrapper3">
+                  <div class="div11">#123456789</div>
+                </div>
+                <div class="march-25-2021-wrapper1">
+                  <div class="march-25-20214">March 25, 2021</div>
+                </div>
+                <div class="jack-adja-wrapper">
+                  <div class="jack-adja">Jack Adja</div>
+                </div>
+                <div class="jakarta-wrapper1">
+                  <div class="jakarta4">Jakarta</div>
+                </div>
+                <div class="student-details-inner2">
+                  <div class="phone-parent1">
+                    <div class="phone5">
+                      <div class="placeholder39"></div>
+                      <img
+                        class="call-icon5"
+                        loading="lazy"
+                        alt=""
+                        src="./public/call1.svg"
+                      />
+                    </div>
+                    <div class="mail5">
+                      <div class="placeholder40"></div>
+                      <img
+                        class="email-icon15"
+                        loading="lazy"
+                        alt=""
+                        src="./public/email1.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="status-wrapper1">
+                  <button class="status4">
+                    <div class="vii-a7">VII A</div>
+                  </button>
+                </div>
+                <div class="dots-wrapper2">
+                  <img class="dots-icon11" alt="" src="./public/dots.svg" />
+                </div>
+              </div>
+              <div class="student-details5">
+                <div class="border6"></div>
+                <div class="selected8"></div>
+                <div class="frame-parent15">
+                  <div class="check-frame">
+                    <input class="check3" type="checkbox" />
+                  </div>
+                  <div class="placeholder41"></div>
+                  <div class="johnny-ahmad-wrapper">
+                    <b class="johnny-ahmad">Johnny Ahmad</b>
+                  </div>
+                </div>
+                <div class="wrapper4">
+                  <div class="div12">#123456789</div>
+                </div>
+                <div class="march-25-2021-wrapper2">
+                  <div class="march-25-20215">March 25, 2021</div>
+                </div>
+                <div class="danny-ahmad-wrapper">
+                  <div class="danny-ahmad">Danny Ahmad</div>
+                </div>
+                <div class="jakarta-wrapper2">
+                  <div class="jakarta5">Jakarta</div>
+                </div>
+                <div class="student-details-inner3">
+                  <div class="phone-parent2">
+                    <div class="phone6">
+                      <div class="placeholder42"></div>
+                      <img
+                        class="call-icon6"
+                        loading="lazy"
+                        alt=""
+                        src="./public/call1.svg"
+                      />
+                    </div>
+                    <div class="mail6">
+                      <div class="placeholder43"></div>
+                      <img
+                        class="email-icon16"
+                        loading="lazy"
+                        alt=""
+                        src="./public/email1.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="status-wrapper2">
+                  <button class="status5">
+                    <div class="vii-a8">VII A</div>
+                  </button>
+                </div>
+                <div class="dots-wrapper3">
+                  <img
+                    class="dots-icon12"
+                    loading="lazy"
+                    alt=""
+                    src="./public/dots.svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="footer-data">
+              <div class="footer-info">
+                <div class="data-info">
+                  <div class="showing-1-5-from-container1">
+                    <span>Showing </span>
+                    <span class="span12">1-5 </span>
+                    <span>from</span>
+                    <span class="span13"> 100 </span>
+                    <span>data</span>
+                  </div>
+                </div>
+                <div class="pagination1">
+                  <div class="pagination-items">
+                    <img
+                      class="dropdown-icon3"
+                      loading="lazy"
+                      alt=""
+                      src="./public/dropdown@2x.png"
+                    />
+                  </div>
+                  <div class="page-number">
+                    <div class="selectedpage1"></div>
+                    <div class="div13">1</div>
+                  </div>
+                  <div class="pagination-items1">
+                    <div class="background35"></div>
+                    <div class="div14">2</div>
+                  </div>
+                  <div class="pagination-items2">
+                    <div class="background36"></div>
+                    <div class="div15">3</div>
+                  </div>
+                  <div class="pagination-items3">
+                    <img
+                      class="dropdown-icon4"
+                      loading="lazy"
+                      alt=""
+                      src="./public/dropdown-1@2x.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

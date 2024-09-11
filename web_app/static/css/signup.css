@@ -1,0 +1,242 @@
+.ais {
+    position: relative;
+    line-height: 67px;
+    display: inline-block;
+    min-width: 114px;
+  }
+  .ais-wrapper {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 var(--padding-xl);
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .automatic-invigilating-system {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: var(--font-size-11xl);
+    line-height: 100%;
+    font-weight: 400;
+    font-family: var(--font-mountains-of-christmas);
+    color: var(--color-black);
+    white-space: pre-wrap;
+  }
+  .frame-parent,
+  .signup-inner {
+    width: 418px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .signup-inner {
+    width: 606px;
+    flex-direction: row;
+    justify-content: center;
+    color: #484848;
+  }
+  .forget-password {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: inherit;
+  }
+  .forget-password-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 6px;
+  }
+  .email-address {
+    position: relative;
+    letter-spacing: 0.08em;
+    line-height: 40px;
+  }
+  .frame-child {
+    align-self: stretch;
+    height: 7px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+  }
+  .email-address-parent,
+  .frame-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .email-address-parent {
+    flex: 1;
+    flex-direction: column;
+  }
+  .frame-wrapper {
+    align-self: stretch;
+    flex-direction: row;
+    padding: 0 15px 10.3px 13px;
+    box-sizing: border-box;
+  }
+  .frame-item {
+    height: 60px;
+    width: 575px;
+    position: relative;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+    border-radius: var(--br-3xs);
+    background-color: var(--color-black);
+    display: none;
+    max-width: 100%;
+  }
+  .send-confirmation-code {
+    position: relative;
+    line-height: 40px;
+    font-weight: 600;
+    z-index: 1;
+  }
+  .rectangle-parent {
+    align-self: stretch;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+    border-radius: var(--br-3xs);
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px var(--padding-xl);
+    box-sizing: border-box;
+    max-width: 100%;
+    color: var(--color-white);
+  }
+  .login {
+    color: #5b86e5;
+  }
+  .already-have-an-container {
+    position: relative;
+    letter-spacing: 0.08em;
+    line-height: 40px;
+  }
+  .already-have-an-account-login-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 var(--padding-xl) 0 53px;
+    color: var(--color-black);
+  }
+  .frame-container,
+  .frame-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .frame-container {
+    align-self: stretch;
+    gap: var(--gap-lgi);
+    font-size: var(--font-size-base);
+    color: #9d9d9d;
+    font-family: var(--font-poppins);
+  }
+  .frame-group {
+    width: 575px;
+    padding: 0 0 74.7px;
+    box-sizing: border-box;
+    gap: 39px;
+    font-size: var(--font-size-11xl);
+  }
+  .fasco-terms {
+    position: relative;
+    line-height: 40px;
+  }
+  .fasco-terms-codnitions-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-size: var(--font-size-base);
+    font-family: var(--font-poppins);
+  }
+  .signup {
+    width: 100%;
+    position: relative;
+    border-radius: 0 var(--br-11xl) var(--br-11xl) 0;
+    background-color: var(--color-white);
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 279px 80px 24px 665px;
+    gap: 142px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 66.6px;
+    color: var(--color-black);
+    font-family: var(--font-volkhov);
+  }
+  @media screen and (max-width: 975px) {
+    .signup {
+      gap: 71px;
+      padding-left: 332px;
+      padding-right: 40px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 950px) {
+    .ais {
+      font-size: 53px;
+      line-height: 53px;
+    }
+    .automatic-invigilating-system,
+    .forget-password {
+      font-size: var(--font-size-5xl);
+      line-height: 24px;
+    }
+    .forget-password {
+      line-height: 32px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .frame-group {
+      gap: var(--gap-lgi);
+    }
+    .signup {
+      gap: 35px;
+      padding-left: 166px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .ais {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    .automatic-invigilating-system,
+    .forget-password {
+      font-size: var(--font-size-lg);
+      line-height: 18px;
+    }
+    .forget-password {
+      line-height: 24px;
+    }
+    .already-have-an-account-login-wrapper {
+      padding-left: var(--padding-xl);
+      box-sizing: border-box;
+    }
+  }
+  

@@ -1,0 +1,352 @@
+.ais1 {
+    position: relative;
+    line-height: 67px;
+    display: inline-block;
+    min-width: 114px;
+  }
+  .a-i-s-intro {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 var(--padding-xl);
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .automatic-invigilating-system1 {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: var(--font-size-11xl);
+    line-height: 100%;
+    font-weight: 400;
+    font-family: var(--font-mountains-of-christmas);
+    color: var(--color-black);
+    white-space: pre-wrap;
+    z-index: 1;
+  }
+  .content,
+  .main {
+    width: 418px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .main {
+    width: 646px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .sign-in-to {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: inherit;
+  }
+  .sign-in-header {
+    width: 520px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 var(--padding-xl);
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .email {
+    width: 45.2px;
+    border: 0;
+    outline: 0;
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-base);
+    background-color: transparent;
+    height: 40px;
+    position: relative;
+    letter-spacing: 0.08em;
+    line-height: 40px;
+    color: var(--color-darkgray);
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+  }
+  .email-field-child {
+    align-self: stretch;
+    height: 1px;
+    position: relative;
+    border-top: 1px solid var(--color-darkgray);
+    box-sizing: border-box;
+  }
+  .email-field {
+    width: 579px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-6xs);
+    max-width: 100%;
+  }
+  .password {
+    position: relative;
+    letter-spacing: 0.08em;
+    line-height: 40px;
+    display: inline-block;
+    min-width: 88px;
+  }
+  .password-field-child {
+    align-self: stretch;
+    height: 7px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+  }
+  .password-field {
+    width: 579px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 24.3px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .sign-in-register-buttons-child {
+    height: 60px;
+    width: 575px;
+    position: relative;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+    border-radius: var(--br-3xs);
+    background-color: var(--color-black);
+    display: none;
+    max-width: 100%;
+  }
+  .sign-in {
+    position: relative;
+    font-size: var(--font-size-base);
+    letter-spacing: 0.08em;
+    line-height: 40px;
+    font-weight: 600;
+    font-family: var(--font-poppins);
+    color: var(--color-white);
+    text-align: left;
+    display: inline-block;
+    min-width: 64px;
+    z-index: 1;
+  }
+  .sign-in-register-buttons {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-3xs) var(--padding-xl) var(--padding-3xs)
+      var(--padding-2xl);
+    background-color: var(--color-black);
+    align-self: stretch;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+    border-radius: var(--br-3xs);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .sign-in-register-buttons:hover {
+    background-color: var(--color-darkslategray-200);
+  }
+  .sign-in-register-buttons-item {
+    height: 60px;
+    width: 575px;
+    position: relative;
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--color-cornflowerblue);
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+  }
+  .register-now {
+    position: relative;
+    font-size: var(--font-size-base);
+    letter-spacing: 0.08em;
+    line-height: 40px;
+    font-weight: 600;
+    font-family: var(--font-poppins);
+    color: var(--color-cornflowerblue);
+    text-align: left;
+    display: inline-block;
+    min-width: 122px;
+    z-index: 1;
+  }
+  .sign-in-register-buttons1 {
+    cursor: pointer;
+    border: 1px solid var(--color-cornflowerblue);
+    padding: var(--padding-5xs) var(--padding-xl) var(--padding-5xs)
+      var(--padding-2xl);
+    background-color: transparent;
+    align-self: stretch;
+    border-radius: var(--br-5xs);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .sign-in-register-buttons1:hover {
+    background-color: rgba(66, 110, 204, 0.09);
+    border: 1px solid var(--color-royalblue-100);
+    box-sizing: border-box;
+  }
+  .sign-in-register-options {
+    width: 575px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-lgi);
+    max-width: 100%;
+  }
+  .forget-password1 {
+    letter-spacing: 0.08em;
+  }
+  .ais-terms,
+  .forget-password1 {
+    position: relative;
+    line-height: 40px;
+  }
+  .terms-conditions {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: -8.3px;
+    color: var(--color-black);
+  }
+  .forgot-password-link {
+    width: 715px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .forgot-password-link,
+  .forgot-password-link-wrapper,
+  .sign-in-register {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .forgot-password-link-wrapper {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .sign-in-register {
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 6px;
+  }
+  .action-buttons,
+  .sign-in-form {
+    align-self: stretch;
+    max-width: 100%;
+  }
+  .action-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 0 4px;
+    box-sizing: border-box;
+    color: var(--color-cornflowerblue);
+  }
+  .sign-in-form {
+    gap: 24px;
+    font-size: var(--font-size-base);
+    color: var(--color-darkgray);
+    font-family: var(--font-poppins);
+  }
+  .sign-in-form,
+  .sign-in-header-parent,
+  .signup1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sign-in-header-parent {
+    align-self: stretch;
+    gap: 54px;
+    max-width: 100%;
+    font-size: var(--font-size-11xl);
+    color: var(--color-black);
+  }
+  .signup1 {
+    width: 100%;
+    position: relative;
+    border-radius: 0 var(--br-11xl) var(--br-11xl) 0;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gainsboro);
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 327px 109px var(--padding-5xl) 680px;
+    gap: 147px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: var(--font-size-47xl-6);
+    color: var(--color-darkslategray-100);
+    font-family: var(--font-volkhov);
+  }
+  @media screen and (max-width: 975px) {
+    .signup1 {
+      gap: var(--gap-54xl);
+      padding-left: 340px;
+      padding-right: var(--padding-35xl);
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 950px) {
+    .ais1 {
+      font-size: var(--font-size-34xl);
+      line-height: 53px;
+    }
+    .automatic-invigilating-system1,
+    .sign-in-to {
+      font-size: var(--font-size-5xl);
+      line-height: 24px;
+    }
+    .sign-in-to {
+      line-height: 32px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .sign-in-header-parent {
+      gap: 27px;
+    }
+    .signup1 {
+      gap: 37px;
+      padding-left: 170px;
+      padding-right: var(--padding-8xl);
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .ais1 {
+      font-size: var(--font-size-21xl);
+      line-height: 40px;
+    }
+    .automatic-invigilating-system1,
+    .sign-in-to {
+      font-size: var(--font-size-lg);
+      line-height: 18px;
+    }
+    .sign-in-to {
+      line-height: 24px;
+    }
+  }
+  
