@@ -32,13 +32,12 @@ For a detailed explanation of the research methodology, findings, and conclusion
 
 ## Results Sample
 
-![Alt Text](assets\cheat.png)
+![Alt Text](assets/cheat.png)
 
-![Alt Text](assets\ais.png)
+![Alt Text](assets/ais.png)
 
-![Alt Text](assets\real_ai.png)
+![Alt Text](assets/real_ai.png)
 
-![Alt Text](path/to/your/image.png)
 
 # AI-Based Invigilation System User Manual
 
@@ -152,31 +151,31 @@ database:
 
 - The first step is to create an academic session.
 
-  ![Session](assets\session.JPG)
+  ![Session](assets/session.JPG)
 
 #### Setting a Faculty, Department, Room, and Course
 
 - Create a faculty, department, and course. Ensure that the same names are used consistently when creating courses.
 
-  ![Room](assets\ROOM.JPG)
+  ![Room](assets/ROOM.JPG)
 
   ![Faculty](assets\faculty.JPG)
 
-  ![Department](assets\department.JPG)
+  ![Department](assets/department.JPG)
 
-  ![Alt Text](assets\course.JPG)
+  ![Alt Text](assets/course.JPG)
 
 #### Creating an Exam
 
 - Ensure the start and end times are in the format `H:M:S` and the date is in `Y-M-D`.
 
-  ![Alt Text](assets\EXAM.JPG)
+  ![Alt Text](assets/EXAM.JPG)
 
 ### Checking Available Cameras
 
 - If the camera returns 1 or 2, it is likely that the camera is connected to the webcam.
 
-  ![Alt Text](assets\camera.JPG)
+  ![Alt Text](assets/camera.JPG)
 
 ### Take Attendance or Coordinates of Students
 
@@ -189,7 +188,7 @@ database:
 5. Click execute and wait for the popup windows to appear.
 6. Click “`s`” to save and “`q`” to retry again.
 
-![Alt Text](assets\detection_2.JPG)
+![Alt Text](assets/detection_2.JPG)
 
 ### Real-time Monitoring
 
@@ -199,7 +198,7 @@ database:
 4. The system will automatically begin capturing video input from the connected camera.
 5. The AI model processes the video stream in real-time, analyzing movements and detecting suspicious behaviors.
 
-![Alt Text](assets\detection_3.JPG)
+![Alt Text](assets/detection_3.JPG)
 
 ### Viewing Results
 
@@ -249,8 +248,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Thanks to the contributors of OpenCV, TensorFlow, PyTorch, and other open-source libraries used in this project.
-- Special thanks to [Collaborator's Name] for their invaluable support and contributions.
+Thanks to the contributors of OpenCV, TensorFlow, PyTorch, and other open-source libraries used in this project.
+
+Special thanks to Hassan Lawal for their invaluable support and contributions.
 
 ![Build Status](https://img.shields.io/github/actions/workflow/status/engrogundeko/AI-INVIGILATING-SYSTEM/ci.yml)
 ![License](https://img.shields.io/github/license/engrogundeko/AI-INVIGILATING-SYSTEM)
