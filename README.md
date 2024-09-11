@@ -32,8 +32,6 @@ For a detailed explanation of the research methodology, findings, and conclusion
 
 ## Results Sample
 
-![Alt Text](assets\ave cheat.JPG)
-
 ![Alt Text](assets\cheat.png)
 
 ![Alt Text](assets\ais.png)
