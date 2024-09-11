@@ -32,13 +32,12 @@ For a detailed explanation of the research methodology, findings, and conclusion
 
 ## Results Sample
 
-![Alt Text](assets\cheat.png)
+![Alt Text](assets/cheat.png)
 
-![Alt Text](assets\ais.png)
+![Alt Text](assets/ais.png)
 
-![Alt Text](assets\real_ai.png)
+![Alt Text](assets/real_ai.png)
 
-![Alt Text](path/to/your/image.png)
 
 # AI-Based Invigilation System User Manual
 
