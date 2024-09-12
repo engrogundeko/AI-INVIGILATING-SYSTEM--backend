@@ -14,9 +14,9 @@ This work is a research project focusing on:
 
 ## Read the Full Journal
 
-For a detailed explanation of the research methodology, findings, and conclusions, you can read the full journal article [here](docs\Final Year Project (1).pdf).
+For a detailed explanation of the research methodology, findings, and conclusions, you can read the full journal article [here ](https://bit.ly/IMPLEMENTATIONOFANINTELLIGENTEXAMMONITORINGSYSTEMUSINGOPTICALFLOWANDDEEPLEARNINGALGORITHMS)
 
-### **Features**
+**Features**
 
 - Highlight the key features of your system to give users a quick summary of its capabilities.
 
