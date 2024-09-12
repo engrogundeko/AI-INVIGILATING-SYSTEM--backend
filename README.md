@@ -14,7 +14,7 @@ This work is a research project focusing on:
 
 ## Read the Full Journal
 
-For a detailed explanation of the research methodology, findings, and conclusions, you can read the full journal article [here](https://example.com/full-journal).
+For a detailed explanation of the research methodology, findings, and conclusions, you can read the full journal article [here](docs\Final Year Project (1).pdf).
 
 ### **Features**
 
@@ -37,7 +37,6 @@ For a detailed explanation of the research methodology, findings, and conclusion
 ![Alt Text](assets/ais.png)
 
 ![Alt Text](assets/real_ai.png)
-
 
 # AI-Based Invigilation System User Manual
 
@@ -122,14 +121,16 @@ The AI-based invigilation system utilizes computer vision algorithms and machine
 
 ### Configuration Files
 
-- Modify configuration files (`config.yaml`) to set parameters like file storage and database.
+- Modify configuration files (`.env`) to set parameters like file storage and database.
+- The WORKING_DIR should be the directory of the cloned repository
+- The MEDIA directory can be any directory
 
 **Example Configuration**:
 
 ```yaml
-directory: C:\Users\Admin\Desktop\AIS
-database:
-  name: ais
+WORKING_DIR="C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM"
+MEDIA="C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\media"
+MODEL_VERSION = 5 # MODEL VERSION RANGES FROM 1 - 5
 ```
 
 ## System Operation
@@ -220,8 +221,8 @@ database:
 
 ## 7. FAQs
 
-- **What types of movements does the system detect?**The system detects head tilts, hand gestures, posture shifts, and other movements commonly associated with cheating.
-- **Can the system be used for remote exams?**Yes, with appropriate integration and camera setup, the system can be adapted for remote invigilation.
+- What types of movements does the system detect? The system detects head tilts, hand gestures, posture shifts, and other movements commonly associated with cheating.
+- Can the system be used for remote exams? Yes, with appropriate integration and camera setup, the system can be adapted for remote invigilation.
 - **How can I adjust the sensitivity of cheating detection?**
   Adjust the detection thresholds in the configuration file to increase or decrease sensitivity.
 
@@ -230,7 +231,7 @@ database:
 For further assistance or technical support, please contact:
 
 - **Email**: [azeezogundeko19@gmail.com](mailto:azeezogundeko19@gmail.com)
-- **Phone**: +234 813 1290 362
+- **Phone**: +234 813 129 0362
 
 ## Contributing
 
@@ -240,7 +241,6 @@ Contributions are welcome! To contribute:
 2. Create a new branch for your feature or bug fix.
 3. Make your changes and ensure that the code is well-documented and tested.
 4. Submit a pull request with a clear description of your changes.
-
 
 ## License
 
