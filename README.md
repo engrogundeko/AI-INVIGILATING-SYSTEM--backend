@@ -14,11 +14,11 @@ This work is a research project focusing on:
 
 ## Read the Full Journal
 
-For a detailed explanation of the research methodology, findings, and conclusions, you can read the full journal article [here ](https://bit.ly/IMPLEMENTATIONOFANINTELLIGENTEXAMMONITORINGSYSTEMUSINGOPTICALFLOWANDDEEPLEARNINGALGORITHMS)
+For a detailed explanation of the research methodology, findings, and conclusions, you can read the full journal article [here ](https://bit.ly/AI-BasedInvigilationSystem)
 
 **Features**
 
-- Highlight the key features of your system to give users a quick summary of its capabilities.
+- [ ] Highlight the key features of your system to give users a quick summary of its capabilities.
 
 ```markdown
 ## Features
