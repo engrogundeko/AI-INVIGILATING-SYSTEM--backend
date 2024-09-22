@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Invigilation System - Analytical Report</title>
+    <link rel="stylesheet" href="{{url_for("static", path="/css/analysis.css")}}" />
+</head>
+<body>
+    <div class="container">
+        <h1>Automatic Invigilation System - Analytical Report</h1>
+        <img
+              class="header-image"
+              loading="lazy"
+              alt=""
+              src="{{url_for("static", path="/images/{{ }}.png")}}"
+            />
+
+        <h2>1. Overview</h2>
+        <p><strong>Date of Examination:</strong> [Insert Date]</p>
+        <p><strong>Number of Students:</strong> [Total Students Monitored]</p>
+        <p><strong>Duration of Exam:</strong> [Start Time] to [End Time]</p>
+        <p><strong>Objective:</strong> Detection of potential cheating behavior using AI-based invigilation through optical flow, object detection, and anomaly detection techniques.</p>
+
+        <h2>2. Key Metrics</h2>
+        <ul>
+            <li><strong>Total Suspicious Activities Detected:</strong> [Insert Total]</li>
+            <li><strong>Number of Alerts Raised:</strong> [Insert Total]</li>
+            <li><strong>False Positives:</strong> [Insert Total]</li>
+            <li><strong>True Positives (Confirmed Cheating Cases):</strong> [Insert Total]</li>
+            <li><strong>False Negatives (Missed Cheating Instances):</strong> [Insert Total]</li>
+        </ul>
+
+        <h2>3. Detection Insights</h2>
+        <p><strong>Type of Anomalies Detected:</strong></p>
+        <ul>
+            <li>Movement-based anomalies: [X%]</li>
+            <li>Optical flow anomalies (e.g., eye movement, head turning): [Z%]</li>
+        </ul>
+
+        <h3>Cheating Probability by Student:</h3>
+        <table id="dynamic-table">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Anomaly Detected</th>
+                    <th>Cheating Probability (%)</th>
+                    <th>Action Taken</th>
+                    <th>Comment</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in data['students'] %}
+                <tr>
+                    <td>{{ student.id }}</td>
+                    <td>{{ student.anomaly }}</td>
+                    <td>{{ student.probability }}</td>
+                    <td>{{ student.action }}</td>
+                    <td>{{ student.comment }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h2>4. Activity Breakdown by Time Intervals</h2>
+        <div class="chart">
+            <!-- Placeholder for a time series graph or heatmap -->
+            <p>Suspicious Activity Peaks (Graph placeholder)</p>
+        </div>
+
+        <h2>5. Student Attention and Behavior Analysis</h2>
+        <p><strong>Attention Metrics (Optical Flow):</strong></p>
+        <ul>
+            <li>Average Student Focus Level: [Insert %]</li>
+            <li>Top 5 Most Distracted Students: [Insert List]</li>
+            <li>Peak Distraction Time Intervals: [Insert Time Ranges]</li>
+        </ul>
+
+        <p><strong>Behavioral Heatmap:</strong></p>
+        <div class="chart">
+            <!-- Placeholder for a heatmap -->
+            <p>Behavioral Heatmap (Heatmap placeholder)</p>
+        </div>
+
+        <h2>6. Performance Evaluation</h2>
+        <p><strong>Model Accuracy:</strong></p>
+        <ul>
+            <li>SVM Detection Accuracy: [Insert %]</li>
+            <li>YOLO Object Detection Accuracy: [Insert %]</li>
+            <li>LSTM/Anomaly Detection Accuracy: [Insert %]</li>
+        </ul>
+
+        <h3>Confusion Matrix:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Predicted Cheating</th>
+                    <th>Predicted Not Cheating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Actual Cheating</td>
+                    <td>True Positives (TP)</td>
+                    <td>False Negatives (FN)</td>
+                </tr>
+                <tr>
+                    <td>Actual Not Cheating</td>
+                    <td>False Positives (FP)</td>
+                    <td>True Negatives (TN)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>7. Recommendations and Next Steps</h2>
+        <p><strong>Areas for Improvement:</strong></p>
+        <ul>
+            <li>Reducing false positives through enhanced anomaly detection techniques.</li>
+            <li>Improving detection of subtle cheating behaviors.</li>
+        </ul>
+        <p><strong>System Optimization Suggestions:</strong></p>
+        <ul>
+            <li>Incorporate more training data for specific cheating behaviors.</li>
+            <li>Fine-tune threshold levels for optical flow and object detection.</li>
+        </ul>
+
+        <h2>8. Conclusion</h2>
+        <p><strong>Summary of Findings:</strong> [Insert summary]</p>
+        <p><strong>Overall Cheating Risk Assessment:</strong> [Insert overall assessment]</p>
+        <p><strong>Next Steps for Investigation:</strong> Follow-up on students with high anomaly scores.</p>
+    </div>
+</body>
+</html>

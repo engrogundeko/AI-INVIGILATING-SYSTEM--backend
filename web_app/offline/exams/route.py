@@ -49,6 +49,7 @@ def plot_cheating_rate(
     exam_id = search_exam(session, course_code)
     services.plot(exam_id)
 
+
 @router.get("/plot")
 def plot(
     course_code: str,
@@ -69,6 +70,7 @@ def plot(
     """
     exam_id = search_exam(session, course_code)
     services.plot_average(exam_id)
+
 
 @router.get("/plot_all_images/{exam_id}")
 def plot_images(
@@ -132,6 +134,10 @@ async def video(
     record_video: bool = False,
     video_source: UploadFile = File(None),
 ):
+    if video_source is None and camera_id is None:
+        raise RequestValidationError("Either camera and video_source cannot be none")
+
+    temp_video_path = None
 
     try:
         if camera_id:
@@ -146,6 +152,8 @@ async def video(
                 temp_video_path = temp_video.name
 
         exam_id = search_exam(session, course_code.upper())
+
+        # video_path = temp_video_path if temp_video_path else None
 
         ais = AIInvigilatingSystem(temp_video_path, camera_id, record_video, use_timer)
         ais(exam_id)
@@ -193,6 +201,10 @@ async def save_detection(
 
     The function saves the data and returns it if 's' is pressed, otherwise, it cancels the operation.
     """
+    if video_source is None and camera_id is None:
+        raise RequestValidationError("Either camera and video_source cannot be none")
+
+    temp_video_path = None
     exam_id = search_exam(session, course_code)
     if camera_id:
         video_source = None

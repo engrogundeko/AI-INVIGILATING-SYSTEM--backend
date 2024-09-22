@@ -11,13 +11,15 @@ import joblib
 import numpy as np
 from ultralytics import YOLO
 import matplotlib.pyplot as plt
+from tensorflow.keras.models import load_model
 
 # Load YOLOv8 model
 pth = r"C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\media\datasets\exams\normal_1.mp4"
 expansion = 100
 expected_feature_length = 2
-model = YOLO("ais3vm.pt")
-svm_model = joblib.load("ais_modelv5.pkl")
+model = YOLO(r"C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\models\aisv4l.pt")
+svm_model = joblib.load(r"C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\models\ais_modelv6.pkl")
+lstm_model = load_model(r'C:\Users\Admin\Desktop\AI INVIGILATING SYSTEM\lstm.h5')
 
 # Initialize video capture
 cap = cv2.VideoCapture(pth)
@@ -47,6 +49,24 @@ detected_bboxes = []
 cheating_list = []
 flows = []
 
+window_size = 10
+num_features = 1  # Update this if you have more features per sample
+buffer = np.zeros((window_size, num_features))
+
+def predict_real_time(new_sample):
+    # Append the new sample to the buffer
+    buffer = np.append(buffer[1:], [new_sample], axis=0)  # Remove the oldest sample and add the new one
+
+    # Check if the buffer is full (contains 10 samples)
+    if len(buffer) == window_size:
+        # Reshape buffer to match the LSTM input shape: (1, timesteps, num_features)
+        input_data = np.expand_dims(buffer, axis=0)
+        
+        # Make predictions
+        prediction = lstm_model.predict(input_data)
+        return prediction
+    else:
+        return None
 
 def plot():
     student_ids = [entry["student_id"] for entry in cheating_list]
@@ -155,6 +175,8 @@ def extract_features(frame, good_new, good_old):
             # num_moving_points = 0
 
         object_size = (x2 - x1) * (y2 - y1)
+        
+        norm = avg_magnitude / object_size
 
         # Append individual feature values to the list
 
@@ -167,6 +189,8 @@ def extract_features(frame, good_new, good_old):
             if match(X1c, Y1c, X2c, Y2c):
 
                 cheat["flows"].append(avg_magnitude)
+                pre = predict_real_time(norm)
+                print(norm, pre)
                 if len(cheat["flows"]) == 6:
                     mean_flow = float(np.mean(cheat["flows"]))
                     cheat["flows"] = []

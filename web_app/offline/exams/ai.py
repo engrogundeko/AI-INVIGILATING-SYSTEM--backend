@@ -15,17 +15,20 @@ from ..config import (
     AIS__MODEL,
     AIS_YOLO,
 )
+from .schema import ReportSchema, ReportAnalysisSchema
 
 from ..repository import (
     suspiciousReportRespository,
     examLocationRepo,
     examRespository,
     studentDataRepo,
+    reportRespository,
 )
 from .timer import ExamTimer
 from .schema import SuspiciousReportSchema
 from ..utils import image_utils
 from .email import EmailHandler
+from .outlier import OutlierDetector
 
 import cv2
 import anyio
@@ -45,36 +48,43 @@ class AIInvigilatingSystem:
         video_path: str,
         camera: int = 1,
         record_video: bool = False,
-        use_timer: bool = False
+        use_timer: bool = False,
     ):
         self.flows = []
         self.cheating_list = []
         self.detected_bboxes = []
         self.student_locations = {}
         self.record_video = record_video
+        self.exam_id = None
+        
 
         self.expansion = 50
         self.threshold: int = 0.2
-        self.new_width = 1920
-        self.new_height = 1080
+        self.apha = 0.9
+        
         self.dis_width = 840
         self.dis_height = 680
+        self.new_width = 1920
+        self.new_height = 1080
+        
+        self.end_time = None
+        self.start_time = None
+        self.stop_thread = False
         self.alarm_duration = 500
+        self.use_timer = use_timer
         self.alarm_frequency = 2500
         self.expected_feature_length = 2
         self.high_brightness_factor = 0.5
-        self.use_timer = use_timer
-        self.stop_thread = False
-        # self.low_brightness_factor = 0.1
 
-        self.svm_model = self.load_ais_model()
-        self.model = self.load_yolo()
+        self.model = self._load_yolo()
+        self.svm_model = self._load_ais_model()
 
-        self.email = EmailHandler()
         self.time = ExamTimer()
+        self.email = EmailHandler()
+        self.result_queue = Queue()
         self.preprocesor = PreProcessor()
         self.frame_queue = Queue(maxsize=10)
-        self.result_queue = Queue()
+        self.outlier = OutlierDetector
         self.cap = cv2.VideoCapture(camera if camera else video_path)
 
     @property
@@ -114,10 +124,10 @@ class AIInvigilatingSystem:
             suspicious = SuspiciousReportSchema(**log)
             suspiciousReportRespository.insert_one(suspicious.__dict__)
 
-    def load_yolo(self):
+    def _load_yolo(self):
         return YOLO(AIS_YOLO)
 
-    def load_ais_model(self):
+    def _load_ais_model(self):
         try:
             model = joblib.load(AIS__MODEL)
             return model
@@ -134,14 +144,64 @@ class AIInvigilatingSystem:
         return await self.email.send(data)
 
     def evaluate_total_result(self):
+        
+        n_suspicious = []
+        report_analysis = []
+        self.end_time = datetime.now()
+        
         for cheat in self.cheating_list:
+            student_id = cheat["student_id"]
             cheating_score = cheat["all_cheating_scores"]
             score = np.mean(cheating_score) if cheating_score else 0
             score = score * 100
             cheat["average_cheat"] = f"{score:.4f}"
+            
+            avg_cheat = float(cheat["average_cheat"])
 
-        # with open("cheating_list.json", "w") as json_file:
-        #     json.dump(self.cheating_list, json_file, indent=4, cls=NumpyEncoder)
+            data = cheat["optical_flows"]
+            outlier = self.outlier(data)
+            result, anomalies_idx, anomaly = outlier.detect_outliers()
+
+            cheat["optical_flows"] = None
+            n_suspicious.append(cheating_score)
+            
+            if len(cheating_score) > 2:
+                comment = "Student Likely Cheated"
+                if result["n_anomalies"] > 5:
+                    comment = "Student Cheated"
+                    
+                    
+            else:
+                comment = "Student Might Not have Cheated"
+                
+            combined_confidence = self.apha * avg_cheat + (1- self.apha) * anomaly
+
+            report = dict(
+                student_id=student_id,
+                average_cheating=score,
+                all_cheating_score=cheating_score,
+                cheat_timestamp=cheat["timestamp"],
+                magnitude=data,
+                anomalies_idx=anomalies_idx,
+                comment=comment,
+                confidence=combined_confidence,
+                **result,
+            )
+
+            report_obj = ReportAnalysisSchema(**report)
+            report_analysis.append(report_obj.__dict__)
+        
+        n_suspicious = sum(n_suspicious)
+
+        report = ReportSchema(
+            exam_id=self.exam_id,
+            end_time=self.end_time,
+            start_time=self.start_time,
+            anomaly_analysis=report_analysis,
+            n_suspicious=n_suspicious,
+            exam_metrics=None,
+        )
+        reportRespository.insert_one(report.__dict__)
 
     def evaluate_cheating(self, x1, y1, x2, y2, confidence_score, frame):
 
@@ -221,7 +281,7 @@ class AIInvigilatingSystem:
         brightness = np.mean(frame)
 
         normalized_brightness = brightness / 255
-        print(normalized_brightness)
+        # print(normalized_brightness)
 
         if normalized_brightness > 0.7:
             adjusted_score = conf - (
@@ -275,6 +335,7 @@ class AIInvigilatingSystem:
                 if self._match(X1c, Y1c, X2c, Y2c):
 
                     cheat["flows"].append(avg_magnitude)
+                    cheat["optical_flows"].append(avg_magnitude)
                     if len(cheat["flows"]) == 6:
                         mean_flow = float(np.mean(cheat["flows"]))
                         cheat["flows"] = []
@@ -301,7 +362,7 @@ class AIInvigilatingSystem:
                                 score = self.evaluate_cheating(
                                     x1, y1, x2, y2, confidence_score, frame
                                 )
-                                print("score", confidence_score, score)
+                                # print("score", confidence_score, score)
                                 # score = self.calculate_conf(crop_frame, confidence_score)
 
                                 code = "Suspicious"
@@ -392,6 +453,7 @@ class AIInvigilatingSystem:
         print("Producer thread ended and resources released.")
 
     def frame_consumer(self, exam_id):
+        self.exam_id = exam_id
         try:
             prev_gray = None
             prev_points = None
@@ -405,9 +467,9 @@ class AIInvigilatingSystem:
             if self.record_video:
                 recorder = self.out
                 record = recorder.out(exam_id)
-                
+
             while True:
-                frame = self.frame_queue.get()  
+                frame = self.frame_queue.get()
                 if frame is None:  # End of the stream
                     self.save_to_db
                     break
@@ -425,6 +487,11 @@ class AIInvigilatingSystem:
                 frame = cv2.resize(frame, (self.new_width, self.new_height))
                 if frame_counter == 1:
                     # start timer
+                    # start the time regardless of the one set in the
+                    # database
+                    self.start_time = datetime.now()
+
+                    # to use time for the exam
                     if self.use_timer:
                         self.time.start_exam_timer(exam_id)
 
@@ -434,18 +501,26 @@ class AIInvigilatingSystem:
                     detections = results["students_data"]
 
                     for result in detections:
+
                         bbox = result["coordinates"]
                         box = list(map(int, bbox))
+                        x1, y1, x2, y2 = map(int, bbox)
+
+                        if (x2 - x1) * (y2 - y1) < 3000:
+                            continue
                         self.detected_bboxes.append(box)
                         self.cheating_list.append(
                             {
                                 "exam_id": exam_id,
                                 "student_id": result["id"],
                                 "coordinates": box,
+                                "end_time": None,
                                 "all_cheating_scores": [],
                                 "image_paths": [],
                                 "flows": [],
                                 "timestamp": [],
+                                "optical_flows": [],
+                                "anomaly_report": None,
                             }
                         )
                 if frame_counter % 5 == 0:
@@ -460,7 +535,7 @@ class AIInvigilatingSystem:
                             minDistance=7,
                             blockSize=7,
                         )
-           
+
                     else:
                         prev_gray, prev_points, _ = self.process_frame(
                             prev_gray, prev_points, gray_frame, frame
@@ -478,12 +553,11 @@ class AIInvigilatingSystem:
                         2,
                         cv2.LINE_AA,
                     )
-   
+
                     cv2.imshow(exam_name, show_frame)
                 if self.use_timer:
                     if self.time.evaluate_time():
                         self.stop_thread = True
-
 
                 if cv2.waitKey(1) & 0xFF == ord("q"):
                     self.stop_thread = True
