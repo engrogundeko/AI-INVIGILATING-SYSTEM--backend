@@ -1,9 +1,32 @@
-from typing import List, Tuple
+from typing import List, Tuple, Dict
 from fastapi.exceptions import RequestValidationError
+import numpy as np
 from pydantic import BaseModel, field_validator
 from datetime import date, datetime, time
 
 from ..repository import examRespository, courseRespository
+
+
+class ImageGraphs:
+    average_cheat: str
+    rated_cheat: str
+    confusion_matrix: str
+    performance: str
+    anomalies: List[str]
+    activities: List[str]
+
+
+class ExamMetrics(BaseModel):
+    true_positive: int
+    false_positive: int
+    true_negative: int
+    false_negative: int
+    accuracy: float
+    precision: float
+    f1_score: float
+    recall: float
+    sample_images: List[str]
+
 
 class SuspiciousReportSchema(BaseModel):
 
@@ -15,28 +38,63 @@ class SuspiciousReportSchema(BaseModel):
     average_cheat: str
     image_paths: List[str]
 
+
+class ReportAnalysisSchema(BaseModel):
+    class Config:
+        arbitrary_types_allowed = True
+    student_id: int
+    average_cheating: float
+    all_cheating_score: List[float]
+    mean_outliers: float
+    contamination_level: str
+    n_iqr_anomalies: int
+    n_anomalies: int
+    score: str
+    magnitude: List[float]
+    cheat_timestamp: List[datetime]
+    anomalies_idx: List[int]
+    comment: str  
+    confidence: float
+
+class ReportSchema(BaseModel):
+    exam_id: str
+    anomaly_analysis: List[dict]
+    start_time: datetime
+    end_time: datetime
+    n_suspicious: int
+    exam_metrics: ExamMetrics | None
+
+
+# class OpticalFlowSchema(Base)
+
+
 class VideoRecordingSchema(BaseModel):
     exam_id: str
     timestamp: datetime
     file_path: str
     duration: float
     resolution: Tuple[int, int]
+
+
 class ExamAttendance(BaseModel):
     status: str
     exam_id: str
     student_id: str
     coordinate: Tuple[float, float, float, float]
 
+
 class Location(BaseModel):
     student_id: str
     coordinate: Tuple[float, float, float, float]
-    
+
+
 class ExamLocation(BaseModel):
     exam_id: str
     locations: List[dict]
     undetected_faces: List[str]
     unrecognised_faces: List[str]
-    
+
+
 class CreateCourseShema(BaseModel):
     name: str
     code: str
@@ -69,8 +127,7 @@ class CreateExamSchema(BaseModel):
         course = courseRespository.find_one({"code": cls.course_code})
         if course is None:
             raise RequestValidationError("Course does not exist")
-        
-        
+
     @field_validator("date", mode="before")
     def convert_date(cls, v):
         if isinstance(v, date):

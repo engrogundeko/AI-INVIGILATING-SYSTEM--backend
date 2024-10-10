@@ -32,7 +32,7 @@ from .sessions import (
     get_all_departments,
     get_all_faculties,
     get_all_rooms,
-    get_all_sessions
+    # get_all_sessions
 )
 from fastapi import APIRouter, Depends, Query
 
@@ -71,11 +71,11 @@ def create_exam(
     if exam is not None:
         raise RequestValidationError("Exam already exist")
     
-    course = courseRespository.find_one({"code": course_code})
+    course = courseRespository.find_one({"code": course_code.upper()})
     if course is None:
         raise RequestValidationError("Course does not exist")
 
-    venue = roomRespository.find_one({"name": venue})
+    venue = roomRespository.find_one({"name": venue.upper()})
     session = sessionRepository.find_one({"name": session})
     return examRespository.insert_one(
         dict(
