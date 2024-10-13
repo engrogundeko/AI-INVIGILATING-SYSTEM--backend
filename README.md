@@ -1,6 +1,7 @@
+
 # InvigilX
 
-![1728579177043](image/README/1728579177043.png)
+![Alt Text](path_to_image)
 
 ## An AI-Based Invigilation System
 
