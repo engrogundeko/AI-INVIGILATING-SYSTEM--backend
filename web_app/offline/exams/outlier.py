@@ -25,6 +25,8 @@ class OutlierDetector:
 
     def isolation_forest_outliers(self, contamination):
         """Use Isolation Forest to detect outliers based on contamination estimate"""
+        if contamination == 0:
+            contamination = 0.1
         iso_forest = IsolationForest(
             contamination=contamination, n_estimators=200, random_state=42
         )

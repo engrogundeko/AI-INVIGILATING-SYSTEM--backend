@@ -30,8 +30,8 @@ async def analyse_exam(course_code: str, session: str, request: Request):
     exam_id = search_exam(session, course_code)
     data = reportRespository.find_one({"exam_id": exam_id})
     exam_metrics = data.get("exam_metrics")
-    if exam_metrics:
-        return "Already analysed"
+    # if exam_metrics:
+    #     return "Already analysed"
 
     return evaluate_cheating(exam_id)
 

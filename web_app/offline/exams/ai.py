@@ -56,17 +56,16 @@ class AIInvigilatingSystem:
         self.student_locations = {}
         self.record_video = record_video
         self.exam_id = None
-        
 
         self.expansion = 50
         self.threshold: int = 0.2
         self.apha = 0.9
-        
+
         self.dis_width = 840
         self.dis_height = 680
         self.new_width = 1920
         self.new_height = 1080
-        
+
         self.end_time = None
         self.start_time = None
         self.stop_thread = False
@@ -144,18 +143,18 @@ class AIInvigilatingSystem:
         return await self.email.send(data)
 
     def evaluate_total_result(self):
-        
+
         n_suspicious = []
         report_analysis = []
         self.end_time = datetime.now()
-        
+
         for cheat in self.cheating_list:
             student_id = cheat["student_id"]
             cheating_score = cheat["all_cheating_scores"]
             score = np.mean(cheating_score) if cheating_score else 0
             score = score * 100
             cheat["average_cheat"] = f"{score:.4f}"
-            
+
             avg_cheat = float(cheat["average_cheat"])
 
             data = cheat["optical_flows"]
@@ -164,17 +163,16 @@ class AIInvigilatingSystem:
 
             cheat["optical_flows"] = None
             n_suspicious.append(cheating_score)
-            
+
             if len(cheating_score) > 2:
                 comment = "Student Likely Cheated"
                 if result["n_anomalies"] > 5:
                     comment = "Student Cheated"
-                    
-                    
+
             else:
                 comment = "Student Might Not have Cheated"
-                
-            combined_confidence = self.apha * avg_cheat + (1- self.apha) * anomaly
+
+            combined_confidence = self.apha * avg_cheat + (1 - self.apha) * anomaly
 
             report = dict(
                 student_id=student_id,
@@ -190,8 +188,13 @@ class AIInvigilatingSystem:
 
             report_obj = ReportAnalysisSchema(**report)
             report_analysis.append(report_obj.__dict__)
-        
-        n_suspicious = sum(n_suspicious)
+        # print(n_suspicious)
+        n_sus = []
+        for n_suspi in n_suspicious:
+            for n_s in n_suspi:
+                n_sus.append(n_s)
+        n_suspicious = len(n_sus)
+        # print(n_suspicious)
 
         report = ReportSchema(
             exam_id=self.exam_id,
@@ -203,49 +206,50 @@ class AIInvigilatingSystem:
         )
         reportRespository.insert_one(report.__dict__)
 
-    def evaluate_cheating(self, x1, y1, x2, y2, confidence_score, frame):
+    def evaluate_cheating(self, cheat, confidence_score, frame):
+        x1, y1, x2, y2 = map(int, cheat["coordinates"])
 
-        X2c, Y2c = self._get_center(x1, y1, x2, y2)
-        for cheat in self.cheating_list:
+        # X2c, Y2c = self._get_center(x1, y1, x2, y2)
+        # for cheat in self.cheating_list:
 
-            X1, Y1, X2, Y2 = map(int, cheat["coordinates"])
+        #     X1, Y1, X2, Y2 = map(int, cheat["coordinates"])
 
-            X1c, Y1c = self._get_center(X1, Y1, X2, Y2)
-            if self._match(X1c, Y1c, X2c, Y2c):
+        #     X1c, Y1c = self._get_center(X1, Y1, X2, Y2)
+        #     if self._match(X1c, Y1c, X2c, Y2c):
 
-                id = cheat["student_id"]
+        id = cheat["student_id"]
 
-                cv2.putText(
-                    frame,
-                    f"ID:{id}",
-                    (x1, y1 - 20),
-                    cv2.FONT_HERSHEY_SIMPLEX,
-                    0.5,
-                    (0, 255, 0),
-                    2,
-                )
+        cv2.putText(
+            frame,
+            f"ID:{id}",
+            (x1, y1 - 20),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            0.5,
+            (0, 255, 0),
+            2,
+        )
 
-                y1 = max(0, y1 - self.expansion)
-                y2 = min(frame.shape[0], y2 + self.expansion)
-                x1 = max(0, x1 - self.expansion)
-                x2 = min(frame.shape[1], x2 + self.expansion)
-                crp_frame = frame[y1:y2, x1:x2]
+        y1 = max(0, y1 - self.expansion)
+        y2 = min(frame.shape[0], y2 + self.expansion)
+        x1 = max(0, x1 - self.expansion)
+        x2 = min(frame.shape[1], x2 + self.expansion)
+        crp_frame = frame[y1:y2, x1:x2]
 
-                score = self.calculate_conf(crp_frame, confidence_score)
+        score = self.calculate_conf(crp_frame, confidence_score)
 
-                # if score > 0.5:
-                cheat["all_cheating_scores"].append(score)
-                cheat["timestamp"].append(datetime.now())
+        # if score > 0.5:
+        cheat["all_cheating_scores"].append(score)
+        cheat["timestamp"].append(datetime.now())
 
-                dt = datetime.now()
-                dg = dt.strftime("%H_%M_%S")
-                filename = f"{id}__{dg}"
-                path = self.save_image(crp_frame, filename)
-                cheat["image_paths"].append(path)
-                # cheat["timestamp"] = dt
+        dt = datetime.now()
+        dg = dt.strftime("%H_%M_%S")
+        filename = f"{id}__{dg}"
+        path = self.save_image(crp_frame, filename)
+        cheat["image_paths"].append(path)
+        # cheat["timestamp"] = dt
 
-                return score
-                # return crp_frame
+        return score
+        # return crp_frame
 
     def _match(self, x1, y1, x2, y2):
         distance = math.sqrt(((x2 - x1) ** 2) + ((y2 - y1) ** 2))
@@ -336,48 +340,48 @@ class AIInvigilatingSystem:
 
                     cheat["flows"].append(avg_magnitude)
                     cheat["optical_flows"].append(avg_magnitude)
-                    if len(cheat["flows"]) == 6:
-                        mean_flow = float(np.mean(cheat["flows"]))
-                        cheat["flows"] = []
+                    # if len(cheat["flows"]) == 6:
+                    #     mean_flow = float(np.mean(cheat["flows"]))
+                    #     cheat["flows"] = []
 
-                        features = [
-                            mean_flow,
-                            object_size,
-                        ]
+                    features = [
+                        avg_magnitude,
+                        object_size,
+                    ]
 
-                        if not len(features) == self.expected_feature_length:
-                            print(
-                                f"Skipping prediction: Expected {self.expected_feature_length} features, but got {len(features)}"
+                    if not len(features) == self.expected_feature_length:
+                        print(
+                            f"Skipping prediction: Expected {self.expected_feature_length} features, but got {len(features)}"
+                        )
+                    else:
+
+                        f_val = np.array(features).reshape(
+                            1, -1
+                        )  # Reshape to (1, n_features)
+                        label = self.svm_model.predict(f_val)[0]
+                        probabilities = self.svm_model.predict_proba(f_val)
+
+                        if label == 1:
+                            confidence_score = probabilities[0, 1]
+                            score = self.evaluate_cheating(
+                                cheat, confidence_score, frame
                             )
-                        else:
+                            # print("score", confidence_score, score)
+                            # score = self.calculate_conf(crop_frame, confidence_score)
 
-                            f_val = np.array(features).reshape(
-                                1, -1
-                            )  # Reshape to (1, n_features)
-                            label = self.svm_model.predict(f_val)[0]
-                            probabilities = self.svm_model.predict_proba(f_val)
+                            code = "Suspicious"
+                            colour = (0, 0, 255)
+                            cv2.rectangle(frame, (x1, y1), (x2, y2), colour, 2)
 
-                            if label == 1:
-                                confidence_score = probabilities[0, 1]
-                                score = self.evaluate_cheating(
-                                    x1, y1, x2, y2, confidence_score, frame
-                                )
-                                # print("score", confidence_score, score)
-                                # score = self.calculate_conf(crop_frame, confidence_score)
-
-                                code = "Suspicious"
-                                colour = (0, 0, 255)
-                                cv2.rectangle(frame, (x1, y1), (x2, y2), colour, 2)
-
-                                cv2.putText(
-                                    frame,
-                                    f"{code}: {score:.2f}%",
-                                    (x1, y1 - 10),
-                                    cv2.FONT_HERSHEY_SIMPLEX,
-                                    0.5,
-                                    colour,
-                                    2,
-                                )
+                            cv2.putText(
+                                frame,
+                                f"{code}: {score:.2f}%",
+                                (x1, y1 - 10),
+                                cv2.FONT_HERSHEY_SIMPLEX,
+                                0.5,
+                                colour,
+                                2,
+                            )
 
                     break
 
